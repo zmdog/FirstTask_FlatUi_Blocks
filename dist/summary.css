@@ -1,42 +1,42 @@
-body button {
+body .wrapper button {
   border-radius: 2px;
   outline: 0; }
-  body button:hover {
+  body .wrapper button:hover {
     cursor: url(png/hand.png), text; }
 
-body .orange, body .medium_button_orange, body .small_button_orange {
+body .wrapper .orange, body .wrapper .button_medium_orange, body .wrapper .button_small_orange {
   color: #FFFFFF;
   border: 1px #e75735;
   background-color: #e75735; }
-  body .orange:hover, body .medium_button_orange:hover, body .small_button_orange:hover {
+  body .wrapper .orange:hover, body .wrapper .button_medium_orange:hover, body .wrapper .button_small_orange:hover {
     box-shadow: 0 3px #bf3e1f; }
-  body .orange:focus, body .medium_button_orange:focus, body .small_button_orange:focus {
+  body .wrapper .orange:focus, body .wrapper .button_medium_orange:focus, body .wrapper .button_small_orange:focus {
     border: 1px solid #e75735;
     background-color: white;
     color: #e75735;
     box-shadow: 0 3px #e75735; }
 
-body .default, body .medium_button_default, body .small_button_default {
+body .wrapper .default, body .wrapper .button_medium_default, body .wrapper .button_small_default {
   color: #FFFFFF;
   border: 1px #4eb7a8;
   background-color: #4eb7a8; }
-  body .default:hover, body .medium_button_default:hover, body .small_button_default:hover {
+  body .wrapper .default:hover, body .wrapper .button_medium_default:hover, body .wrapper .button_small_default:hover {
     box-shadow: 0 3px  #28a290; }
-  body .default:focus, body .medium_button_default:focus, body .small_button_default:focus {
+  body .wrapper .default:focus, body .wrapper .button_medium_default:focus, body .wrapper .button_small_default:focus {
     border: 1px solid #4eb7a8;
     background-color: white;
     color: #4eb7a8;
     box-shadow: 0 3px  #4eb7a8; }
 
-body .medium_button_orange {
+body .wrapper .button_medium_orange {
   height: 32px; }
 
-body .small_button_orange {
+body .wrapper .button_small_orange {
   height: 22px; }
 
-body .medium_button_default {
+body .wrapper .button_medium_default {
   height: 32px; }
 
-body .small_button_default {
+body .wrapper .button_small_default {
   height: 22px; }
 

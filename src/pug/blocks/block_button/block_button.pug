@@ -1,19 +1,15 @@
 mixin block_button(size, text, color)
-    .button_block
+    .block_button
         case color
             when "orange"
                 case size
                     when "small"
-                        div(class=size + "_block" + "_orange")
-                            button(class=size + "_button" + "_orange")= text
+                            button(class="button_"  + size + "_orange")= text
                     default
-                        div(class="medium" + "_block" + "_orange")
-                            button(class="medium" + "_button" + "_orange")= text
+                            button(class="button_" + "medium" + "_orange")= text
             default
                 case size
                     when "small"
-                        div(class=size + "_block" + "_default")
-                            button(class=size + "_button" + "_default")= text
+                            button(class="button_"  + size + "_default")= text
                     default
-                        div(class="medium" + "_block" + "_default")
-                            button(class="medium" + "_button" + "_default")= text
+                            button(class="button_" + "medium" + "_default")= text
