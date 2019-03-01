@@ -1,0 +1,57 @@
+body{
+  button{
+    border-radius: 2px;
+    outline: 0;
+    &:hover{
+      cursor: url("./hand.png"), text;
+    }
+  }
+  .orange{
+    color: #FFFFFF;
+    border: 1px #e75735;
+    background-color: #e75735;
+    &:hover{
+      box-shadow: 0 3px #bf3e1f;
+    }
+    &:focus{
+      border: 1px solid #e75735;
+      background-color: white;
+      color: #e75735;
+      box-shadow: 0 3px #e75735;
+    }
+  }
+  .default{
+    color: #FFFFFF;
+    border: 1px #4eb7a8;
+    background-color: #4eb7a8;
+    &:hover{
+      box-shadow: 0 3px  #28a290;
+    }
+    &:focus{
+      border: 1px solid #4eb7a8;
+      background-color: white;
+      color: #4eb7a8;
+      box-shadow: 0 3px  #4eb7a8;
+    }
+  }
+
+
+  .medium_button_orange{
+    @extend .orange;
+    height: 32px;
+
+  }
+  .small_button_orange{
+    @extend .orange;
+    height: 22px;
+
+  }
+  .medium_button_default{
+    @extend .default;
+    height: 32px;
+  }
+  .small_button_default{
+    @extend .default;
+    height: 22px;
+  }
+}
