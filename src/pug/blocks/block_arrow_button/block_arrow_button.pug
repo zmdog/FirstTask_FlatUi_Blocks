@@ -1,0 +1,29 @@
+mixin block_arrow_button(status, side, color)
+    .block_arrow_button
+        case status
+            when "disable"
+                case side
+                    when "right"
+                        button(class="button_" + side + "_disable")
+
+                    default
+                        button(class="button_" + "left" + "_disable")
+
+            default
+                case color
+                    when "orange"
+                        case side
+                            when "right"
+                                button(class="button_" + side + "_orange")
+
+                            default
+                                button(class="button_" + "left" + "_orange")
+
+                    default
+                        case side
+                            when "right"
+                                button(class="button_" + side + "_default")
+
+                            default
+                                button(class="button_" + "left" + "_default")
+

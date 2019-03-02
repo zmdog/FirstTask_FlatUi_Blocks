@@ -1,6 +1,15 @@
-include ../block_button/block_button
+include ../block_basic_button/block_basic_button
+include ../block_arrow_button/block_arrow_button
 .block_buttons
-    +block_button("small", "checkButtonSMALL", "default")
-    +block_button("medium", "checkButtonMEDIUM", "default")
-    +block_button("small", "checkButtonSMALL", "orange")
-    +block_button("medium", "checkButtonMEDIUM","orange")
+    .block_basic_buttons
+        +block_basic_button("small", "SMALL", "default")
+        +block_basic_button("medium", "MEDIUM", "default")
+        +block_basic_button("small", "SMALL", "orange")
+        +block_basic_button("medium", "MEDIUM","orange")
+    .block_arrow_buttons
+        +block_arrow_button("active","left", "orange")
+        +block_arrow_button("active","right", "orange")
+        +block_arrow_button("active","right", "default")
+        +block_arrow_button("active","left", "default")
+        +block_arrow_button("disable", "right")
+        +block_arrow_button("disable", "left")
