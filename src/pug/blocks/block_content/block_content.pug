@@ -1,6 +1,9 @@
-include ../block_basic_button/block_basic_button
+include ../block_standart_button/block_standart_button
 include ../block_arrow_button/block_arrow_button
-.block_buttons
+include ../block_percentage/block_percentage
+include ../block_pie_chart/block_pie_chart
+
+.content_block
     .block_basic_buttons
         +block_basic_button("small", "SMALL", "default")
         +block_basic_button("medium", "MEDIUM", "default")
@@ -13,3 +16,10 @@ include ../block_arrow_button/block_arrow_button
         +block_arrow_button("active","left", "default")
         +block_arrow_button("disable", "right")
         +block_arrow_button("disable", "left")
+    .block_percentages
+        +block_percentage(0)
+        +block_percentage(38)
+        +block_percentage(62)
+        +block_percentage(89)
+    .block_pie_chart
+        +block_pie_chart(50, 30, 10, 10)

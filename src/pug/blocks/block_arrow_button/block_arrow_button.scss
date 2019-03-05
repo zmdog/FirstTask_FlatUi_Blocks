@@ -1,0 +1,165 @@
+button{
+  .pulse{
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.51);
+    animation: pulse 0.7s ease-out;
+    transform: scale(0);
+  }
+  @keyframes pulse {
+    to{
+      transform: scale(1);
+      opacity: 0;
+    }
+  }
+  outline: 0;
+  overflow: hidden;
+  position: relative;
+  &:hover{
+    cursor: url("../hand.png"), text;
+  }
+}
+.block_arrow_buttons{
+
+  .arrow_button{
+    width: 50px;
+    height: 50px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+  }
+  .arrow_default{
+    border: #4eb7a8 solid 3px;
+    &:hover{
+      border: 0;
+      background-color: #4EB7A8;
+      &::after{
+        top: 17px;
+        width: 13px;
+        border-top: 4px solid #FFFFFF;
+        border-right: 4px solid #FFFFFF;
+      }
+    }
+    &::after{
+      content: "";
+      display: inline-block;
+      position: absolute;
+      top: 14px;
+      width: 13px;
+      height: 13px;
+      border-top: 4px solid #4eb7a8;
+      border-right: 4px solid #4eb7a8;
+    }
+  }
+  .arrow_orange{
+    border: #e75735 solid 3px;
+    &:hover{
+      border: 0;
+      background-color: #E75735;
+      &::after{
+        top: 17px;
+        width: 13px;
+        border-top: 4px solid #FFFFFF;
+        border-right: 4px solid #FFFFFF;
+      }
+    }
+    &::after{
+      content: "";
+      display: inline-block;
+      position: absolute;
+      top: 14px;
+      width: 13px;
+      height: 13px;
+      border-top: 4px solid #e75735;
+      border-right: 4px solid #e75735;
+    }
+  }
+  .right{
+    &:hover{
+      &::after{
+        right: 20px;
+      }
+    }
+    &::after{
+      right: 17px;
+      transform: rotate(45deg)
+    }
+  }
+  .left{
+    &:hover{
+      &::after{
+        left: 20px;
+      }
+    }
+    &::after{
+      left: 17px;
+      transform: rotate(-135deg)
+    }
+  }
+
+
+  .button_left_orange{
+    @extend .arrow_button;
+    @extend .arrow_orange;
+    @extend .left
+  }
+  .button_left_default{
+    @extend .arrow_button;
+    @extend .arrow_default;
+    @extend .left
+  }
+  .button_right_orange{
+    @extend .arrow_button;
+    @extend .arrow_orange;
+    @extend .right
+  }
+  .button_right_default{
+    @extend .arrow_button;
+    @extend .arrow_default;
+    @extend .right
+  }
+
+  .button_left_disable{
+    background-color: #e5e5e5;
+    border: 0;
+    @extend .arrow_button;
+    &:hover{
+      border: 0;
+      background-color: #e5e5e5;
+    }
+    &::after{
+      content: "";
+      display: inline-block;
+      position: absolute;
+      top: 16px;
+      width: 13px;
+      height: 13px;
+      border-top: 4px solid #FFFFFF;
+      border-right: 4px solid #FFFFFF;
+      left: 19px;
+      transform: rotate(-135deg)
+    }
+  }
+  .button_right_disable{
+    background-color: #e5e5e5;
+    border: 0;
+    @extend .arrow_button;
+    &:hover{
+      border: 0;
+      background-color: #e5e5e5;
+    }
+    &::after{
+      content: "";
+      display: inline-block;
+      position: absolute;
+      top: 16px;
+      width: 13px;
+      height: 13px;
+      border-top: 4px solid #FFFFFF;
+      border-right: 4px solid #FFFFFF;
+      right: 19px;
+      transform: rotate(45deg)
+    }
+
+  }
+
+}

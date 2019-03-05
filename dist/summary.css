@@ -1,8 +1,8 @@
-body .wrapper button {
+button {
   outline: 0;
   overflow: hidden;
   position: relative; }
-  body .wrapper button .pulse {
+  button .pulse {
     position: absolute;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.51);
@@ -13,61 +13,79 @@ body .wrapper button {
   to {
     transform: scale(1);
     opacity: 0; } }
-  body .wrapper button:hover {
+  button:hover {
     cursor: url(png/hand.png), text; }
 
-body .wrapper .block_basic_buttons .basic_button, body .wrapper .block_basic_buttons .button_medium_orange, body .wrapper .block_basic_buttons .button_small_orange, body .wrapper .block_basic_buttons .button_medium_default, body .wrapper .block_basic_buttons .button_small_default {
+.block_basic_buttons .basic_button, .block_basic_buttons .button_medium_orange, .block_basic_buttons .button_small_orange, .block_basic_buttons .button_medium_default, .block_basic_buttons .button_small_default {
   border-radius: 2px; }
 
-body .wrapper .block_basic_buttons .basic_orange, body .wrapper .block_basic_buttons .button_medium_orange, body .wrapper .block_basic_buttons .button_small_orange {
+.block_basic_buttons .basic_orange, .block_basic_buttons .button_medium_orange, .block_basic_buttons .button_small_orange {
   color: #FFFFFF;
   border: 1px #e75735;
   background-color: #e75735; }
-  body .wrapper .block_basic_buttons .basic_orange:hover, body .wrapper .block_basic_buttons .button_medium_orange:hover, body .wrapper .block_basic_buttons .button_small_orange:hover {
+  .block_basic_buttons .basic_orange:hover, .block_basic_buttons .button_medium_orange:hover, .block_basic_buttons .button_small_orange:hover {
     box-shadow: 0 3px #bf3e1f; }
-  body .wrapper .block_basic_buttons .basic_orange:active, body .wrapper .block_basic_buttons .button_medium_orange:active, body .wrapper .block_basic_buttons .button_small_orange:active {
+  .block_basic_buttons .basic_orange:active, .block_basic_buttons .button_medium_orange:active, .block_basic_buttons .button_small_orange:active {
     border: 1px solid #e75735;
     background-color: white;
     color: #e75735;
     box-shadow: 0 3px #e75735; }
 
-body .wrapper .block_basic_buttons .basic_default, body .wrapper .block_basic_buttons .button_medium_default, body .wrapper .block_basic_buttons .button_small_default {
+.block_basic_buttons .basic_default, .block_basic_buttons .button_medium_default, .block_basic_buttons .button_small_default {
   color: #FFFFFF;
   border: 1px #4eb7a8;
   background-color: #4eb7a8; }
-  body .wrapper .block_basic_buttons .basic_default:hover, body .wrapper .block_basic_buttons .button_medium_default:hover, body .wrapper .block_basic_buttons .button_small_default:hover {
+  .block_basic_buttons .basic_default:hover, .block_basic_buttons .button_medium_default:hover, .block_basic_buttons .button_small_default:hover {
     box-shadow: 0 3px  #28a290; }
-  body .wrapper .block_basic_buttons .basic_default:active, body .wrapper .block_basic_buttons .button_medium_default:active, body .wrapper .block_basic_buttons .button_small_default:active {
+  .block_basic_buttons .basic_default:active, .block_basic_buttons .button_medium_default:active, .block_basic_buttons .button_small_default:active {
     border: 1px solid #4eb7a8;
     background-color: white;
     color: #4eb7a8;
     box-shadow: 0 3px  #4eb7a8; }
 
-body .wrapper .block_basic_buttons .medium, body .wrapper .block_basic_buttons .button_medium_orange, body .wrapper .block_basic_buttons .button_medium_default {
+.block_basic_buttons .medium, .block_basic_buttons .button_medium_orange, .block_basic_buttons .button_medium_default {
   height: 32px;
   width: 118px; }
 
-body .wrapper .block_basic_buttons .small, body .wrapper .block_basic_buttons .button_small_orange, body .wrapper .block_basic_buttons .button_small_default {
+.block_basic_buttons .small, .block_basic_buttons .button_small_orange, .block_basic_buttons .button_small_default {
   height: 22px;
   width: 78px; }
 
-body .wrapper .block_arrow_buttons .arrow_button, body .wrapper .block_arrow_buttons .button_left_orange, body .wrapper .block_arrow_buttons .button_left_default, body .wrapper .block_arrow_buttons .button_right_orange, body .wrapper .block_arrow_buttons .button_right_default, body .wrapper .block_arrow_buttons .button_left_disable, body .wrapper .block_arrow_buttons .button_right_disable {
+button {
+  outline: 0;
+  overflow: hidden;
+  position: relative; }
+  button .pulse {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.51);
+    animation: pulse 0.7s ease-out;
+    transform: scale(0); }
+
+@keyframes pulse {
+  to {
+    transform: scale(1);
+    opacity: 0; } }
+  button:hover {
+    cursor: url(png/hand.png), text; }
+
+.block_arrow_buttons .arrow_button, .block_arrow_buttons .button_left_orange, .block_arrow_buttons .button_left_default, .block_arrow_buttons .button_right_orange, .block_arrow_buttons .button_right_default, .block_arrow_buttons .button_left_disable, .block_arrow_buttons .button_right_disable {
   width: 50px;
   height: 50px;
   background-color: #FFFFFF;
   border-radius: 50%; }
 
-body .wrapper .block_arrow_buttons .arrow_default, body .wrapper .block_arrow_buttons .button_left_default, body .wrapper .block_arrow_buttons .button_right_default {
+.block_arrow_buttons .arrow_default, .block_arrow_buttons .button_left_default, .block_arrow_buttons .button_right_default {
   border: #4eb7a8 solid 3px; }
-  body .wrapper .block_arrow_buttons .arrow_default:hover, body .wrapper .block_arrow_buttons .button_left_default:hover, body .wrapper .block_arrow_buttons .button_right_default:hover {
+  .block_arrow_buttons .arrow_default:hover, .block_arrow_buttons .button_left_default:hover, .block_arrow_buttons .button_right_default:hover {
     border: 0;
     background-color: #4EB7A8; }
-    body .wrapper .block_arrow_buttons .arrow_default:hover::after, body .wrapper .block_arrow_buttons .button_left_default:hover::after, body .wrapper .block_arrow_buttons .button_right_default:hover::after {
+    .block_arrow_buttons .arrow_default:hover::after, .block_arrow_buttons .button_left_default:hover::after, .block_arrow_buttons .button_right_default:hover::after {
       top: 17px;
       width: 13px;
       border-top: 4px solid #FFFFFF;
       border-right: 4px solid #FFFFFF; }
-  body .wrapper .block_arrow_buttons .arrow_default::after, body .wrapper .block_arrow_buttons .button_left_default::after, body .wrapper .block_arrow_buttons .button_right_default::after {
+  .block_arrow_buttons .arrow_default::after, .block_arrow_buttons .button_left_default::after, .block_arrow_buttons .button_right_default::after {
     content: "";
     display: inline-block;
     position: absolute;
@@ -77,17 +95,17 @@ body .wrapper .block_arrow_buttons .arrow_default, body .wrapper .block_arrow_bu
     border-top: 4px solid #4eb7a8;
     border-right: 4px solid #4eb7a8; }
 
-body .wrapper .block_arrow_buttons .arrow_orange, body .wrapper .block_arrow_buttons .button_left_orange, body .wrapper .block_arrow_buttons .button_right_orange {
+.block_arrow_buttons .arrow_orange, .block_arrow_buttons .button_left_orange, .block_arrow_buttons .button_right_orange {
   border: #e75735 solid 3px; }
-  body .wrapper .block_arrow_buttons .arrow_orange:hover, body .wrapper .block_arrow_buttons .button_left_orange:hover, body .wrapper .block_arrow_buttons .button_right_orange:hover {
+  .block_arrow_buttons .arrow_orange:hover, .block_arrow_buttons .button_left_orange:hover, .block_arrow_buttons .button_right_orange:hover {
     border: 0;
     background-color: #E75735; }
-    body .wrapper .block_arrow_buttons .arrow_orange:hover::after, body .wrapper .block_arrow_buttons .button_left_orange:hover::after, body .wrapper .block_arrow_buttons .button_right_orange:hover::after {
+    .block_arrow_buttons .arrow_orange:hover::after, .block_arrow_buttons .button_left_orange:hover::after, .block_arrow_buttons .button_right_orange:hover::after {
       top: 17px;
       width: 13px;
       border-top: 4px solid #FFFFFF;
       border-right: 4px solid #FFFFFF; }
-  body .wrapper .block_arrow_buttons .arrow_orange::after, body .wrapper .block_arrow_buttons .button_left_orange::after, body .wrapper .block_arrow_buttons .button_right_orange::after {
+  .block_arrow_buttons .arrow_orange::after, .block_arrow_buttons .button_left_orange::after, .block_arrow_buttons .button_right_orange::after {
     content: "";
     display: inline-block;
     position: absolute;
@@ -97,27 +115,27 @@ body .wrapper .block_arrow_buttons .arrow_orange, body .wrapper .block_arrow_but
     border-top: 4px solid #e75735;
     border-right: 4px solid #e75735; }
 
-body .wrapper .block_arrow_buttons .right:hover::after, body .wrapper .block_arrow_buttons .button_right_orange:hover::after, body .wrapper .block_arrow_buttons .button_right_default:hover::after {
+.block_arrow_buttons .right:hover::after, .block_arrow_buttons .button_right_orange:hover::after, .block_arrow_buttons .button_right_default:hover::after {
   right: 20px; }
 
-body .wrapper .block_arrow_buttons .right::after, body .wrapper .block_arrow_buttons .button_right_orange::after, body .wrapper .block_arrow_buttons .button_right_default::after {
+.block_arrow_buttons .right::after, .block_arrow_buttons .button_right_orange::after, .block_arrow_buttons .button_right_default::after {
   right: 17px;
   transform: rotate(45deg); }
 
-body .wrapper .block_arrow_buttons .left:hover::after, body .wrapper .block_arrow_buttons .button_left_orange:hover::after, body .wrapper .block_arrow_buttons .button_left_default:hover::after {
+.block_arrow_buttons .left:hover::after, .block_arrow_buttons .button_left_orange:hover::after, .block_arrow_buttons .button_left_default:hover::after {
   left: 20px; }
 
-body .wrapper .block_arrow_buttons .left::after, body .wrapper .block_arrow_buttons .button_left_orange::after, body .wrapper .block_arrow_buttons .button_left_default::after {
+.block_arrow_buttons .left::after, .block_arrow_buttons .button_left_orange::after, .block_arrow_buttons .button_left_default::after {
   left: 17px;
   transform: rotate(-135deg); }
 
-body .wrapper .block_arrow_buttons .button_left_disable {
+.block_arrow_buttons .button_left_disable {
   background-color: #e5e5e5;
   border: 0; }
-  body .wrapper .block_arrow_buttons .button_left_disable:hover {
+  .block_arrow_buttons .button_left_disable:hover {
     border: 0;
     background-color: #e5e5e5; }
-  body .wrapper .block_arrow_buttons .button_left_disable::after {
+  .block_arrow_buttons .button_left_disable::after {
     content: "";
     display: inline-block;
     position: absolute;
@@ -129,13 +147,13 @@ body .wrapper .block_arrow_buttons .button_left_disable {
     left: 19px;
     transform: rotate(-135deg); }
 
-body .wrapper .block_arrow_buttons .button_right_disable {
+.block_arrow_buttons .button_right_disable {
   background-color: #e5e5e5;
   border: 0; }
-  body .wrapper .block_arrow_buttons .button_right_disable:hover {
+  .block_arrow_buttons .button_right_disable:hover {
     border: 0;
     background-color: #e5e5e5; }
-  body .wrapper .block_arrow_buttons .button_right_disable::after {
+  .block_arrow_buttons .button_right_disable::after {
     content: "";
     display: inline-block;
     position: absolute;
@@ -146,4 +164,23 @@ body .wrapper .block_arrow_buttons .button_right_disable {
     border-right: 4px solid #FFFFFF;
     right: 19px;
     transform: rotate(45deg); }
+
+#pie, .block_pie_chart {
+  width: 95px;
+  height: 95px; }
+
+.block_percentage {
+  position: relative; }
+
+.percentage {
+  width: 95px;
+  position: absolute;
+  top: 29px;
+  text-align: center;
+  font-size: 40px;
+  line-height: 40px;
+  color: #9d9d9d;
+  font-family: "Lato";
+  font-weight: 100;
+  letter-spacing: -3px; }
 
