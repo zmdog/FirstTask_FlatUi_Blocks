@@ -6,12 +6,11 @@ html(lang = "ru")
         meta(name="viewport" content="width=device-width, initial-scale=1")
         title First Task
         link(href="./summary.css" rel="stylesheet")
-        script(src="../node_modules/chart.js/dist/Chart.js")
-        script(src="../node_modules/jquery-circle-progress/dist/circle-progress.js")
+        script(src="./summary.js")
+        script(src="./another.js")
     body
         .wrapper
             include blocks/block_content/block_content
         .cursor
             p= "Наведи на кнопку"
             img(src="./png/hand.png")
-        script(src="./summary.js")
