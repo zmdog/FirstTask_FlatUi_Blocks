@@ -5,11 +5,16 @@ const webpack = require('webpack');
 
 module.exports = {
     entry: {
-        summary: './src/js/index.js'
+        summary: './src/js/index.js',
+        another: './src/js/another_modules.js'
     },
     output: {
         filename: '[name].js',
         path: path.resolve(__dirname, './dist')
+    },
+    performance: {
+        maxAssetSize: 1000000,
+        maxEntrypointSize: 500000
     },
     module: {
         rules:[

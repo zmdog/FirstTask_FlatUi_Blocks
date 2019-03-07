@@ -11,4 +11,3 @@ import "../pug/blocks/block_percentage/block_percentage.scss"
 import "../pug/blocks/block_percentage/block_percentage.js"
 
 import "./jquery-script.js"
-
