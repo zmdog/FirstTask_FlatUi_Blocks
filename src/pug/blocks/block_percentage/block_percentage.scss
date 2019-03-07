@@ -1,15 +1,15 @@
 .block_percentage{
   position: relative;
-}
-.percentage{
-  width: 95px;
-  position: absolute;
-  top: 29px;
-  text-align: center;
-  font-size: 40px;
-  line-height: 40px;
-  color: #9d9d9d;
-  font-family: "Lato";
-  font-weight: 100;
-  letter-spacing: -3px;
+  .percent{
+    width: 95px;
+    position: absolute;
+    top: 26px;
+    text-align: center;
+    font-size: 40px;
+    color: #9d9d9d;
+    font-family: "Lato";
+    font-weight: 300;
+    letter-spacing: -3px
+  }
+
 }

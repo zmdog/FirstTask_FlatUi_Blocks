@@ -9,3 +9,6 @@ import "../pug/blocks/block_pie_chart/block_pie_chart.js"
 
 import "../pug/blocks/block_percentage/block_percentage.scss"
 import "../pug/blocks/block_percentage/block_percentage.js"
+
+import "./jquery-script.js"
+

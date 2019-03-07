@@ -6,7 +6,7 @@
     <title>First Task</title>
     <link href="./summary.css" rel="stylesheet">
     <script src="../node_modules/chart.js/dist/Chart.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="../node_modules/jquery-circle-progress/dist/circle-progress.js"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -45,31 +45,33 @@
                   <button class="button_left_disable"></button>
                 </div>
         </div>
-        <div class="block_percentages">
-                <div class="block_percentage">
-                  <div class="percentage">0</div>
+        <div class="content_percentages">
+                <div class="block_percentage" data-percent="0">
+                  <div class="percent">0</div>
                 </div>
-                <div class="block_percentage">
-                  <div class="percentage">38</div>
+                <div class="block_percentage" data-percent="38">
+                  <div class="percent">38</div>
                 </div>
-                <div class="block_percentage">
-                  <div class="percentage">62</div>
+                <div class="block_percentage" data-percent="62">
+                  <div class="percent">62</div>
                 </div>
-                <div class="block_percentage">
-                  <div class="percentage">89</div>
+                <div class="block_percentage" data-percent="89">
+                  <div class="percent">89</div>
                 </div>
         </div>
-        <div class="block_pie_chart">
+        <div class="block_pie_charts">
                 <div class="block_pie_chart" data-piece1="50" data-piece2="30" data-piece3="10" data-piece4="10">
-                  <canvas id="pie"></canvas>
+                  <canvas></canvas>
+                </div>
+                <div class="block_pie_chart" data-piece1="10" data-piece2="30" data-piece3="20" data-piece4="40">
+                  <canvas></canvas>
                 </div>
         </div>
       </div>
     </div>
     <div class="cursor">
       <p>Наведи на кнопку</p><img src="./png/hand.png">
-      <script src="./summary.js"></script>
-      <script src="../node_modules/jquery-circle-progress/dist/circle-progress.js"></script>
     </div>
+    <script src="./summary.js"></script>
   </body>
 </html>
