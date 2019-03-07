@@ -5,8 +5,7 @@ const webpack = require('webpack');
 
 module.exports = {
     entry: {
-        summary: './src/js/index.js',
-        another: './src/js/another_modules.js'
+        summary: './src/js/index.js'
     },
     output: {
         filename: '[name].js',
