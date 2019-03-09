@@ -2,6 +2,7 @@ include ../block_standart_button/block_standart_button
 include ../block_arrow_button/block_arrow_button
 include ../block_percentage/block_percentage
 include ../block_pie_chart/block_pie_chart
+include ../block_slider/block_slider
 
 .content_block
     .block_basic_buttons
@@ -24,3 +25,8 @@ include ../block_pie_chart/block_pie_chart
     .block_pie_charts
         +block_pie_chart(50, 30, 10, 10)
         +block_pie_chart(10, 30, 20, 40)
+    .block_sliders
+        +block_slider('orange', 0, 100)
+        +block_slider('orange', 0, 100, 5)
+        +block_slider('default', 0, 300, 10)
+        +block_slider('default', 0, 5, 1)
