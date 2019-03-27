@@ -15,5 +15,8 @@ import "chart.js"
 import "jquery-circle-progress"
 
 import "../pug/blocks/block_slider/block_slider.scss"
-import "../pug/blocks/block_slider/block_slider.js"
+import "../pug/blocks/block_slider/block_slider_orange.js"
+import "../pug/blocks/block_slider/block_slider_default.js"
 
+import "../pug/blocks/block_slider/jquery-ui/jquery-ui.min.js";
+import "../pug/blocks/block_slider/jquery-ui/jquery-ui.css";

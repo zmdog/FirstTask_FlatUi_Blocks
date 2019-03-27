@@ -1,5 +1,4 @@
 let $ = require("jquery");
-let circleProgress = require("jquery-circle-progress");
 
 $(document).ready(function () {
     $(".block_percentage").each(function() {

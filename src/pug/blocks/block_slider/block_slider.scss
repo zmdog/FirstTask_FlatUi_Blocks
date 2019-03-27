@@ -1,66 +1,59 @@
-.block_sliders{
-  line-height: 40px;
-  datalist{
-    width: 265px;
-    display: flex;
-    justify-content: space-between;
-    option {
-      display: inline;
-      text-align: center;
-      width: 20px;
-      font-size: 12px;
-    }
-  }
-  .default{
-    &::-webkit-slider-thumb{
-      -webkit-appearance: none;
-      width:20px;
-      height:20px;
-      background:#4eb7a8;
-      border-radius: 50%;
-      outline : none;
-    }
-    &::-moz-range-thumb{
-      -webkit-appearance: none;
-      width:20px;
-      height:20px;
-      background:#4eb7a8;
-      border-radius: 50%;
-      outline : none;
-    }
-
-    -webkit-appearance: none;
-    border-radius: 5px;
-    width: 260px;
+.ui-slider-horizontal{
+  @mixin slider(){
+    margin-top: 44px;
+    margin-bottom: 30px;
+    border: 0;
+    border-radius: 3px;
     height: 5px;
-    outline: none;
-    top: -5px;
-    position: relative;
-    background: linear-gradient(to right, #4eb7a8 0%, #4eb7a8 0%, #e5e5e5 0%,#e5e5e5 100%);
-
+    width: 300px;
   }
-  .orange{
-    &::-webkit-slider-thumb{
-      -webkit-appearance: none;
-      width:20px;
-      height:20px;
-      background:#e75735;
-      border-radius: 50%;
-      outline : none;
+
+  .ui-slider-handle{
+    outline: none;
+    border-radius: 50%;
+  }
+
+  &#orange{
+    @include slider();
+    .ui-slider-handle{
+      background-color: #e75735;
+      border-color: #e75735;
+      top: -8px;
     }
-    &::-moz-range-thumb{
-      -webkit-appearance: none;
-      width:20px;
-      height:20px;
-      background:#e75735;
-      border-radius: 50%;
-      outline : none;
+    background-color: #e5e5e5;
+    margin-left: 11px;
+    .ui-slider-label-orange{
+      line-height: 25px;
+      position: absolute;
+      top: -43px;
+      width: 35px;
+      height: 24px;
+      background-color: #e75735;
+      border-radius: 5px;
+      border: none;
+      font-family: "Lato";
+      font-weight: 900;
+      font-size: 13px;
+      color: #ffffff;
+      text-align: center;
+      &:after{
+        content: "";
+        position: absolute;
+        top: 20px;
+        left: 13.5px;
+        border: solid #e75735 4px;
+        transform: rotate(44deg);
+      }
     }
-    -webkit-appearance: none;
-    border-radius: 5px;
-    width:260px;
-    height:5px;
-    outline : none;
+  }
+
+  &#default{
+    @include slider();
+    .ui-slider-handle{
+      background-color: #4eb7a8;
+      border-color: #4eb7a8;
+      top: -8px;
+    }
     background-color: #e5e5e5;
   }
 }

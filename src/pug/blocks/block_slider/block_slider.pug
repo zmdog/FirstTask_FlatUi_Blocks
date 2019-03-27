@@ -1,16 +1,8 @@
-include ./block_slider.js
 mixin block_slider(type, min, max, step)
-    mixin option()
 
-        - var x = max/5;
-        while x < max+1
-            option(value=x label=x)
-            -x=x+step
-
-    .block_slider
-        if type === "orange"
-            input(type='range' class=type min=min max=max, step=step value=min)
-            label
-        else
-            input(type='range' class=type min=min max=max, step=step value=min, list="tickmarks")
-            datalist(id="tickmarks_" + max)
+    div(data-min=min data-max=max data-step=step class="slider" id=type)
+        case type
+            when 'orange'
+                label(class='ui-slider-label-orange')
+            when 'default'
+                .ui-slider-label-default

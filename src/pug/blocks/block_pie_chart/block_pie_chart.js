@@ -2,7 +2,6 @@ let block_pie_chart = document.getElementsByClassName('block_pie_chart');
 let $ = require('jquery');
 let Chart = require('chart.js');
 
-console.log('работает');
 $(document).ready(()=>{
     for(let i=0;i<block_pie_chart.length;i++){
         console.log('работает');
