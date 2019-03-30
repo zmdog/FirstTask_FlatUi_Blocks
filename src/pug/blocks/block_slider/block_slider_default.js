@@ -1,12 +1,30 @@
 let $ = require("jquery");
 
 $(document).ready(function() {
-        $(".slider#default")
+    let sliderDefault = $(".slider#default"),
+        Default = $("#default");
+
+    sliderDefault.html(()=>{
+        let filler = '',
+            val = 0,
+            step = Default.data("max")/4;
+
+        for(let i=0; i<5;i++){
+            filler+='<li>'+val+'</li>';
+            val+=step
+            }
+        return '<ul>'+ filler +'</ul>';
+    });
+
+    sliderDefault
             .slider({
                 range: "min",
-                min: $("#default").data("min"),
-                max: $("#default").data("max"),
-                step:$("#default").data("step"),
+                min: Default.data("min"),
+                max: Default.data("max"),
+                step:Default.data("step"),
+                change: function(event, ui) {
+                    console.log(ui.value)
+                }
             });
-        $(".ui-slider-range", this).css("background", "#4eb7a8");
+        $(".ui-slider-range").css("background", "#4eb7a8");
 });
