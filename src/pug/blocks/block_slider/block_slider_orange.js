@@ -1,6 +1,4 @@
-let $ = require("jquery");
-
-$(document).ready(function() {
+$(document).ready(()=>{
     let sliderOrange = $(".slider#orange"),
         orange = $("#orange"),
         labelOrange = $(".ui-slider-label-orange");

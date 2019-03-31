@@ -1,0 +1,33 @@
+.block_stage{
+  line-height: 30px;
+  height: 30px;
+  width: 594px;
+  position: relative;
+  &:before{
+    content: '';
+    position: absolute;
+    top: 13px;
+    width: 592px;
+    height: 5px;
+    background-color: #e5e5e5;
+    left: 1px;
+  }
+  ul{
+    width: 594px;
+    position: absolute;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    padding: 0;
+    top: -15.5px;
+  }
+  li{
+    height: 29px;
+    width: 29px;
+    text-align: center;
+    background-color: #e5e5e5;
+    border-radius: 50%;
+    color: #888888;
+    cursor: url("../hand.png"), text;
+  }
+}

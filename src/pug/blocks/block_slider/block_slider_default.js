@@ -1,6 +1,4 @@
-let $ = require("jquery");
-
-$(document).ready(function() {
+$(document).ready(()=>{
     let sliderDefault = $(".slider#default"),
         Default = $("#default");
 

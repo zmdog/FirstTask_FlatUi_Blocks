@@ -1,13 +1,13 @@
 mixin block_arrow_button(status, side, color)
     .block_arrow_button
         case status
-            when "disable"
+            when "passive"
                 case side
                     when "right"
-                        button(class="button_" + side + "_disable")
+                        button(class="button_" + side + "_passive")
 
                     default
-                        button(class="button_" + "left" + "_disable")
+                        button(class="button_" + "left" + "_passive")
 
             default
                 case color

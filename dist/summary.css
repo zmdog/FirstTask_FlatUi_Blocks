@@ -69,7 +69,7 @@ button {
   button:hover {
     cursor: url(png/hand.png), text; }
 
-.block_arrow_buttons .arrow_button, .block_arrow_buttons .button_left_orange, .block_arrow_buttons .button_left_default, .block_arrow_buttons .button_right_orange, .block_arrow_buttons .button_right_default, .block_arrow_buttons .button_left_disable, .block_arrow_buttons .button_right_disable {
+.block_arrow_buttons .arrow_button, .block_arrow_buttons .button_left_orange, .block_arrow_buttons .button_left_default, .block_arrow_buttons .button_right_orange, .block_arrow_buttons .button_right_default, .block_arrow_buttons .button_left_passive, .block_arrow_buttons .button_right_passive {
   width: 50px;
   height: 50px;
   background-color: #FFFFFF;
@@ -129,13 +129,13 @@ button {
   left: 17px;
   transform: rotate(-135deg); }
 
-.block_arrow_buttons .button_left_disable {
+.block_arrow_buttons .button_left_passive {
   background-color: #e5e5e5;
   border: 0; }
-  .block_arrow_buttons .button_left_disable:hover {
+  .block_arrow_buttons .button_left_passive:hover {
     border: 0;
     background-color: #e5e5e5; }
-  .block_arrow_buttons .button_left_disable::after {
+  .block_arrow_buttons .button_left_passive::after {
     content: "";
     display: inline-block;
     position: absolute;
@@ -147,13 +147,13 @@ button {
     left: 19px;
     transform: rotate(-135deg); }
 
-.block_arrow_buttons .button_right_disable {
+.block_arrow_buttons .button_right_passive {
   background-color: #e5e5e5;
   border: 0; }
-  .block_arrow_buttons .button_right_disable:hover {
+  .block_arrow_buttons .button_right_passive:hover {
     border: 0;
     background-color: #e5e5e5; }
-  .block_arrow_buttons .button_right_disable::after {
+  .block_arrow_buttons .button_right_passive::after {
     content: "";
     display: inline-block;
     position: absolute;
@@ -842,4 +842,34 @@ a.ui-button:active,
 	-webkit-box-shadow: 0px 0px 5px #666666;
 	box-shadow: 0px 0px 5px #666666;
 }
+
+.block_stage {
+  line-height: 30px;
+  height: 30px;
+  width: 594px;
+  position: relative; }
+  .block_stage:before {
+    content: '';
+    position: absolute;
+    top: 13px;
+    width: 592px;
+    height: 5px;
+    background-color: #e5e5e5;
+    left: 1px; }
+  .block_stage ul {
+    width: 594px;
+    position: absolute;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    padding: 0;
+    top: -15.5px; }
+  .block_stage li {
+    height: 29px;
+    width: 29px;
+    text-align: center;
+    background-color: #e5e5e5;
+    border-radius: 50%;
+    color: #888888;
+    cursor: url(png/hand.png), text; }
 

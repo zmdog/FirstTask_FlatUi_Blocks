@@ -20,3 +20,6 @@ import "../pug/blocks/block_slider/block_slider_default.js"
 
 import "../pug/blocks/block_slider/jquery-ui/jquery-ui.min.js";
 import "../pug/blocks/block_slider/jquery-ui/jquery-ui.css";
+
+import "../pug/blocks/block_stage/block_stage.scss"
+import "../pug/blocks/block_stage/block_stage.js"
