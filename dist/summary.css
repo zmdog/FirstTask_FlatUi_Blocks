@@ -848,13 +848,12 @@ a.ui-button:active,
   height: 30px;
   width: 594px;
   position: relative; }
-  .block_stage:before {
-    content: '';
+  .block_stage label {
     position: absolute;
     top: 13px;
     width: 592px;
     height: 5px;
-    background-color: #e5e5e5;
+    background: linear-gradient(to right, #e75735 0%, #e5e5e5 0%);
     left: 1px; }
   .block_stage ul {
     width: 594px;
