@@ -16,38 +16,38 @@ button {
   button:hover {
     cursor: url(png/hand.png), text; }
 
-.block_basic_buttons .basic_button, .block_basic_buttons .button_medium_orange, .block_basic_buttons .button_small_orange, .block_basic_buttons .button_medium_default, .block_basic_buttons .button_small_default {
+.basic_button, .button_medium_orange, .button_small_orange, .button_medium_default, .button_small_default {
   border-radius: 2px; }
 
-.block_basic_buttons .basic_orange, .block_basic_buttons .button_medium_orange, .block_basic_buttons .button_small_orange {
+.basic_orange, .button_medium_orange, .button_small_orange {
   color: #FFFFFF;
   border: 1px #e75735;
   background-color: #e75735; }
-  .block_basic_buttons .basic_orange:hover, .block_basic_buttons .button_medium_orange:hover, .block_basic_buttons .button_small_orange:hover {
+  .basic_orange:hover, .button_medium_orange:hover, .button_small_orange:hover {
     box-shadow: 0 3px #bf3e1f; }
-  .block_basic_buttons .basic_orange:active, .block_basic_buttons .button_medium_orange:active, .block_basic_buttons .button_small_orange:active {
+  .basic_orange:active, .button_medium_orange:active, .button_small_orange:active {
     border: 1px solid #e75735;
     background-color: white;
     color: #e75735;
     box-shadow: 0 3px #e75735; }
 
-.block_basic_buttons .basic_default, .block_basic_buttons .button_medium_default, .block_basic_buttons .button_small_default {
+.basic_default, .button_medium_default, .button_small_default {
   color: #FFFFFF;
   border: 1px #4eb7a8;
   background-color: #4eb7a8; }
-  .block_basic_buttons .basic_default:hover, .block_basic_buttons .button_medium_default:hover, .block_basic_buttons .button_small_default:hover {
+  .basic_default:hover, .button_medium_default:hover, .button_small_default:hover {
     box-shadow: 0 3px  #28a290; }
-  .block_basic_buttons .basic_default:active, .block_basic_buttons .button_medium_default:active, .block_basic_buttons .button_small_default:active {
+  .basic_default:active, .button_medium_default:active, .button_small_default:active {
     border: 1px solid #4eb7a8;
     background-color: white;
     color: #4eb7a8;
     box-shadow: 0 3px  #4eb7a8; }
 
-.block_basic_buttons .medium, .block_basic_buttons .button_medium_orange, .block_basic_buttons .button_medium_default {
+.medium, .button_medium_orange, .button_medium_default {
   height: 32px;
   width: 118px; }
 
-.block_basic_buttons .small, .block_basic_buttons .button_small_orange, .block_basic_buttons .button_small_default {
+.small, .button_small_orange, .button_small_default {
   height: 22px;
   width: 78px; }
 
@@ -871,4 +871,44 @@ a.ui-button:active,
     border-radius: 50%;
     color: #888888;
     cursor: url(png/hand.png), text; }
+
+.block_form {
+  height: 213px;
+  width: 288px; }
+  .block_form .form, .block_form .form_name, .block_form .form_email {
+    display: flex;
+    margin-bottom: 12px;
+    border-radius: 2px; }
+  .block_form .form_input, .block_form .form_name input, .block_form .form_email input {
+    height: 26px;
+    width: 208px;
+    margin-right: 7px;
+    border-radius: 2px; }
+  .block_form .form_label, .block_form .form_name div, .block_form .form_email div {
+    height: 28px;
+    width: 72px;
+    border-radius: 2px; }
+  .block_form .form_name input {
+    border: 0;
+    background-color: #e5e5e5; }
+  .block_form .form_name div {
+    background-color: black; }
+  .block_form .form_email input {
+    border: 0;
+    background-color: #e5e5e5; }
+  .block_form .form_email div {
+    background-color: black; }
+  .block_form textarea {
+    resize: none;
+    background-color: #e5e5e5;
+    border: 0;
+    border-radius: 2px;
+    margin-bottom: 5px;
+    min-height: 88px;
+    min-width: 282px;
+    max-height: 88px;
+    max-width: 282px; }
+  .block_form .block_basic_button {
+    margin-right: 2px;
+    float: right; }
 

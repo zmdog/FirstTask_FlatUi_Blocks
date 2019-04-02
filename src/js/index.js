@@ -23,3 +23,6 @@ import "../pug/blocks/block_slider/jquery-ui/jquery-ui.css";
 
 import "../pug/blocks/block_stage/block_stage.scss"
 import "../pug/blocks/block_stage/block_stage.js"
+
+import "../pug/blocks/block_form/block_form.scss"
+// import "../pug/blocks/block_form/block_form.js"

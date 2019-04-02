@@ -1,0 +1,71 @@
+.block_form{
+  height: 213px;
+  width: 288px;
+
+  $bc: #e5e5e5;
+
+  .form{
+    display: flex;
+    margin-bottom: 12px;
+    border-radius: 2px;
+  }
+  .form_input{
+    height: 26px;
+    width: 208px;
+    margin-right: 7px;
+    border-radius: 2px;
+  }
+  .form_label{
+    height: 28px;
+    width: 72px;
+    border-radius: 2px;
+  }
+
+  .form_name{
+    @extend .form;
+    input{
+      border: 0;
+      background-color: $bc;
+      @extend .form_input
+    }
+    div{
+      background-color: black;
+      @extend .form_label
+    }
+  }
+  .form_email{
+    @extend .form;
+    input{
+      border: 0;
+      background-color: $bc;
+      @extend .form_input
+    }
+    div{
+      @extend .form_label;
+      background-color: black;
+    }
+  }
+
+  .label_name{}
+  .label_email{}
+
+  textarea{
+    resize: none;
+    background-color: $bc;
+    border: 0;
+    border-radius: 2px;
+    margin-bottom: 5px;
+    min-height: 88px;
+    min-width: 282px;
+    max-height: 88px;
+    max-width: 282px;
+  }
+
+  .block_basic_button{
+    margin-right: 2px;
+    float:right;
+  }
+
+
+
+}
