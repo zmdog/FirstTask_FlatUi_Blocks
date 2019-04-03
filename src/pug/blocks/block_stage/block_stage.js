@@ -12,6 +12,7 @@ $(document).ready(()=>{
             items= $(block_stage.children().children()),
             lineOrange = (594 / (block_stage.data('stage') - 1)) * 100 / 594;
 
+        $('.block_stage').attr('value', text);
         items.each((elem)=>{
             if(Number(elem)<Number(text)){
                 console.log(lineOrange);
@@ -26,7 +27,6 @@ $(document).ready(()=>{
                 items[elem].style.color='#888888'
             }
         });
-
     });
 
     while(i<block_stage.data('stage')+1){

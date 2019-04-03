@@ -854,7 +854,8 @@ a.ui-button:active,
     width: 592px;
     height: 5px;
     background: linear-gradient(to right, #e75735 0%, #e5e5e5 0%);
-    left: 1px; }
+    left: 1px;
+    transition: 0.5s; }
   .block_stage ul {
     width: 594px;
     position: absolute;
@@ -864,6 +865,7 @@ a.ui-button:active,
     padding: 0;
     top: -15.5px; }
   .block_stage li {
+    transition: 0.5s;
     height: 29px;
     width: 29px;
     text-align: center;
@@ -880,35 +882,43 @@ a.ui-button:active,
     margin-bottom: 12px;
     border-radius: 2px; }
   .block_form .form_input, .block_form .form_name input, .block_form .form_email input {
+    font-family: "Source Sans Pro";
+    outline: none;
+    font-size: 14px;
     height: 26px;
-    width: 208px;
-    margin-right: 7px;
-    border-radius: 2px; }
+    width: 288px;
+    border-radius: 2px;
+    transition: 0.5s; }
   .block_form .form_label, .block_form .form_name div, .block_form .form_email div {
+    font-family: "Lato";
+    font-size: 10px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFF;
     height: 28px;
-    width: 72px;
-    border-radius: 2px; }
+    width: 0;
+    border-radius: 2px;
+    transition: 0.5s; }
   .block_form .form_name input {
     border: 0;
     background-color: #e5e5e5; }
-  .block_form .form_name div {
-    background-color: black; }
   .block_form .form_email input {
     border: 0;
     background-color: #e5e5e5; }
-  .block_form .form_email div {
-    background-color: black; }
   .block_form textarea {
+    font-family: "Source Sans Pro";
+    outline: none;
+    font-size: 14px;
     resize: none;
     background-color: #e5e5e5;
     border: 0;
+    padding: 0;
     border-radius: 2px;
     margin-bottom: 5px;
     min-height: 88px;
-    min-width: 282px;
+    min-width: 288px;
     max-height: 88px;
-    max-width: 282px; }
+    max-width: 288px; }
   .block_form .block_basic_button {
-    margin-right: 2px;
     float: right; }
 

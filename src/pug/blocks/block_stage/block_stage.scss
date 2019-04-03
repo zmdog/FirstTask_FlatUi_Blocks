@@ -10,6 +10,7 @@
     height: 5px;
     background: linear-gradient(to right, #e75735 0%, #e5e5e5 0%);
     left: 1px;
+    transition: 0.5s;
   }
   ul{
     width: 594px;
@@ -21,6 +22,7 @@
     top: -15.5px;
   }
   li{
+    transition: 0.5s;
     height: 29px;
     width: 29px;
     text-align: center;

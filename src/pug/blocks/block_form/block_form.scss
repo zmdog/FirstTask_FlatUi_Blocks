@@ -10,15 +10,24 @@
     border-radius: 2px;
   }
   .form_input{
+    font-family: "Source Sans Pro";
+    outline: none;
+    font-size: 14px;
     height: 26px;
-    width: 208px;
-    margin-right: 7px;
+    width: 288px;
     border-radius: 2px;
+    transition: 0.5s;
   }
   .form_label{
+    font-family: "Lato";
+    font-size: 10px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFF;
     height: 28px;
-    width: 72px;
+    width: 0;
     border-radius: 2px;
+    transition: 0.5s;
   }
 
   .form_name{
@@ -29,7 +38,6 @@
       @extend .form_input
     }
     div{
-      background-color: black;
       @extend .form_label
     }
   }
@@ -42,30 +50,26 @@
     }
     div{
       @extend .form_label;
-      background-color: black;
     }
   }
 
-  .label_name{}
-  .label_email{}
-
   textarea{
+    font-family: "Source Sans Pro";
+    outline: none;
+    font-size: 14px;
     resize: none;
     background-color: $bc;
     border: 0;
+    padding: 0;
     border-radius: 2px;
     margin-bottom: 5px;
     min-height: 88px;
-    min-width: 282px;
+    min-width: 288px;
     max-height: 88px;
-    max-width: 282px;
+    max-width: 288px;
   }
 
   .block_basic_button{
-    margin-right: 2px;
     float:right;
   }
-
-
-
 }
