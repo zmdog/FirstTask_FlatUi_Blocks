@@ -13,13 +13,18 @@ $(document).ready(()=>{
         if(options){
 
             $(name_label).css({'width':'73px','backgroundColor':'#4eb7a8'});
-            $(name_label).text('THANKS!');
+            $(name_label).html('<label></label>'+'THANKS!');
+            $(name_label).children('label').css({
+                'border-width':'4px 4px 4px 0',
+                'color':'#4eb7a8',
+                'borderColor':'transparent #4eb7a8 transparent transparent'});
 
         } else{
 
             $(name_input).css({'width':'208px','margin-right':'7px'});
             $(name_label).css({'width':'73px','backgroundColor':'#e75735'});
-            $(name_label).text('ERROR');
+            $(name_label).html('<label></label>'+'ERROR');
+            $(name_label).children('label').css({'border-width':'4px 4px 4px 0','color':'#e75735'});
 
         }
 
@@ -31,13 +36,18 @@ $(document).ready(()=>{
         if(options){
 
             $(email_label).css({'width':'73px','backgroundColor':'#4eb7a8'});
-            $(email_label).text('THANKS!');
+            $(email_label).html('<label></label>'+'THANKS!');
+            $(email_label).children('label').css({
+                'border-width':'4px 4px 4px 0',
+                'color':'#4eb7a8',
+                'borderColor':'transparent #4eb7a8 transparent transparent'});
 
         } else{
 
             $(email_input).css({'width':'208px','margin-right':'7px'});
             $(email_label).css({'width':'73px','backgroundColor':'#e75735'});
-            $(email_label).text('ERROR');
+            $(email_label).html('<label></label>'+'ERROR');
+            $(email_label).children('label').css({'border-width':'4px 4px 4px 0','color':'#e75735'});
 
         }
 

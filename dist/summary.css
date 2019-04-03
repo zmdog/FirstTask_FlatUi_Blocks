@@ -890,6 +890,7 @@ a.ui-button:active,
     border-radius: 2px;
     transition: 0.5s; }
   .block_form .form_label, .block_form .form_name div, .block_form .form_email div {
+    position: relative;
     font-family: "Lato";
     font-size: 10px;
     line-height: 28px;
@@ -897,8 +898,14 @@ a.ui-button:active,
     color: #FFF;
     height: 28px;
     width: 0;
-    border-radius: 2px;
-    transition: 0.5s; }
+    border-radius: 2px; }
+    .block_form .form_label label, .block_form .form_name div label, .block_form .form_email div label {
+      content: "";
+      position: absolute;
+      left: -4px;
+      top: 10px;
+      border-style: solid;
+      border-color: transparent #e75735 transparent transparent; }
   .block_form .form_name input {
     border: 0;
     background-color: #e5e5e5; }
