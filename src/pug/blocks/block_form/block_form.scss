@@ -28,14 +28,7 @@
     height: 28px;
     width: 0;
     border-radius: 2px;
-    label{
-      content: "";
-      position: absolute;
-      left: -4px;
-      top: 10px;
-      border-style: solid;
-      border-color: transparent #e75735 transparent transparent;
-    }
+    transition: 0.5s;
   }
 
   .form_name{
@@ -45,8 +38,35 @@
       background-color: $bc;
       @extend .form_input
     }
-    div{
-      @extend .form_label
+    &#YES{
+      div{
+        display: none;
+        @extend .form_label;
+        &:after{
+          content: "";
+          position: absolute;
+          left: -6px;
+          top: 10px;
+          border-style: solid;
+          border-color: transparent #4eb7a8 transparent transparent;
+          transition: 0.5s;
+        }
+      }
+    }
+    &#NO{
+      div{
+        display: none;
+        @extend .form_label;
+        &:after{
+          content: "";
+          position: absolute;
+          left: -6px;
+          top: 10px;
+          border-style: solid;
+          border-color: transparent #e75735 transparent transparent;
+          transition: 0.5s;
+        }
+      }
     }
   }
   .form_email{
@@ -56,8 +76,35 @@
       background-color: $bc;
       @extend .form_input
     }
-    div{
-      @extend .form_label;
+    &#YES{
+      div{
+        display: none;
+        @extend .form_label;
+        &:after{
+          content: "";
+          position: absolute;
+          left: -6px;
+          top: 10px;
+          border-style: solid;
+          border-color: transparent #4eb7a8 transparent transparent;
+          transition: 0.5s;
+        }
+      }
+    }
+    &#NO{
+      div{
+        display: none;
+        @extend .form_label;
+        &:after{
+          content: "";
+          position: absolute;
+          left: -6px;
+          top: 10px;
+          border-style: solid;
+          border-color: transparent #e75735 transparent transparent;
+          transition: 0.5s;
+        }
+      }
     }
   }
 

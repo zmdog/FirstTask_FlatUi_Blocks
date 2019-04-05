@@ -12,20 +12,22 @@ $(document).ready(()=>{
 
         if(options){
 
-            $(name_label).css({'width':'73px','backgroundColor':'#4eb7a8'});
-            $(name_label).html('<label></label>'+'THANKS!');
+
+            $(name_label).css({'width':'73px','backgroundColor':'#4eb7a8','display':'block'});
+            $(name_label).html('THANKS!');
             $(name_label).children('label').css({
                 'border-width':'4px 4px 4px 0',
                 'color':'#4eb7a8',
                 'borderColor':'transparent #4eb7a8 transparent transparent'});
+            $(form_name).attr('id','YES')
 
         } else{
 
             $(name_input).css({'width':'208px','margin-right':'7px'});
-            $(name_label).css({'width':'73px','backgroundColor':'#e75735'});
-            $(name_label).html('<label></label>'+'ERROR');
+            $(name_label).css({'width':'73px','backgroundColor':'#e75735','display':'block'});
+            $(name_label).html('ERROR');
             $(name_label).children('label').css({'border-width':'4px 4px 4px 0','color':'#e75735'});
-
+            $(form_name).attr('id','NO')
         }
 
     });
@@ -35,19 +37,21 @@ $(document).ready(()=>{
 
         if(options){
 
-            $(email_label).css({'width':'73px','backgroundColor':'#4eb7a8'});
-            $(email_label).html('<label></label>'+'THANKS!');
+            $(email_label).css({'width':'73px','backgroundColor':'#4eb7a8','display':'block'});
+            $(email_label).html('THANKS!');
             $(email_label).children('label').css({
                 'border-width':'4px 4px 4px 0',
                 'color':'#4eb7a8',
                 'borderColor':'transparent #4eb7a8 transparent transparent'});
+            $(form_email).attr('id','YES')
 
         } else{
 
             $(email_input).css({'width':'208px','margin-right':'7px'});
-            $(email_label).css({'width':'73px','backgroundColor':'#e75735'});
-            $(email_label).html('<label></label>'+'ERROR');
+            $(email_label).css({'width':'73px','backgroundColor':'#e75735','display':'block'});
+            $(email_label).html('ERROR');
             $(email_label).children('label').css({'border-width':'4px 4px 4px 0','color':'#e75735'});
+            $(form_email).attr('id','NO')
 
         }
 
