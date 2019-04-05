@@ -1,0 +1,61 @@
+.block_tick_box{
+  position: relative;
+  height: 23px;
+  width: 23px;
+  cursor: url("../hand.png"), text;
+
+  &#ON{
+    background-color: #4eb7a8;
+    border-radius: 50%;
+    transition: 1s;
+    &:after{
+      position: absolute;
+      content: "";
+      width: 12px;
+      height: 3px;
+      transform: rotate(-45deg);
+      background-color: #FFF;
+      right: 4px;
+      top: 10px;
+      transition: 1s;
+    }
+    &:before{
+      position: absolute;
+      content: "";
+      width: 5px;
+      height: 3px;
+      transform: rotate(45deg);
+      background-color: #FFF;
+      left: 5px;
+      top: 11px;
+      transition: 1s;
+    }
+  }
+  &#OFF{
+    background-color: #e5e5e5;
+    border-radius: 50%;
+    transition: 1s;
+    &:after{
+      position: absolute;
+      content: "";
+      width: 12px;
+      height: 3px;
+      transform: rotate(-45deg);
+      background-color: #c0c0c0;
+      right: 4px;
+      top: 10px;
+      transition: 1s;
+  }
+    &:before{
+      position: absolute;
+      content: "";
+      width: 5px;
+      height: 3px;
+      transform: rotate(45deg);
+      background-color: #c0c0c0;
+      left: 5px;
+      top: 11px;
+      transition: 1s;
+    }
+  }
+}

@@ -26,3 +26,7 @@ import "../pug/blocks/block_stage/block_stage.js"
 
 import "../pug/blocks/block_form/block_form.scss"
 import "../pug/blocks/block_form/block_form.js"
+
+import "../pug/blocks/block_toggle_tick_box/block_toggle.scss"
+import "../pug/blocks/block_toggle_tick_box/block_tick_box.scss"
+import "../pug/blocks/block_toggle_tick_box/block_toggle_tick_box.js"

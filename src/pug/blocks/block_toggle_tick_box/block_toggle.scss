@@ -1,0 +1,57 @@
+.settings{
+  width: 60px;
+  height: 24px;
+  border-radius: 12px;
+  transition: 1s;
+  position: relative;
+  cursor: url("../hand.png"), text;
+  p{
+    position: absolute;
+    font-size: 12.02px;
+    margin: 0;
+    line-height: 24px;
+    color: #FFF;
+    transition: 0.5s;
+  }
+}
+
+.block_toggle{
+  &#OFF{
+    background-color: #e5e5e5;
+    @extend .settings;
+    p{
+      left: 26px;
+    }
+    &:after{
+      position: absolute;
+      content: '';
+      border-radius: 50%;
+      width: 18px;
+      height: 18px;
+      background-color: #FFF;
+      top: 3px;
+      left: 3px;
+      cursor: url("../hand.png"), text;
+      transition: 0.5s;
+    }
+  }
+  &#ON{
+    background-color: #4eb7a8;
+    @extend .settings;
+    p{
+      left: 11px;
+    }
+    &:after{
+      position: absolute;
+      content: '';
+      border-radius: 50%;
+      width: 18px;
+      height: 18px;
+      background-color: #FFF;
+      top: 3px;
+      left: 39px;
+      cursor: url("../hand.png"), text;
+      transition: 0.5s;
+    }
+  }
+}

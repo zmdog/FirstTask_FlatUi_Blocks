@@ -5,6 +5,8 @@ include ../block_pie_chart/block_pie_chart
 include ../block_slider/block_slider
 include ../block_stage/block_stage
 include ../block_form/block_form
+include ../block_toggle_tick_box/block_toggle
+    include ../block_toggle_tick_box/block_tick_box
 
 .content_block
     .block_basic_buttons
@@ -32,5 +34,9 @@ include ../block_form/block_form
         +block_slider('default', 0, 100, 25)
     .block_stages
         +block_stage(5)
-    .block_forms
+    .block_form_elements
         +block_form()
+        +block_toggle('OFF')
+        +block_toggle('ON')
+        +block_tick_box('ON')
+        +block_tick_box('OFF')

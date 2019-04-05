@@ -19,5 +19,4 @@ $(document).ready(function(){
     forEach.call(buttons,(b)=>{
         b.addEventListener('click', {handleEvent: pulse, context:b})
     });
-    console.log(buttons);
 });

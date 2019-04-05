@@ -1,6 +1,5 @@
 $(document).ready(()=>{
 
-    console.log('подключен');
     let filler = '',
         block_stage = $('.block_stage'),
         i = 1;

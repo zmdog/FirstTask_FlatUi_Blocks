@@ -10,7 +10,6 @@
     height: 5px;
     background: linear-gradient(to right, #e75735 0%, #e5e5e5 0%);
     left: 1px;
-    transition: 0.5s;
   }
   ul{
     width: 594px;
@@ -22,6 +21,19 @@
     top: -15.5px;
   }
   li{
+    .pulse{
+      position: absolute;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.51);
+      animation: pulse 0.7s ease-out;
+      transform: scale(0);
+    }
+    @keyframes pulse {
+      to{
+        transform: scale(1);
+        opacity: 0;
+      }
+    }
     transition: 0.5s;
     height: 29px;
     width: 29px;

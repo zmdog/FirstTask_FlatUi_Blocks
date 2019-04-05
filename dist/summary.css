@@ -854,8 +854,7 @@ a.ui-button:active,
     width: 592px;
     height: 5px;
     background: linear-gradient(to right, #e75735 0%, #e5e5e5 0%);
-    left: 1px;
-    transition: 0.5s; }
+    left: 1px; }
   .block_stage ul {
     width: 594px;
     position: absolute;
@@ -873,6 +872,17 @@ a.ui-button:active,
     border-radius: 50%;
     color: #888888;
     cursor: url(png/hand.png), text; }
+    .block_stage li .pulse {
+      position: absolute;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.51);
+      animation: pulse 0.7s ease-out;
+      transform: scale(0); }
+
+@keyframes pulse {
+  to {
+    transform: scale(1);
+    opacity: 0; } }
 
 .block_form {
   height: 213px;
@@ -928,4 +938,105 @@ a.ui-button:active,
     max-width: 288px; }
   .block_form .block_basic_button {
     float: right; }
+
+.settings, .block_toggle#OFF, .block_toggle#ON {
+  width: 60px;
+  height: 24px;
+  border-radius: 12px;
+  transition: 1s;
+  position: relative;
+  cursor: url(png/hand.png), text; }
+  .settings p, .block_toggle#OFF p, .block_toggle#ON p {
+    position: absolute;
+    font-size: 12.02px;
+    margin: 0;
+    line-height: 24px;
+    color: #FFF;
+    transition: 0.5s; }
+
+.block_toggle#OFF {
+  background-color: #e5e5e5; }
+  .block_toggle#OFF p {
+    left: 26px; }
+  .block_toggle#OFF:after {
+    position: absolute;
+    content: '';
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    background-color: #FFF;
+    top: 3px;
+    left: 3px;
+    cursor: url(png/hand.png), text;
+    transition: 0.5s; }
+
+.block_toggle#ON {
+  background-color: #4eb7a8; }
+  .block_toggle#ON p {
+    left: 11px; }
+  .block_toggle#ON:after {
+    position: absolute;
+    content: '';
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    background-color: #FFF;
+    top: 3px;
+    left: 39px;
+    cursor: url(png/hand.png), text;
+    transition: 0.5s; }
+
+.block_tick_box {
+  position: relative;
+  height: 23px;
+  width: 23px;
+  cursor: url(png/hand.png), text; }
+  .block_tick_box#ON {
+    background-color: #4eb7a8;
+    border-radius: 50%;
+    transition: 1s; }
+    .block_tick_box#ON:after {
+      position: absolute;
+      content: "";
+      width: 12px;
+      height: 3px;
+      transform: rotate(-45deg);
+      background-color: #FFF;
+      right: 4px;
+      top: 10px;
+      transition: 1s; }
+    .block_tick_box#ON:before {
+      position: absolute;
+      content: "";
+      width: 5px;
+      height: 3px;
+      transform: rotate(45deg);
+      background-color: #FFF;
+      left: 5px;
+      top: 11px;
+      transition: 1s; }
+  .block_tick_box#OFF {
+    background-color: #e5e5e5;
+    border-radius: 50%;
+    transition: 1s; }
+    .block_tick_box#OFF:after {
+      position: absolute;
+      content: "";
+      width: 12px;
+      height: 3px;
+      transform: rotate(-45deg);
+      background-color: #c0c0c0;
+      right: 4px;
+      top: 10px;
+      transition: 1s; }
+    .block_tick_box#OFF:before {
+      position: absolute;
+      content: "";
+      width: 5px;
+      height: 3px;
+      transform: rotate(45deg);
+      background-color: #c0c0c0;
+      left: 5px;
+      top: 11px;
+      transition: 1s; }
 
