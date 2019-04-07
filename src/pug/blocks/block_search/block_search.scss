@@ -1,0 +1,28 @@
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+.block_search{
+  height: 28px;
+  display: block;
+  input{
+    border: 0;
+    border-bottom-left-radius: 2px;
+    border-top-left-radius: 2px;
+    background-color: #e5e5e5;
+    height: 26px;
+    width: 253px;
+    outline: none;
+    &::placeholder{
+      color: #888888;
+      font-family: "Source Sans Pro";
+    }
+  }
+  button{
+    color: #FFF;
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+    position: absolute;
+    height: 28px;
+    width: 33px;
+    background-color: #e75735;
+    border: 0;
+  }
+}

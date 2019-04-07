@@ -6,7 +6,8 @@ include ../block_slider/block_slider
 include ../block_stage/block_stage
 include ../block_form/block_form
 include ../block_toggle_tick_box/block_toggle
-    include ../block_toggle_tick_box/block_tick_box
+include ../block_toggle_tick_box/block_tick_box
+include ../block_search/block_search
 
 .content_block
     .block_basic_buttons
@@ -40,3 +41,5 @@ include ../block_toggle_tick_box/block_toggle
         +block_toggle('ON')
         +block_tick_box('ON')
         +block_tick_box('OFF')
+    .block_search_drop-down
+        +block_search('Search', [{price:46,type:'red',presence:true}])

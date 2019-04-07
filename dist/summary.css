@@ -1,3 +1,4 @@
+@import url(https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css);
 button {
   outline: 0;
   overflow: hidden;
@@ -1073,4 +1074,28 @@ a.ui-button:active,
       left: 5px;
       top: 11px;
       transition: 0.5s; }
+
+.block_search {
+  height: 28px;
+  display: block; }
+  .block_search input {
+    border: 0;
+    border-bottom-left-radius: 2px;
+    border-top-left-radius: 2px;
+    background-color: #e5e5e5;
+    height: 26px;
+    width: 253px;
+    outline: none; }
+    .block_search input::placeholder {
+      color: #888888;
+      font-family: "Source Sans Pro"; }
+  .block_search button {
+    color: #FFF;
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+    position: absolute;
+    height: 28px;
+    width: 33px;
+    background-color: #e75735;
+    border: 0; }
 
