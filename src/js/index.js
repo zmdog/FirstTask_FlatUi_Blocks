@@ -33,3 +33,6 @@ import "../pug/blocks/block_toggle_tick_box/block_toggle_tick_box.js"
 
 import "../pug/blocks/block_search/block_search.scss"
 import "../pug/blocks/block_search/block_search.js"
+
+import "../pug/blocks/block_drop_down/block_drop_down.scss"
+import "../pug/blocks/block_drop_down/block_drop_down.js"

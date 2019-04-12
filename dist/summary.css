@@ -1078,6 +1078,7 @@ a.ui-button:active,
   height: 28px;
   display: block; }
   .block_search input {
+    font-size: 14px;
     font-family: "Source Sans Pro";
     border: 0;
     border-bottom-left-radius: 2px;
@@ -1101,4 +1102,43 @@ a.ui-button:active,
     width: 33px;
     background-color: #e75735;
     border: 0; }
+
+.block_drop_down {
+  width: 312px;
+  margin: 0; }
+  .block_drop_down .block_option {
+    position: relative;
+    background-color: #e5e5e5; }
+  .block_drop_down a {
+    color: #888888;
+    font-family: "Source Sans Pro";
+    font-size: 14px;
+    padding-left: 13px;
+    line-height: 28px;
+    padding-right: 13px; }
+  .block_drop_down .option-btn {
+    right: 0;
+    color: #FFF;
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+    position: absolute;
+    height: 28px;
+    width: 33px;
+    background-color: #4eb7a8;
+    border: 0; }
+  .block_drop_down .drop_down_option {
+    cursor: url(png/hand.png), text;
+    margin: 0;
+    height: 0;
+    color: #FFF;
+    font-size: 14px;
+    line-height: 28px;
+    background-color: #4eb7a8;
+    width: 286px;
+    list-style-type: none;
+    padding-left: 13px;
+    padding-right: 13px;
+    transition: 1s; }
+  .block_drop_down li {
+    display: none; }
 

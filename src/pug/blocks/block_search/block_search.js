@@ -1,7 +1,7 @@
 $(document).ready(()=>{
 
     let block_search = $('.block_search'),
-        searchBTN = $(block_search).children('.search__button');
+        searchBTN = $(block_search).children('.search_button');
 
     searchBTN.on('click',(event)=>{
         let elem = $(event.currentTarget).parent().attr('id'),
@@ -15,9 +15,5 @@ $(document).ready(()=>{
         }
 
     })
-
-
-
-
 
 });

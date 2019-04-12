@@ -8,6 +8,7 @@ include ../block_form/block_form
 include ../block_toggle_tick_box/block_toggle
 include ../block_toggle_tick_box/block_tick_box
 include ../block_search/block_search
+include ../block_drop_down/block_drop_down
 
 .content_block
     .block_basic_buttons
@@ -44,3 +45,4 @@ include ../block_search/block_search
     .block_search_drop-down
         +block_search('Search', 'true')
         +block_search('Search', 'false')
+        +block_drop_down(['seed','asso','картошечка','кувшин'])
