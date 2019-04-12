@@ -899,8 +899,11 @@ a.ui-button:active,
     height: 26px;
     width: 288px;
     border-radius: 2px;
-    transition: 0.5s; }
+    transition: 0.5s;
+    padding-left: 13px;
+    padding-right: 13px; }
   .block_form .form_label, .block_form .form_name#YES div, .block_form .form_name#NO div, .block_form .form_email#YES div, .block_form .form_email#NO div {
+    display: none;
     position: relative;
     font-family: "Lato";
     font-size: 10px;
@@ -914,26 +917,22 @@ a.ui-button:active,
   .block_form .form_name input {
     border: 0;
     background-color: #e5e5e5; }
-  .block_form .form_name#YES div {
-    display: none; }
-    .block_form .form_name#YES div:after {
-      content: "";
-      position: absolute;
-      left: -6px;
-      top: 10px;
-      border-style: solid;
-      border-color: transparent #4eb7a8 transparent transparent;
-      transition: 0.5s; }
-  .block_form .form_name#NO div {
-    display: none; }
-    .block_form .form_name#NO div:after {
-      content: "";
-      position: absolute;
-      left: -6px;
-      top: 10px;
-      border-style: solid;
-      border-color: transparent #e75735 transparent transparent;
-      transition: 0.5s; }
+  .block_form .form_name#YES div:after {
+    content: "";
+    position: absolute;
+    left: -6px;
+    top: 10px;
+    border-style: solid;
+    border-color: transparent #4eb7a8 transparent transparent;
+    transition: 0.5s; }
+  .block_form .form_name#NO div:after {
+    content: "";
+    position: absolute;
+    left: -6px;
+    top: 10px;
+    border-style: solid;
+    border-color: transparent #e75735 transparent transparent;
+    transition: 0.5s; }
   .block_form .form_email input {
     border: 0;
     background-color: #e5e5e5; }
@@ -958,19 +957,19 @@ a.ui-button:active,
       border-color: transparent #e75735 transparent transparent;
       transition: 0.5s; }
   .block_form textarea {
+    padding: 13px;
     font-family: "Source Sans Pro";
     outline: none;
     font-size: 14px;
     resize: none;
     background-color: #e5e5e5;
     border: 0;
-    padding: 0;
     border-radius: 2px;
     margin-bottom: 5px;
-    min-height: 88px;
-    min-width: 288px;
-    max-height: 88px;
-    max-width: 288px; }
+    min-height: 66px;
+    min-width: 262px;
+    max-height: 66px;
+    max-width: 262px; }
   .block_form .block_basic_button {
     float: right; }
 
@@ -1079,13 +1078,17 @@ a.ui-button:active,
   height: 28px;
   display: block; }
   .block_search input {
+    font-family: "Source Sans Pro";
     border: 0;
     border-bottom-left-radius: 2px;
     border-top-left-radius: 2px;
     background-color: #e5e5e5;
     height: 26px;
     width: 253px;
-    outline: none; }
+    outline: none;
+    transition: 0.2s;
+    padding-left: 13px;
+    padding-right: 13px; }
     .block_search input::placeholder {
       color: #888888;
       font-family: "Source Sans Pro"; }

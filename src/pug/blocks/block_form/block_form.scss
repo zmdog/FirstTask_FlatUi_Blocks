@@ -17,8 +17,11 @@
     width: 288px;
     border-radius: 2px;
     transition: 0.5s;
+    padding-left: 13px;
+    padding-right: 13px;
   }
   .form_label{
+    display: none;
     position: relative;
     font-family: "Lato";
     font-size: 10px;
@@ -40,7 +43,6 @@
     }
     &#YES{
       div{
-        display: none;
         @extend .form_label;
         &:after{
           content: "";
@@ -55,7 +57,6 @@
     }
     &#NO{
       div{
-        display: none;
         @extend .form_label;
         &:after{
           content: "";
@@ -109,19 +110,20 @@
   }
 
   textarea{
+    padding: 13px;
     font-family: "Source Sans Pro";
     outline: none;
     font-size: 14px;
     resize: none;
     background-color: $bc;
     border: 0;
-    padding: 0;
     border-radius: 2px;
     margin-bottom: 5px;
-    min-height: 88px;
-    min-width: 288px;
-    max-height: 88px;
-    max-width: 288px;
+
+    min-height: 66px;
+    min-width: 262px;
+    max-height: 66px;
+    max-width: 262px;
   }
 
   .block_basic_button{

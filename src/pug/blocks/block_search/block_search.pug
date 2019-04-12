@@ -1,6 +1,6 @@
-mixin block_search(placeholder, array)
+mixin block_search(placeholder, id)
 
-    div(class='block_search' data-search= array)
+    div(class='block_search' id= id)
         input(placeholder= placeholder)
         button(class="search__button")
             i(class="fa fa-search" aria-hidden="true")

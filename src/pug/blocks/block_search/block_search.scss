@@ -3,6 +3,7 @@
   height: 28px;
   display: block;
   input{
+    font-family: "Source Sans Pro";
     border: 0;
     border-bottom-left-radius: 2px;
     border-top-left-radius: 2px;
@@ -10,6 +11,9 @@
     height: 26px;
     width: 253px;
     outline: none;
+    transition: 0.2s;
+    padding-left: 13px;
+    padding-right: 13px;
     &::placeholder{
       color: #888888;
       font-family: "Source Sans Pro";
