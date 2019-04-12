@@ -4,6 +4,8 @@
   .block_option{
     position: relative;
     background-color: #e5e5e5;
+    border-bottom-left-radius: 2px;
+    border-top-left-radius: 2px;
   }
   a{
     color: #888888;
@@ -37,6 +39,7 @@
     padding-left: 13px;
     padding-right: 13px;
     transition: 1s;
+    border-radius: 2px;
   }
   li{
     display: none;
