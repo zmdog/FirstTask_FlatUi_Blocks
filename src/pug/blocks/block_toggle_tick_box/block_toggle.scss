@@ -4,7 +4,7 @@
   border-radius: 12px;
   transition: 1s;
   position: relative;
-  cursor: url("../hand.png"), text;
+  cursor: url("../../../img/hand.png"), text;
   p{
     position: absolute;
     font-size: 12.02px;
@@ -31,7 +31,7 @@
       background-color: #FFF;
       top: 3px;
       left: 3px;
-      cursor: url("../hand.png"), text;
+      cursor: url("../../../img/hand.png"), text;
       transition: 0.5s;
     }
   }
@@ -50,7 +50,7 @@
       background-color: #FFF;
       top: 3px;
       left: 39px;
-      cursor: url("../hand.png"), text;
+      cursor: url("../../../img/hand.png"), text;
       transition: 0.5s;
     }
   }

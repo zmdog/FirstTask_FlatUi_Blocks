@@ -27,12 +27,13 @@
     border: 0;
   }
   .drop_down_option{
-    cursor: url("../hand.png"), text;
+    cursor: url("../../../img/hand.png"), text;
     margin: 0;
     height: 0;
     color: #FFF;
     font-size: 14px;
     line-height: 28px;
+    overflow: hidden;
     background-color: #4eb7a8;
     width: 286px;
     list-style-type: none;

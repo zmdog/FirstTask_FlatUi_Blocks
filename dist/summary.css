@@ -15,7 +15,7 @@ button {
     transform: scale(1);
     opacity: 0; } }
   button:hover {
-    cursor: url(png/hand.png), text; }
+    cursor: url(012708bfdad21a6bdb801aedeb08c16b.png), text; }
 
 .basic_button, .button_medium_orange, .button_small_orange, .button_medium_default, .button_small_default {
   border-radius: 2px; }
@@ -68,7 +68,7 @@ button {
     transform: scale(1);
     opacity: 0; } }
   button:hover {
-    cursor: url(png/hand.png), text; }
+    cursor: url(012708bfdad21a6bdb801aedeb08c16b.png), text; }
 
 .block_arrow_buttons .arrow_button, .block_arrow_buttons .button_left_orange, .block_arrow_buttons .button_left_default, .block_arrow_buttons .button_right_orange, .block_arrow_buttons .button_right_default, .block_arrow_buttons .button_left_passive, .block_arrow_buttons .button_right_passive {
   width: 50px;
@@ -598,31 +598,31 @@ a.ui-button:active,
 }
 .ui-icon,
 .ui-widget-content .ui-icon {
-	background-image: url(png/ui-icons_444444_256x240.png);
+	background-image: url(52be4326361661376f66c700eb8062e2.png);
 }
 .ui-widget-header .ui-icon {
-	background-image: url(png/ui-icons_444444_256x240.png);
+	background-image: url(52be4326361661376f66c700eb8062e2.png);
 }
 .ui-state-hover .ui-icon,
 .ui-state-focus .ui-icon,
 .ui-button:hover .ui-icon,
 .ui-button:focus .ui-icon {
-	background-image: url(png/ui-icons_555555_256x240.png);
+	background-image: url(b5a54c093252fae85c6101fe3f0fe347.png);
 }
 .ui-state-active .ui-icon,
 .ui-button:active .ui-icon {
-	background-image: url(png/ui-icons_ffffff_256x240.png);
+	background-image: url(8551602b30168e123d9e74cc6a64d74f.png);
 }
 .ui-state-highlight .ui-icon,
 .ui-button .ui-state-highlight.ui-icon {
-	background-image: url(png/ui-icons_777620_256x240.png);
+	background-image: url(6cefdaefd99eb74e08cc55e96fa520de.png);
 }
 .ui-state-error .ui-icon,
 .ui-state-error-text .ui-icon {
-	background-image: url(png/ui-icons_cc0000_256x240.png);
+	background-image: url(e7739ff9fcce7f5bd2116c759bed936a.png);
 }
 .ui-button .ui-icon {
-	background-image: url(png/ui-icons_777777_256x240.png);
+	background-image: url(4d286eb8ccd1a97a7b92f26f941786dc.png);
 }
 
 /* positioning */
@@ -872,7 +872,7 @@ a.ui-button:active,
     background-color: #e5e5e5;
     border-radius: 50%;
     color: #888888;
-    cursor: url(png/hand.png), text; }
+    cursor: url(012708bfdad21a6bdb801aedeb08c16b.png), text; }
     .block_stage li .pulse {
       position: absolute;
       border-radius: 50%;
@@ -979,7 +979,7 @@ a.ui-button:active,
   border-radius: 12px;
   transition: 1s;
   position: relative;
-  cursor: url(png/hand.png), text; }
+  cursor: url(012708bfdad21a6bdb801aedeb08c16b.png), text; }
   .settings p, .block_toggle#OFF p, .block_toggle#ON p {
     position: absolute;
     font-size: 12.02px;
@@ -1001,7 +1001,7 @@ a.ui-button:active,
     background-color: #FFF;
     top: 3px;
     left: 3px;
-    cursor: url(png/hand.png), text;
+    cursor: url(012708bfdad21a6bdb801aedeb08c16b.png), text;
     transition: 0.5s; }
 
 .block_toggle#ON {
@@ -1017,14 +1017,14 @@ a.ui-button:active,
     background-color: #FFF;
     top: 3px;
     left: 39px;
-    cursor: url(png/hand.png), text;
+    cursor: url(012708bfdad21a6bdb801aedeb08c16b.png), text;
     transition: 0.5s; }
 
 .block_tick_box {
   position: relative;
   height: 23px;
   width: 23px;
-  cursor: url(png/hand.png), text; }
+  cursor: url(012708bfdad21a6bdb801aedeb08c16b.png), text; }
   .block_tick_box#ON {
     background-color: #4eb7a8;
     border-radius: 50%;
@@ -1129,12 +1129,13 @@ a.ui-button:active,
     background-color: #4eb7a8;
     border: 0; }
   .block_drop_down .drop_down_option {
-    cursor: url(png/hand.png), text;
+    cursor: url(012708bfdad21a6bdb801aedeb08c16b.png), text;
     margin: 0;
     height: 0;
     color: #FFF;
     font-size: 14px;
     line-height: 28px;
+    overflow: hidden;
     background-color: #4eb7a8;
     width: 286px;
     list-style-type: none;
@@ -1144,4 +1145,75 @@ a.ui-button:active,
     border-radius: 2px; }
   .block_drop_down li {
     display: none; }
+
+.block_user-profile {
+  display: flex;
+  height: 94px;
+  width: 268px;
+  font-family: Regular Lato, sans-serif; }
+  .block_user-profile .user_img {
+    border-radius: 50%;
+    background-color: #e5e5e5; }
+    .block_user-profile .user_img img {
+      margin: 5px;
+      width: 84px;
+      height: 84px; }
+  .block_user-profile .user_block {
+    position: relative;
+    width: 100%;
+    background-color: #e5e5e5;
+    border-radius: 5px; }
+    .block_user-profile .user_block:after {
+      left: -4px;
+      top: 50%;
+      margin-top: -5px;
+      content: '';
+      position: absolute;
+      background-color: #e5e5e5;
+      width: 10px;
+      height: 10px;
+      transform: rotate(45deg); }
+    .block_user-profile .user_block .user_info {
+      margin-top: 13px;
+      margin-bottom: 14px; }
+      .block_user-profile .user_block .user_info p {
+        text-align: center;
+        margin: 0; }
+      .block_user-profile .user_block .user_info .user_name {
+        color: #e75735;
+        margin-bottom: 8px;
+        line-height: 14px;
+        font-size: 18px; }
+      .block_user-profile .user_block .user_info .user_prof {
+        line-height: 8px;
+        font-size: 11px; }
+    .block_user-profile .user_block .social_icons {
+      display: flex;
+      justify-content: center; }
+      .block_user-profile .user_block .social_icons button {
+        border: 0;
+        box-shadow: none;
+        background-color: rgba(0, 0, 0, 0); }
+        .block_user-profile .user_block .social_icons button:nth-last-child(2) {
+          margin-left: 10px;
+          margin-right: 10px; }
+      .block_user-profile .user_block .social_icons i {
+        color: #757575;
+        font-size: 21px; }
+        .block_user-profile .user_block .social_icons i:hover {
+          color: #e75735; }
+    .block_user-profile .user_block#visible {
+      width: 100%; }
+      .block_user-profile .user_block#visible .user_info {
+        display: block; }
+      .block_user-profile .user_block#visible .social_icons {
+        display: flex; }
+    .block_user-profile .user_block#invisible {
+      width: 0; }
+      .block_user-profile .user_block#invisible .user_info {
+        display: none; }
+      .block_user-profile .user_block#invisible .social_icons {
+        display: none; }
+      .block_user-profile .user_block#invisible:after {
+        display: none; }
 

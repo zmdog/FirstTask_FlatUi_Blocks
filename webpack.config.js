@@ -17,6 +17,7 @@ module.exports = {
     },
     module: {
         rules:[
+
             {
                 test: /\.css$/,
                 loader:[
@@ -27,12 +28,12 @@ module.exports = {
             },
             {
                 test: /\.png$/,
-                use: {
-                    loader: 'file-loader',
-                    options : {
-                        name: 'png/[name].[ext]'
-                    }
-                }
+                use: [
+                    'file-loader',
+                    {
+                        loader: 'image-webpack-loader',
+                    },
+                ],
             },
             {
                 test: /\.scss$/,

@@ -1,5 +1,11 @@
 import "../pug/index.pug"
 
+import "../img/city.png"
+import "../img/bicycle.png"
+import "../img/person_1.png"
+import "../img/person_2.png"
+import "../img/bicycle.png"
+
 import "../pug/blocks/block_standart_button/block_standart_button.scss"
 import "../pug/blocks/block_arrow_button/block_arrow_button.scss"
 
@@ -36,3 +42,6 @@ import "../pug/blocks/block_search/block_search.js"
 
 import "../pug/blocks/block_drop_down/block_drop_down.scss"
 import "../pug/blocks/block_drop_down/block_drop_down.js"
+
+import "../pug/blocks/block_user-profile/block_user-profile.scss"
+import "../pug/blocks/block_user-profile/block_user-profile.js"
