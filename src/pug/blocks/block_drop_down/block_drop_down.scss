@@ -27,7 +27,7 @@
     border: 0;
   }
   .drop_down_option{
-    cursor: url("../../../img/hand.png"), text;
+    cursor: $point_cursor;
     margin: 0;
     height: 0;
     color: #FFF;
@@ -41,8 +41,5 @@
     padding-right: 13px;
     transition: 1s;
     border-radius: 2px;
-  }
-  li{
-    display: none;
   }
 }

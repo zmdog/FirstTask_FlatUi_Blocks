@@ -10,14 +10,10 @@ $(document).ready(()=>{
 
         if(!block_drop_down_state){
             $(drop_down_option).css({'height':(li.length * 28) + 'px'});
-            $(li).css({'display':'block'});
             block_drop_down_state = true
         }else{
             $(drop_down_option).css({'height':'0'});
             block_drop_down_state = false;
-            setTimeout(()=>{
-                $(li).css({'display':'none'});
-            },1000)
         }
     });
 

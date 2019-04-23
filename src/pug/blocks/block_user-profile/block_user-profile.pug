@@ -1,15 +1,16 @@
 mixin block_user-profile(img, name, prof)
     .block_user-profile
         .user_img
-            img(src=img)
-        div(class='user_block' id='invisible')
-            .user_info
-                p(class='user_name')=name
-                p(class='user_prof')=prof
-            .social_icons
-                button(class= 'social-btn')
-                    i(class="fa fa-facebook" aria-hidden="true")
-                button(class= 'social-btn')
-                    i(class="fa fa-twitter" aria-hidden="true")
-                button(class= 'social-btn')
-                    i(class="fa fa-dribbble" aria-hidden="true")
+            img(src="./dist/img/"+img+".png")
+        .active_zone
+            div(class='user_block' id='invisible')
+                .user_info
+                    p(class='user_name')=name
+                    p(class='user_prof')=prof
+                .social_icons
+                    button(class= 'social-btn')
+                        i(class="fa fa-facebook" aria-hidden="true")
+                    button(class= 'social-btn')
+                        i(class="fa fa-twitter" aria-hidden="true")
+                    button(class= 'social-btn')
+                        i(class="fa fa-dribbble" aria-hidden="true")

@@ -13,83 +13,72 @@
     }
   }
 
-  .user_block{
+  .active_zone{
+    display: flex;
     position: relative;
-    width: 100%;
-    background-color: #e5e5e5;
-    border-radius: 5px;
-    &:after{
-      left: -4px;
-      top: 50%;
-      margin-top: -5px;
-      content: '';
+    transition: 0.5s;
+    overflow: hidden;
+    width: 0;
+    .user_block{
       position: absolute;
+      width: 163px;
+      right: 0;
+      height: 94px;
       background-color: #e5e5e5;
-      width: 10px;
-      height: 10px;
-      transform: rotate(45deg);
-    }
-    .user_info{
-      margin-top: 13px;
-      margin-bottom: 14px;
-      p{
-        text-align: center;
-        margin: 0
+      border-radius: 5px;
+      &:after{
+        left: -4px;
+        top: 50%;
+        margin-top: -5px;
+        content: '';
+        position: absolute;
+        background-color: #e5e5e5;
+        width: 10px;
+        height: 10px;
+        transform: rotate(45deg);
       }
-      .user_name{
-        color: #e75735;
-        margin-bottom: 8px;
-        line-height: 14px;
-        font-size: 18px;
-      }
-      .user_prof{
-        line-height: 8px;
-        font-size: 11px;
-      }
-    }
 
-    .social_icons{
-      display: flex;
-      justify-content: center;
-      button{
-        &:nth-last-child(2){
-          margin-left: 10px;
-          margin-right: 10px;
-        }
-        border: 0;
-        box-shadow: none;
-        background-color: rgba(0, 0, 0, 0);
-      }
-      i{
-        &:hover{
-          color: #e75735;
-        }
-        color: #757575;
-        font-size: 21px;
-      }
-    }
-
-    &#visible{
-      width: 100%;
       .user_info{
-        display: block;
+        margin-top: 13px;
+        margin-bottom: 14px;
+        p{
+          text-align: center;
+          margin: 0
+        }
+        .user_name{
+          color: #e75735;
+          margin-bottom: 8px;
+          line-height: 14px;
+          font-size: 18px;
+        }
+        .user_prof{
+          line-height: 8px;
+          font-size: 11px;
+        }
       }
+
       .social_icons{
         display: flex;
+        justify-content: center;
+        button{
+          &:nth-last-child(2){
+            margin-left: 10px;
+            margin-right: 10px;
+          }
+          border: 0;
+          box-shadow: none;
+          background-color: rgba(0, 0, 0, 0);
+        }
+        i{
+          &:hover{
+            color: #e75735;
+          }
+          color: #757575;
+          font-size: 21px;
+        }
       }
-    }
-    &#invisible{
-      width: 0;
-      .user_info{
-        display: none;
-      }
-      .social_icons{
-        display: none;
-      }
-      &:after{
-        display: none;
-      }
-    }
 
+
+    }
   }
 }

@@ -3,20 +3,22 @@ $(document).ready(function () {
 
     user_block_profile.each((index,elem)=>{
         let img = $(elem).children('.user_img'),
-            user_block = $(elem).children('.user_block');
-        $(img).hover(()=>{
-            $(user_block).attr('id','visible');
-            console.log('наведено')
-        },()=>{
-            $(user_block).attr('id','invisible');
-            console.log('снято')
-        });
-        $(user_block).hover(()=>{
-            $(user_block).attr('id','visible');
-            console.log('наведено')
-        },()=>{
-            $(user_block).attr('id','invisible');
-            console.log('снято')
-        });
+            active_zone = $(elem).children('.active_zone');
+
+            $(img).hover(()=>{
+
+                $(active_zone).css({'width':'100%'});
+
+                $(active_zone).hover(
+                    ()=>{
+                    $(active_zone).css({'width':'100%'})},
+
+                    ()=>{
+                    $(active_zone).css({'width':'0'})})
+                },
+
+                ()=>{
+                $(active_zone).css({'width':'0'})
+            });
     });
 });
