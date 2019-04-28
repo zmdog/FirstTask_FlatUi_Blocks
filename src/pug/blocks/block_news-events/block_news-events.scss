@@ -5,6 +5,10 @@
     display: flex;
     width: 288px;
     height: 212px;
+    &:hover img{
+      transform: scale(1.1);
+      transition: 0.5s;
+    }
     .news-event{
       width: 100%;
       border-bottom-right-radius: 3px;
@@ -21,7 +25,10 @@
     margin-right: 18px;
 
     .news-img{
-      width: 95px;
+      overflow: hidden;
+      width: 142px;
+      border-bottom-left-radius: 3px;
+      border-top-left-radius: 3px;
     }
     .news{
       @extend .news-event;
@@ -56,7 +63,10 @@
   .block_event{
     @extend .settings_news-events;
     .event-img{
-      width: 95px;
+      overflow: hidden;
+      width: 142px;
+      border-bottom-left-radius: 3px;
+      border-top-left-radius: 3px;
     }
     .event{
       @extend .news-event;

@@ -12,6 +12,7 @@ $point_cursor: url("../../../../dist/img/hand.png"), text;
 @import "../block_drop_down/block_drop_down.scss";
 @import "../block_user-profile/block_user-profile.scss";
 @import "../block_news-events/block_news-events.scss";
+@import "../block_location/block_location.scss";
 button{
   .pulse{
     position: absolute;
