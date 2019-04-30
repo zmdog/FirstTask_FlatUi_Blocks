@@ -7,5 +7,43 @@
     #map{
       height: 203px;
     }
+    .info-block{
+      display: flex;
+      p{
+        margin: 0;
+        color: #FFF;
+      }
+      .meet{
+        font-size: 30px;
+        font-family: 'Lato Light', sans-serif;
+        margin-right: 26px;
+        margin-left: 30px;
+        height:69px;
+        p{
+          line-height: 69px;
+        }
+      }
+      .street{
+        display: flex;
+        align-items: center;
+        font-size: 12.5px;
+        font-family: 'Lato Black', sans-serif;
+        width: 126px;
+        margin-right: 199px;
+      }
+      .icons{
+        display: flex;
+        align-items: center;
+        width: 67px;
+        justify-content: space-between;
+        i{
+          cursor: $point_cursor;;
+          font-size: 26px;
+          color: #FFF;
+        }
+      }
+
+    }
+
   }
 }

@@ -671,6 +671,35 @@
   height: 272px; }
   .block_locations .block_location #map {
     height: 203px; }
+  .block_locations .block_location .info-block {
+    display: flex; }
+    .block_locations .block_location .info-block p {
+      margin: 0;
+      color: #FFF; }
+    .block_locations .block_location .info-block .meet {
+      font-size: 30px;
+      font-family: 'Lato Light', sans-serif;
+      margin-right: 26px;
+      margin-left: 30px;
+      height: 69px; }
+      .block_locations .block_location .info-block .meet p {
+        line-height: 69px; }
+    .block_locations .block_location .info-block .street {
+      display: flex;
+      align-items: center;
+      font-size: 12.5px;
+      font-family: 'Lato Black', sans-serif;
+      width: 126px;
+      margin-right: 199px; }
+    .block_locations .block_location .info-block .icons {
+      display: flex;
+      align-items: center;
+      width: 67px;
+      justify-content: space-between; }
+      .block_locations .block_location .info-block .icons i {
+        cursor: url(012708bfdad21a6bdb801aedeb08c16b.png), text;
+        font-size: 26px;
+        color: #FFF; }
 
 button {
   outline: 0;
