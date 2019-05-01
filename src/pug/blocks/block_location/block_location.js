@@ -11,10 +11,7 @@ $(document).ready(()=>{
             iconImageSize: [57, 54],
             iconImageOffset: [-20, -47],
         });
-        var placemark1 = new ymaps.Placemark([37.787509, -122.444838], {}, {
-            iconLayout: 'default#image',
-        });
-        Map.geoObjects.add(placemark).add(placemark1);
+        Map.geoObjects.add(placemark);
     }
 
 });
