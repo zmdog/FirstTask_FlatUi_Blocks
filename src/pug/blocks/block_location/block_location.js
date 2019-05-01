@@ -1,17 +1,20 @@
 $(document).ready(()=>{
     ymaps.ready(init);
     function init(){
-        let myMap = new ymaps.Map("map", {
+        let Map = new ymaps.Map("map", {
             center: [37.787509, -122.444838],
             zoom: 16
         });
-        var myGeoObject = new ymaps.GeoObject({
-            geometry: {
-                type: "Point",
-                coordinates: [37.787509, -122.444838]
-            }
+        var placemark = new ymaps.Placemark([37.787509, -122.444838], {}, {
+            iconLayout: 'default#image',
+            iconImageHref: './img/Marker.png',
+            iconImageSize: [57, 54],
+            iconImageOffset: [-20, -47],
         });
-        myMap.geoObjects.add(myGeoObject)
+        var placemark1 = new ymaps.Placemark([37.787509, -122.444838], {}, {
+            iconLayout: 'default#image',
+        });
+        Map.geoObjects.add(placemark).add(placemark1);
     }
 
 });

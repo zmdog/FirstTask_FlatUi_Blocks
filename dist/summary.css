@@ -694,12 +694,19 @@
     .block_locations .block_location .info-block .icons {
       display: flex;
       align-items: center;
-      width: 67px;
+      width: 68px;
       justify-content: space-between; }
-      .block_locations .block_location .info-block .icons i {
+      .block_locations .block_location .info-block .icons button {
         cursor: url(012708bfdad21a6bdb801aedeb08c16b.png), text;
-        font-size: 26px;
-        color: #FFF; }
+        background-color: #e75735;
+        border: 0;
+        padding: 0; }
+        .block_locations .block_location .info-block .icons button i {
+          cursor: url(012708bfdad21a6bdb801aedeb08c16b.png), text;
+          font-size: 26px;
+          color: #FFF; }
+      .block_locations .block_location .info-block .icons button:last-child {
+        padding-right: 1px; }
 
 button {
   outline: 0;

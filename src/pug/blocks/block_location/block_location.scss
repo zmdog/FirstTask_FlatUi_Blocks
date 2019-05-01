@@ -34,12 +34,21 @@
       .icons{
         display: flex;
         align-items: center;
-        width: 67px;
+        width: 68px;
         justify-content: space-between;
-        i{
-          cursor: $point_cursor;;
-          font-size: 26px;
-          color: #FFF;
+        button{
+          cursor: $point_cursor;
+          background-color: #e75735;
+          border: 0;
+          padding: 0;
+          i{
+            cursor: $point_cursor;
+            font-size: 26px;
+            color: #FFF;
+          }
+        }
+        button:last-child{
+          padding-right: 1px;
         }
       }
 
