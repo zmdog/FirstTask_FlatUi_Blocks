@@ -1,12 +1,12 @@
-mixin block_location()
+mixin block_location(location, meet)
 
     .block_location
         #map
         .info-block
             .meet
-                p='Meet us!'
+                p=meet
             .street
-                p='1259  CALIFORNIA ST San Francisco, CA'
+                p=location
             .icons
                 button
                     i(class="fa fa-crosshairs" aria-hidden="true")

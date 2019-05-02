@@ -12,6 +12,7 @@ include ../block_drop_down/block_drop_down
 include ../block_user-profile/block_user-profile
 include ../block_news-events/block_news-events
 include ../block_location/block_location
+include ../block_calendar/block_calendar
 
 .content_block
     .block_basic_buttons
@@ -59,4 +60,6 @@ include ../block_location/block_location
         +block_event('city.png', 'THIS IS THE TITLE', '24', ' Aug', 'Lorem ipsum dolor sit amet, ' +
                      'consectetur adipiscing elit.')
     .block_locations
-        +block_location()
+        +block_location('1259  CALIFORNIA ST San Francisco, CA', 'Meet us!')
+    .block_calendars
+        +block_calendar()
