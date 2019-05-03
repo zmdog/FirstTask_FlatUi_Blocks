@@ -48,7 +48,7 @@
           @extend .ui-datepicker-prev-next;
           left: 0;
           span{
-            background-image: url("../../../../dist/img/Arrow_Left.png");
+            background-image: $arrow_left;
             left:15px;
           }
         }
@@ -56,7 +56,7 @@
           @extend .ui-datepicker-prev-next;
           right: 0;
           span{
-            background-image: url("../../../../dist/img/Arrow_Right.png");
+            background-image: $arrow_right;
             right:15px;
           }
         }
