@@ -1,0 +1,83 @@
+.block_messaging{
+  width: 288px;
+  position: relative;
+
+  .user_img{
+    position: absolute;
+    border-radius: 50%;
+    background-color: #e5e5e5;
+    width: 94px;
+    height: 94px;
+    left: 288/2 - 94/2 + px;
+    top: 70px;
+    img{
+      margin: 5px;
+      width: 84px;
+      height: 84px;
+    }
+  }
+
+  .header_messaging{
+    height: 82px;
+    background-color: #4eb7a8;
+    border-bottom: #46ab9d solid 34px;
+    p{
+      color: #FFF;
+      text-align: center;
+      font-size: 34px;
+      font-family: 'Source Sans Pro', sans-serif;
+      vertical-align: middle;
+      margin: 0;
+      line-height: 82px;
+    }
+  }
+
+  .content_messaging{
+    background-color: #f2f2f2;
+    height: 312px;
+    .content_icons{
+      display: flex;
+      position: relative;
+      button{
+        position: absolute;
+        border: 0;
+        font-size: 20px;
+        background-color: #f2f2f2;
+        width: 21px;
+        height: 20px;
+        padding: 0;
+        right: 27px;
+        top: 22px;
+        color: #8e8d8d;
+        &:first-child{
+          height: 22px;
+          width: 20px;
+          border: 0;
+          left: 27px;
+        }
+        .icon-message{
+          &:before{
+            content: '';
+            position: absolute;
+            top: 14px;
+            right: 5px;
+            height: 6px;
+            width: 6px;
+            background-color: #8e8d8d;
+            transform: skewY(40deg);
+          }
+          &:after{
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 18px;
+            left: 0;
+            top: 0;
+            border-radius: 6px;
+            background-color: #8e8d8d;
+          }
+        }
+      }
+    }
+  }
+}

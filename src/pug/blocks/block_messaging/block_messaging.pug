@@ -1,0 +1,15 @@
+mixin block_messaging(img, name)
+
+   .block_messaging
+       .user_img
+           img(src="./img/"+img)
+       //"../../../../dist/img/" + img
+       .header_messaging
+           p=name
+
+       .content_messaging
+           .content_icons
+               button(class= 'messaging-btn')
+                   i(class="icon-message")
+               button(class= 'messaging-btn')
+                   i(class="fa fa-camera" aria-hidden="true")

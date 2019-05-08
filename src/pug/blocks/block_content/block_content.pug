@@ -13,6 +13,7 @@ include ../block_user-profile/block_user-profile
 include ../block_news-events/block_news-events
 include ../block_location/block_location
 include ../block_calendar/block_calendar
+include ../block_messaging/block_messaging
 
 .content_block
     .block_basic_buttons
@@ -63,3 +64,5 @@ include ../block_calendar/block_calendar
         +block_location('1259  CALIFORNIA ST San Francisco, CA', 'Meet us!')
     .block_calendars
         +block_calendar()
+    .block_messagings
+        +block_messaging("person_2.png", "Sarah Brown")
