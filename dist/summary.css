@@ -906,6 +906,7 @@
         .block_messaging .content_messaging .content_chatting .answer textarea {
           margin: 20px;
           width: 198px;
+          height: 48px;
           border: 0;
           padding: 0;
           background-color: #e5e5e5;
