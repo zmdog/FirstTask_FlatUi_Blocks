@@ -1,9 +1,8 @@
-mixin block_messaging(img, name)
+mixin block_messaging(img, name, question, answer)
 
    .block_messaging
        .user_img
            img(src="./img/"+img)
-       //"../../../../dist/img/" + img
        .header_messaging
            p=name
 
@@ -13,3 +12,9 @@ mixin block_messaging(img, name)
                    i(class="icon-message")
                button(class= 'messaging-btn')
                    i(class="fa fa-camera" aria-hidden="true")
+           .content_chatting
+               .question
+                   p=question
+               .answer
+                   textarea=answer
+               button="REPLY"

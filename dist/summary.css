@@ -884,6 +884,43 @@
           top: 0;
           border-radius: 6px;
           background-color: #8e8d8d; }
+    .block_messaging .content_messaging .content_chatting {
+      margin: 62px 22px 0 22px; }
+      .block_messaging .content_messaging .content_chatting .message, .block_messaging .content_messaging .content_chatting .question, .block_messaging .content_messaging .content_chatting .answer {
+        border-radius: 5px;
+        font-size: 12.5px;
+        font-family: 'Lato Bold', sans-serif; }
+      .block_messaging .content_messaging .content_chatting .question {
+        padding: 20px;
+        background-color: #fff;
+        margin-bottom: 17px;
+        color: #868686; }
+        .block_messaging .content_messaging .content_chatting .question p {
+          margin: 0; }
+      .block_messaging .content_messaging .content_chatting .answer {
+        height: 88px;
+        border: #fff solid 3px;
+        background-color: #e5e5e5;
+        color: #030303;
+        margin-bottom: 15px; }
+        .block_messaging .content_messaging .content_chatting .answer textarea {
+          margin: 20px;
+          width: 198px;
+          border: 0;
+          padding: 0;
+          background-color: #e5e5e5;
+          outline: none;
+          resize: none; }
+      .block_messaging .content_messaging .content_chatting button {
+        width: 243px;
+        height: 32px;
+        border: 0;
+        border-bottom: #28a290 solid 3px;
+        border-radius: 3px;
+        color: #FFF;
+        background-color: #4eb7a8;
+        font-size: 12px;
+        font-family: 'Lato Black', sans-serif; }
 
 button {
   outline: 0;
