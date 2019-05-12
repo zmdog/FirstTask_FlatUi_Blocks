@@ -7,14 +7,15 @@ mixin block_messaging(img, name, question, answer)
            p=name
 
        .content_messaging
-           .content_icons
-               button(class= 'messaging-btn')
-                   i(class="icon-message")
-               button(class= 'messaging-btn')
-                   i(class="fa fa-camera" aria-hidden="true")
-           .content_chatting
-               .question
-                   p=question
-               .answer
-                   textarea=answer
-               button="REPLY"
+           form
+               .content_icons
+                   button(class='messaging-btn')
+                       i(class="icon-message")
+                   button(class='messaging-btn')
+                       i(class="fa fa-camera" aria-hidden="true")
+               .content_chatting
+                   .question
+                       p=question
+                   .answer
+                       textarea=answer
+                   button="REPLY"
