@@ -1,6 +1,15 @@
-mixin block_video(src)
+mixin block_video(src, vsrc)
 
     .block_video
-        video(controls)
-            source(src='./dist/video/'+src+'.mp4' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"')
-            //../../../../dist/video/'
+        iframe(src='https://player.vimeo.com/video/'+src
+               height='335px'
+               width='594px'
+               frameborder="0"
+               allowfullscreen
+               )
+        .video
+            video(src='../../../../dist/video/'+vsrc+'.mp4' class='myvideo')
+            .video-controls
+                button(class='btn-play' id='unpaused')
+                    i
+                input(class='range')
