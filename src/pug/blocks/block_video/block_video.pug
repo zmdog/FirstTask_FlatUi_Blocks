@@ -12,4 +12,7 @@ mixin block_video(src, vsrc)
             .video-controls
                 button(class='btn-play' id='unpaused')
                     i
-                input(class='range')
+                span(class='total')
+                    span(class='current')
+                button(class='btn-fullscreen' id='off')
+                    i(class="fa fa-arrows-alt" aria-hidden="true")

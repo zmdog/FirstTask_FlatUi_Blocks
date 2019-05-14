@@ -19,7 +19,7 @@
       .btn-play{
         width: 50px;
         height: 48px;
-        background-color: rgba(0, 0, 0, 0.28);
+        background: rgba(0, 0, 0, 0);
         border: 0;
         &#paused{
           i{
@@ -58,8 +58,42 @@
           }
         }
       }
-      .range{
 
+      .total {
+        width: 479px;
+        background: #e5e5e5;
+        height: 5px;
+        border-radius: 2px;
+        margin: 20px 17px 20px 0;
+        .current {
+          position: absolute;
+          background:#e75735;
+          line-height:0;
+          height:5px;
+          border-radius: 2px;
+        }
+      }
+
+      .btn-fullscreen{
+        width: 48px;
+        background-color: #e75735;
+        border: 0;
+        font-size: 23px;
+        color: #FFF;
+        &#off{
+          i{
+            &:after{
+              position: absolute;
+              content: '';
+              left: 20px;
+              transform: rotate(45deg);
+              top: 20px;
+              width: 8px;
+              height: 8px;
+              background-color: #e75735;
+            }
+          }
+        }
       }
     }
   }
