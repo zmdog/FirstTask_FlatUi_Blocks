@@ -1,20 +1,14 @@
 .block_video{
   display: flex;
-  .video{
+  .video-controls{
     position: relative;
-    height:335px;
-    width:594px;
-    video{
-      height: inherit;
-      width:inherit;
-    }
-    .video-controls{
+    .controls{
       position: absolute;
       display: flex;
       bottom: 0;
-      left: 0;
-      height:48px;
-      width:100%;
+      opacity: 0;
+      z-index: 5;
+      transition: 0.5s;
       background-color: rgba(0, 0, 0, 0.28);
       .btn-play{
         width: 50px;
@@ -95,6 +89,16 @@
           }
         }
       }
+    }
+  }
+  .video{
+    position: relative;
+    height:335px;
+    width:594px;
+    video{
+      height: inherit;
+      width:inherit;
+      background: #000000;
     }
   }
 }

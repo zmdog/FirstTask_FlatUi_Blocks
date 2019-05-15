@@ -925,27 +925,22 @@
 
 .block_video {
   display: flex; }
-  .block_video .video {
-    position: relative;
-    height: 335px;
-    width: 594px; }
-    .block_video .video video {
-      height: inherit;
-      width: inherit; }
-    .block_video .video .video-controls {
+  .block_video .video-controls {
+    position: relative; }
+    .block_video .video-controls .controls {
       position: absolute;
       display: flex;
       bottom: 0;
-      left: 0;
-      height: 48px;
-      width: 100%;
+      opacity: 0;
+      z-index: 5;
+      transition: 0.5s;
       background-color: rgba(0, 0, 0, 0.28); }
-      .block_video .video .video-controls .btn-play {
+      .block_video .video-controls .controls .btn-play {
         width: 50px;
         height: 48px;
         background: rgba(0, 0, 0, 0);
         border: 0; }
-        .block_video .video .video-controls .btn-play#paused i:after {
+        .block_video .video-controls .controls .btn-play#paused i:after {
           top: 13px;
           left: 27px;
           background-color: white;
@@ -954,7 +949,7 @@
           position: absolute;
           content: '';
           transition: 0.5s; }
-        .block_video .video .video-controls .btn-play#paused i:before {
+        .block_video .video-controls .controls .btn-play#paused i:before {
           top: 13px;
           left: 20px;
           background-color: white;
@@ -963,32 +958,32 @@
           position: absolute;
           content: '';
           transition: 0.5s; }
-        .block_video .video .video-controls .btn-play#unpaused i:after {
+        .block_video .video-controls .controls .btn-play#unpaused i:after {
           top: 13px;
           border: 10px solid transparent;
           border-left: 16px solid white;
           left: 20px;
           position: absolute;
           content: ''; }
-      .block_video .video .video-controls .total {
+      .block_video .video-controls .controls .total {
         width: 479px;
         background: #e5e5e5;
         height: 5px;
         border-radius: 2px;
         margin: 20px 17px 20px 0; }
-        .block_video .video .video-controls .total .current {
+        .block_video .video-controls .controls .total .current {
           position: absolute;
           background: #e75735;
           line-height: 0;
           height: 5px;
           border-radius: 2px; }
-      .block_video .video .video-controls .btn-fullscreen {
+      .block_video .video-controls .controls .btn-fullscreen {
         width: 48px;
         background-color: #e75735;
         border: 0;
         font-size: 23px;
         color: #FFF; }
-        .block_video .video .video-controls .btn-fullscreen#off i:after {
+        .block_video .video-controls .controls .btn-fullscreen#off i:after {
           position: absolute;
           content: '';
           left: 20px;
@@ -997,6 +992,14 @@
           width: 8px;
           height: 8px;
           background-color: #e75735; }
+  .block_video .video {
+    position: relative;
+    height: 335px;
+    width: 594px; }
+    .block_video .video video {
+      height: inherit;
+      width: inherit;
+      background: #000000; }
 
 button {
   outline: 0;

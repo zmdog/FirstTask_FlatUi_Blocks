@@ -7,12 +7,14 @@ mixin block_video(src, vsrc)
                frameborder="0"
                allowfullscreen
                )
-        .video
-            video(src='../../../../dist/video/'+vsrc+'.mp4' class='myvideo')
-            .video-controls
+
+        .video-controls
+            .controls
                 button(class='btn-play' id='unpaused')
                     i
                 span(class='total')
                     span(class='current')
                 button(class='btn-fullscreen' id='off')
                     i(class="fa fa-arrows-alt" aria-hidden="true")
+            .video
+                video(src='../../../../dist/video/'+vsrc+'.mp4' poster='../../../../dist/video/Spiderman.png')
