@@ -2,17 +2,62 @@
   display: flex;
   .video-controls{
     position: relative;
+    background: black;
+
+    .info{
+      position: absolute;
+      z-index: 0;
+      opacity: 0;
+      color: #FFF;
+      margin-top: 34px;
+      margin-left: 40px;
+      transition: 0.5s;
+      .settings-info{
+        margin: 0;
+        padding: 0;
+      }
+      #name{
+        @extend .settings-info;
+        font-family: "Lato Light", sans-serif;
+        font-size: 36px;
+        margin-bottom: 11px;
+      }
+      #from{
+        @extend .settings-info;
+        font-family: "Lato Black", sans-serif;
+        font-size: 12.5px;
+        margin-bottom: 24px;
+      }
+      a{
+        @extend .settings-info;
+        font-family: 'Lato Regular', sans-serif;
+        font-size: 18px;
+        text-decoration: none;
+        &:visited{
+          color: #FFF;
+        }
+      }
+      &:hover .info{
+        z-index: 5;
+        opacity: 1;
+      }
+    }
+
     .controls{
       position: absolute;
       display: flex;
+      width: 100%;
+      height: 48px;
       bottom: 0;
       opacity: 0;
       z-index: 5;
       transition: 0.5s;
       background-color: rgba(0, 0, 0, 0.28);
       .btn-play{
+        position: absolute;
+        left: 0;
         width: 50px;
-        height: 48px;
+        height: 100%;
         background: rgba(0, 0, 0, 0);
         border: 0;
         &#paused{
@@ -54,11 +99,11 @@
       }
 
       .total {
-        width: 479px;
+        width: 100%;
         background: #e5e5e5;
         height: 5px;
         border-radius: 2px;
-        margin: 20px 17px 20px 0;
+        margin: 20px 70px 20px 50px;
         .current {
           position: absolute;
           background:#e75735;
@@ -69,7 +114,10 @@
       }
 
       .btn-fullscreen{
+        position: absolute;
+        right: 0;
         width: 48px;
+        height: 100%;
         background-color: #e75735;
         border: 0;
         font-size: 23px;
@@ -90,15 +138,15 @@
         }
       }
     }
-  }
-  .video{
-    position: relative;
-    height:335px;
-    width:594px;
-    video{
-      height: inherit;
-      width:inherit;
-      background: #000000;
+
+    .video{
+      position: relative;
+      height:335px;
+      width:594px;
+      video{
+        height: inherit;
+        width:inherit;
+      }
     }
   }
 }

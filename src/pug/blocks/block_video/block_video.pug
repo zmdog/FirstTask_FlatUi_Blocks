@@ -1,4 +1,4 @@
-mixin block_video(src, vsrc)
+mixin block_video(src, vsrc, name, link, from)
 
     .block_video
         iframe(src='https://player.vimeo.com/video/'+src
@@ -9,6 +9,10 @@ mixin block_video(src, vsrc)
                )
 
         .video-controls
+            .info
+                p(id='name')=name
+                p(id='from')='from ' + from
+                a(href=link)=link
             .controls
                 button(class='btn-play' id='unpaused')
                     i

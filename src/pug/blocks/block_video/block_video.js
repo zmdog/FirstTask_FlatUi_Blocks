@@ -24,9 +24,11 @@ $(document).ready(()=>{
 
     //Soft Controls
     $(block_video).hover(()=>{
-        $('.video-controls').children('.controls').css({'opacity':'1'})
+        $(block_video).children('.controls').css({'opacity':'1'});
+        $(block_video).children('.info').css({'opacity':'1', 'z-index':'5'});
     },()=>{
-        $('.video-controls').children('.controls').css({'opacity':'0'})
+        $(block_video).children('.controls').css({'opacity':'0'});
+        $(block_video).children('.info').css({'opacity':'0', 'z-index':'0'});
     });
 
     //Whole Process
@@ -37,18 +39,15 @@ $(document).ready(()=>{
 
     //Current Process
     controls.total.click(function(e) {
-        let x = e.pageX;
+        let width = $(controls.total).css('width'),
+            position = e.offsetX,
+            nowWidth = (position*100)/(+width.split('px')[0]),
+            duration = video.duration;
 
-        if($(controls.total).css('width') === '479px'){
-            let z = (x - 650)/$(this).width();
-            video.currentTime = z * video.duration;
-        }else{
-            let z = (x - 112)/$(this).width();
-            video.currentTime = z * video.duration;
-        }
+        video.currentTime = duration*nowWidth/100
     });
 
-    //Fullscreen (починить фулскрин)
+    //Fullscreen
     controls.btn_fullscreen.click(function(){
         if(controls.fulscreen){
             controls.fulscreen = false;
@@ -63,8 +62,10 @@ $(document).ready(()=>{
                                 'left':'0',
                                 'transform':'translate(0, 0)'});
 
+            let progress = Math.floor(video.currentTime) / Math.floor(video.duration);
+            controls.progress[0].style.width = Math.floor(progress * controls.total.width()) + "px";
+
             $(video).css({'width':'inherit', 'height':'100%'});
-            $(controls.total).css({'width':'479px'});
         }else{
             controls.fulscreen = true;
             $(this).attr('id', 'on');
@@ -75,11 +76,13 @@ $(document).ready(()=>{
                                 'top':'50%',
                                 'left':'50%',
                                 'transform':'translate(-50%, -50%)',
-                                'width':'90%',
-                                'height':'90%'});
+                                'width':'100%',
+                                'height':'100%'});
+
+            let progress = Math.floor(video.currentTime) / Math.floor(video.duration);
+            controls.progress[0].style.width = Math.floor(progress * controls.total.width()) + "px";
 
             $(block_video).children('.video').css({'width':'100%','height':'100%'});
-            $(controls.total).css({'width':'1001px'});
         }
     });
 
