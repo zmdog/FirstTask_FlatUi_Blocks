@@ -3,8 +3,7 @@ $arrow_left: url("../../../../dist/img/Arrow_Left.png");
 $arrow_right: url("../../../../dist/img/Arrow_Right.png");
 @import "../block_standart_button/block_standart_button.scss";
 @import "../block_arrow_button/block_arrow_button.scss";
-@import "../block_pie_chart/block_pie_chart.scss";
-@import "../block_percentage/block_percentage.scss";
+@import "../block_percentage-pie_chart/block_percentage-pie_chart.scss";
 @import "../block_slider/block_slider.scss";
 @import "../block_stage/block_stage.scss";
 @import "../block_form/block_form.scss";
@@ -18,6 +17,13 @@ $arrow_right: url("../../../../dist/img/Arrow_Right.png");
 @import "../block_calendar/block_calendar.scss";
 @import "../block_messaging/block_messaging.scss";
 @import "../block_video/block_video.scss";
+
+.content_block{
+  width: 594px;
+  position: absolute;
+  margin-right: 50%;
+  left: 297px;
+}
 button{
   .pulse{
     position: absolute;
@@ -38,4 +44,9 @@ button{
   &:hover{
     cursor: $point_cursor;
   }
+}
+.title{
+  font-family: 'Lato Black', sans-serif;
+  font-size: 18px;
+  text-align: center;
 }

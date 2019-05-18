@@ -5,7 +5,7 @@
     border: 0;
     border-radius: 3px;
     height: 5px;
-    width: 300px;
+    width: 260px;
     margin-left: 11px;
   }
 
@@ -15,6 +15,7 @@
   }
 
   &#orange{
+    margin-right: 61px;
     @include slider();
     .ui-slider-handle{
       background-color: #e75735;
@@ -36,6 +37,7 @@
       font-size: 13px;
       color: #ffffff;
       text-align: center;
+      transition: 0.5s;
       &:after{
         content: "";
         position: absolute;
@@ -71,7 +73,7 @@
       position: absolute;
       left: -3.3%;
       justify-content: space-between;
-      width: 320px;
+      width: 274px;
       top: 5px;
       li{
         width: 20px;
@@ -81,4 +83,8 @@
     background-color: #e5e5e5;
   }
 
+}
+.content_sliders{
+  display: flex;
+  justify-content: center;
 }

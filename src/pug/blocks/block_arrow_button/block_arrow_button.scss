@@ -1,4 +1,12 @@
-.block_arrow_buttons{
+.block_arrow_buttons-content{
+  display: flex;
+  justify-content: center;
+  .block_arrow_button{
+    margin-right: 24px;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
   .arrow_button{
     width: 50px;
     height: 50px;
@@ -139,5 +147,15 @@
     }
 
   }
+
+  //.ab-orange{
+  //  display: flex;
+  //}
+  //.ab-default{
+  //  display: flex;
+  //}
+  //.ab-disabled{
+  //  display: flex;
+  //}
 
 }

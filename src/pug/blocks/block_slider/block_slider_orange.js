@@ -23,5 +23,5 @@ $(document).ready(()=>{
             });
 
         labelOrange.text(sliderOrange.slider( "value" ));
-        labelOrange.css('left', '-5.4%');
+        labelOrange.css('left', '-6.5%');
 });

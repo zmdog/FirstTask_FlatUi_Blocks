@@ -1,0 +1,25 @@
+.content_percentages-pie_charts{
+  display: flex;
+  justify-content: center;
+  .block_percentage{
+    position: relative;
+    margin-right: 30px;
+    .percent{
+      width: 95px;
+      position: absolute;
+      top: 26px;
+      text-align: center;
+      font-size: 40px;
+      color: #9d9d9d;
+      font-family: "Lato";
+      font-weight: 300;
+      letter-spacing: -3px
+    }
+
+  }
+
+  #pie, .block_pie_chart{
+    width: 95px;
+    height: 95px;
+  }
+}

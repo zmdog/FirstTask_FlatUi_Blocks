@@ -3,8 +3,8 @@ import "../pug/index.pug"
 import "../pug/blocks/block_content/content.scss"
 
 import "../pug/blocks/event_pulse/event_pulse.js"
-import "../pug/blocks/block_pie_chart/block_pie_chart.js"
-import "../pug/blocks/block_percentage/block_percentage.js"
+import "../pug/blocks/block_percentage-pie_chart/block_pie_chart.js"
+import "../pug/blocks/block_percentage-pie_chart/block_percentage.js"
 import "../pug/blocks/block_slider/block_slider_orange.js"
 import "../pug/blocks/block_slider/block_slider_default.js"
 

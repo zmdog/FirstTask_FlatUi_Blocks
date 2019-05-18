@@ -1,61 +1,69 @@
-.block_tick_box{
-  position: relative;
-  height: 23px;
-  width: 23px;
-  cursor: $point_cursor;
+.content_tick_boxes{
+  display: flex;
+  justify-content: center;
 
-  &#ON{
-    background-color: #4eb7a8;
-    border-radius: 50%;
-    transition: 1s;
-    &:after{
-      position: absolute;
-      content: "";
-      width: 12px;
-      height: 3px;
-      transform: rotate(-45deg);
-      background-color: #FFF;
-      right: 4px;
-      top: 10px;
+  .block_tick_box{
+    position: relative;
+    height: 23px;
+    width: 23px;
+    cursor: $point_cursor;
+
+    &#ON{
+      background-color: #4eb7a8;
+      border-radius: 50%;
       transition: 1s;
+      &:after{
+        position: absolute;
+        content: "";
+        width: 12px;
+        height: 3px;
+        transform: rotate(-45deg);
+        background-color: #FFF;
+        right: 4px;
+        top: 10px;
+        transition: 1s;
+      }
+      &:before{
+        position: absolute;
+        content: "";
+        width: 5px;
+        height: 3px;
+        transform: rotate(45deg);
+        background-color: #FFF;
+        left: 5px;
+        top: 11px;
+        transition: 1s;
+      }
     }
-    &:before{
-      position: absolute;
-      content: "";
-      width: 5px;
-      height: 3px;
-      transform: rotate(45deg);
-      background-color: #FFF;
-      left: 5px;
-      top: 11px;
+    &#OFF{
+      background-color: #e5e5e5;
+      border-radius: 50%;
       transition: 1s;
+      &:after{
+        position: absolute;
+        content: "";
+        width: 12px;
+        height: 3px;
+        transform: rotate(-45deg);
+        background-color: #c0c0c0;
+        right: 4px;
+        top: 10px;
+        transition: 0.5s;
+      }
+      &:before{
+        position: absolute;
+        content: "";
+        width: 5px;
+        height: 3px;
+        transform: rotate(45deg);
+        background-color: #c0c0c0;
+        left: 5px;
+        top: 11px;
+        transition: 0.5s;
+      }
     }
-  }
-  &#OFF{
-    background-color: #e5e5e5;
-    border-radius: 50%;
-    transition: 1s;
-    &:after{
-      position: absolute;
-      content: "";
-      width: 12px;
-      height: 3px;
-      transform: rotate(-45deg);
-      background-color: #c0c0c0;
-      right: 4px;
-      top: 10px;
-      transition: 0.5s;
-  }
-    &:before{
-      position: absolute;
-      content: "";
-      width: 5px;
-      height: 3px;
-      transform: rotate(45deg);
-      background-color: #c0c0c0;
-      left: 5px;
-      top: 11px;
-      transition: 0.5s;
+    &:first-child{
+      margin-right: 15px;
     }
   }
 }

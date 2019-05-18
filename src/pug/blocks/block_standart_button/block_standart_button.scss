@@ -1,3 +1,8 @@
+
+.block_basic_buttons-content{
+  display: flex;
+  justify-content: center;
+}
 .basic_button{
   border-radius: 2px;
 }
@@ -57,4 +62,34 @@
   @extend .basic_button;
   @extend .basic_default;
   @extend .small
+}
+
+.bb-ld{
+  margin-right: 23px;
+  div{
+    margin-top: 30px;
+    &:first-child{
+      margin-top: 10px;
+    }
+  }
+}
+.bb-rd{
+  margin-right: 23px;
+  div{
+    margin-bottom: 20px;
+  }
+}
+.bb-lo{
+  margin-right: 23px;
+  div{
+    margin-bottom: 20px;
+  }
+}
+.bb-ro{
+  div{
+    margin-top: 30px;
+    &:first-child{
+      margin-top: 10px;
+    }
+  }
 }
