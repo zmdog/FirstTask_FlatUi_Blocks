@@ -7,9 +7,9 @@ include ../block_stage/block_stage
 include ../block_form/block_form
 include ../block_toggle_tick_box/block_toggle
 include ../block_toggle_tick_box/block_tick_box
-include ../block_search/block_search
-include ../block_drop_down/block_drop_down
-include ../block_user-profile/block_user-profile
+include ../blocks_sdp-up/block_search/block_search
+include ../blocks_sdp-up/block_drop_down/block_drop_down
+include ../blocks_sdp-up/block_user-profile/block_user-profile
 include ../block_news-events/block_news-events
 include ../block_location/block_location
 include ../block_calendar/block_calendar
@@ -77,15 +77,16 @@ include ../block_video/block_video
                     .content_tick_boxes
                         +block_tick_box('ON')
                         +block_tick_box('OFF')
-    .block_search_drop-down
-        p(class='title')='SEARCH / DROP DOWN'
-        +block_search('Search', 'true')
-        +block_search('Search', 'false')
-        +block_drop_down(['This is option 1','This is option 2','This is option 3','This is option 4'])
-    .block_user_profile
-        p(class='title')='USER PROFILE'
-        +block_user-profile("person_1.png", 'John Smith', 'UX  DESIGNER')
-        +block_user-profile("person_2.png", 'Sarah Brown', 'DEVELOPER')
+    .blocks_sdp-up
+        .block_search_drop-down
+            p(class='title')='SEARCH / DROP DOWN'
+            +block_search('Search', 'true')
+            +block_search('Search', 'false')
+            +block_drop_down(['This is option 1','This is option 2','This is option 3','This is option 4'])
+        .block_user_profile
+            p(class='title')='USER PROFILE'
+            +block_user-profile("person_1.png", 'John Smith', 'UX  DESIGNER')
+            +block_user-profile("person_2.png", 'Sarah Brown', 'DEVELOPER')
     .block_news-events
         p(class='title')='NEWS & EVENTS'
         +block_news('bicycle.png', 'It’s all going downhill', '24  AUGUST  2013',

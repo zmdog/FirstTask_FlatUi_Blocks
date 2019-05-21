@@ -14,7 +14,7 @@
       border-radius: 2px;
     }
     .form_input{
-      font-family: "Source Sans Pro";
+      font-family: "Source Sans Pro Regular", sans-serif;
       outline: none;
       font-size: 14px;
       height: 26px;
@@ -27,7 +27,7 @@
     .form_label{
       display: none;
       position: relative;
-      font-family: "Lato";
+      font-family: "Lato Black", sans-serif;
       font-size: 10px;
       line-height: 28px;
       text-align: center;
@@ -115,7 +115,7 @@
 
     textarea{
       padding: 13px;
-      font-family: "Source Sans Pro";
+      font-family: "Source Sans Pro Regular", sans-serif;
       outline: none;
       font-size: 14px;
       resize: none;

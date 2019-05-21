@@ -2,8 +2,8 @@ mixin block_user-profile(img, name, prof)
     .block_user-profile
         .user_img
             img(src="./img/"+img)
-        .active_zone
-            div(class='user_block' id='invisible')
+        .active_zone(id='inactive')
+            .user_block
                 .user_info
                     p(class='user_name')=name
                     p(class='user_prof')=prof

@@ -24,7 +24,6 @@
       width: 163px;
       right: 0;
       height: 94px;
-      background-color: #e5e5e5;
       border-radius: 5px;
       &:after{
         left: -4px;
@@ -32,7 +31,6 @@
         margin-top: -5px;
         content: '';
         position: absolute;
-        background-color: #e5e5e5;
         width: 10px;
         height: 10px;
         transform: rotate(45deg);
@@ -79,6 +77,26 @@
       }
 
 
+    }
+    &#active{
+      color: #757575;
+      .user_block{
+        background-color: #e5e5e5;
+        &:after{
+          background-color: #e5e5e5;
+        }
+      }
+    }
+    &#inactive{
+      .user_block{
+        background-color: #4eb7a8;
+        .user_name{color: #FFF}
+        .user_prof{color: #FFF}
+        i{color: #FFF}
+        &:after{
+          background-color: #4eb7a8;
+        }
+      }
     }
   }
 }
