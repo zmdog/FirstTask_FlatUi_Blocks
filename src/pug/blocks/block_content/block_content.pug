@@ -12,39 +12,44 @@ include ../blocks_sdp-up/block_drop_down/block_drop_down
 include ../blocks_sdp-up/block_user-profile/block_user-profile
 include ../block_news-events/block_news-events
 include ../block_location/block_location
-include ../block_calendar/block_calendar
-include ../block_messaging/block_messaging
+include ../blocks_calendars-messagings/block_calendar/block_calendar
+include ../blocks_calendars-messagings/block_messaging/block_messaging
 include ../block_video/block_video
 
 .content_block
     .block_basic_buttons
         p(class='title')='STANDARD  BUTTONS'
         .block_basic_buttons-content
-            .bb-ld
-                +block_basic_button("small", "SMALL", "default")
-                +block_basic_button("small", "SMALL", "default")
-                +block_basic_button("small", "SMALL", "default")
-            .bb-rd
-                +block_basic_button("medium", "MEDIUM", "default")
-                +block_basic_button("medium", "MEDIUM", "default")
-                +block_basic_button("medium", "MEDIUM", "default")
-            .bb-lo
-                +block_basic_button("medium", "MEDIUM","orange")
-                +block_basic_button("medium", "MEDIUM","orange")
-                +block_basic_button("medium", "MEDIUM","orange")
-            .bb-ro
-                +block_basic_button("small", "SMALL", "orange")
-                +block_basic_button("small", "SMALL", "orange")
-                +block_basic_button("small", "SMALL", "orange")
+            .button-default
+                .bb-ld
+                    +block_basic_button("small", "SMALL", "default")
+                    +block_basic_button("small", "SMALL", "default")
+                    +block_basic_button("small", "SMALL", "default")
+                .bb-rd
+                    +block_basic_button("medium", "MEDIUM", "default")
+                    +block_basic_button("medium", "MEDIUM", "default")
+                    +block_basic_button("medium", "MEDIUM", "default")
+            .button-orange
+                .bb-lo
+                    +block_basic_button("medium", "MEDIUM","orange")
+                    +block_basic_button("medium", "MEDIUM","orange")
+                    +block_basic_button("medium", "MEDIUM","orange")
+                .bb-ro
+                    +block_basic_button("small", "SMALL", "orange")
+                    +block_basic_button("small", "SMALL", "orange")
+                    +block_basic_button("small", "SMALL", "orange")
     .block_arrow_buttons
         p(class='title')='ARROW  BUTTONS'
         .block_arrow_buttons-content
-            +block_arrow_button("active","left", "orange")
-            +block_arrow_button("active","right", "orange")
-            +block_arrow_button("passive", "left")
-            +block_arrow_button("passive", "right")
-            +block_arrow_button("active","left", "default")
-            +block_arrow_button("active","right", "default")
+            .arrow_buttons-orange
+                +block_arrow_button("active","left", "orange")
+                +block_arrow_button("active","right", "orange")
+            .arrow_buttons-passive
+                +block_arrow_button("passive", "left")
+                +block_arrow_button("passive", "right")
+            .arrow_buttons-default
+                +block_arrow_button("active","left", "default")
+                +block_arrow_button("active","right", "default")
     .block_percentages-pie_charts
         p(class='title')='PERCENTAGES / PIE CHART'
         .content_percentages-pie_charts
@@ -89,22 +94,27 @@ include ../block_video/block_video
             +block_user-profile("person_2.png", 'Sarah Brown', 'DEVELOPER')
     .block_news-events
         p(class='title')='NEWS & EVENTS'
-        +block_news('bicycle.png', 'It’s all going downhill', '24  AUGUST  2013',
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ' +
-                    'Sed condimentum aliquet venenatis. Etiam a nisi nunc, a tincidunt eros.')
-        +block_event('city.png', 'THIS IS THE TITLE', '24', ' Aug', 'Lorem ipsum dolor sit amet, ' +
-                     'consectetur adipiscing elit.')
+        .content_news-events
+            +block_news('bicycle.png', 'It’s all going downhill', '24  AUGUST  2013',
+                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ' +
+                        'Sed condimentum aliquet venenatis. Etiam a nisi nunc, a tincidunt eros.')
+            +block_event('city.png', 'THIS IS THE TITLE', '24', 'Aug', 'Lorem ipsum dolor sit amet, ' +
+                         'consectetur adipiscing elit.')
     .block_locations
         p(class='title')='LOCATION'
-        +block_location('1259  CALIFORNIA ST San Francisco, CA', 'Meet us!')
-    .block_calendars
-        p(class='title')='CALENDAR'
-        +block_calendar()
-    .block_messagings
-        p(class='title')='MESSAGING'
-        +block_messaging("person_2.png", "Sarah Brown","Hey! So are we cool to meet at the art gallery? Say 8pm",
-                         "Yeah that sounds great. See you then.")
+        .content_locations
+            +block_location('1259  CALIFORNIA ST San Francisco, CA', 'Meet us!')
+
+    .blocks_calendars-messaging
+        .block_calendars
+            p(class='title')='CALENDAR'
+            +block_calendar()
+        .block_messagings
+            p(class='title')='MESSAGING'
+            +block_messaging("person_2.png", "Sarah Brown","Hey! So are we cool to meet at the art gallery? Say 8pm",
+                             "Yeah that sounds great. See you then.")
     .block_videos
         p(class='title')='VIDEO'
-        +block_video('62980495', 'Nature', 'New Zealand Landscapes Timelapse', 'http://vimeo.com/62980495',
-                     'Bevan Percival ')
+        .content_videos
+            +block_video('62980495', 'Nature', 'New Zealand Landscapes Timelapse', 'http://vimeo.com/62980495',
+                         'Bevan Percival ')

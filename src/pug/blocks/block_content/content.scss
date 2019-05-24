@@ -10,42 +10,24 @@ $arrow_right: url("../../../../dist/img/Arrow_Right.png");
 @import "../block_toggle_tick_box/block_toggle.scss";
 @import "../block_toggle_tick_box/block_tick_box.scss";
 @import "../blocks_sdp-up/blocks_sdp-up";
+@import "../blocks_calendars-messagings/blocks_calendars-messagings";
 @import "../block_news-events/block_news-events.scss";
 @import "../block_location/block_location.scss";
-@import "../block_calendar/block_calendar.scss";
-@import "../block_messaging/block_messaging.scss";
 @import "../block_video/block_video.scss";
 @import "../../fonts/font-Lato.scss";
 
 .content_block{
-  width: 594px;
-  position: absolute;
-  margin-right: 50%;
-  left: 297px;
-}
-button{
-  .pulse{
-    position: absolute;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.51);
-    animation: pulse 0.7s ease-out;
-    transform: scale(0);
-  }
-  @keyframes pulse {
-    to{
-      transform: scale(1);
-      opacity: 0;
-    }
-  }
-  outline: 0;
-  overflow: hidden;
+  width: 84.85%;
   position: relative;
-  &:hover{
-    cursor: $point_cursor;
+  margin-left: 7.57%;
+  .content_block-content{
+    display: flex;
+    justify-content: center;
   }
 }
 .title{
   font-family: 'Lato Black', sans-serif;
   font-size: 18px;
+  margin: 0;
   text-align: center;
 }

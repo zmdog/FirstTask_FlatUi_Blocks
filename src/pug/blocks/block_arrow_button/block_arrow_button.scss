@@ -1,11 +1,14 @@
 .block_arrow_buttons-content{
   display: flex;
   justify-content: center;
+  margin-top: 36px;
+  margin-bottom: 48px;
+  @media (max-width: 780px) {
+    flex-direction: column;
+    align-items: center;
+  }
   .block_arrow_button{
     margin-right: 24px;
-    &:last-child{
-      margin-right: 0;
-    }
   }
   .arrow_button{
     width: 50px;
@@ -13,7 +16,21 @@
     background-color: #FFFFFF;
     border-radius: 50%;
   }
+  .arrow_button-setting{
+    display: flex;
+    .block_arrow_button{
+      margin-right: 24px;
+    }
+    @media (max-width: 780px) {
+     display: flex;
+      margin-bottom: 10px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+  }
   .arrow_default{
+    @extend .arrow_button-setting;
     border: #4eb7a8 solid 3px;
     &:hover{
       border: 0;
@@ -37,6 +54,7 @@
     }
   }
   .arrow_orange{
+    @extend .arrow_button-setting;
     border: #e75735 solid 3px;
     &:hover{
       border: 0;
@@ -104,6 +122,18 @@
     @extend .right
   }
 
+  .arrow_buttons-orange{@extend .arrow_button-setting}
+  .arrow_buttons-passive{@extend .arrow_button-setting}
+  .arrow_buttons-default{
+    .block_arrow_button{
+      &:last-child{margin-right: 0;}
+    }
+    @media (max-width: 780px) {
+      &:last-child{margin-right: 24px;}
+    }
+    @extend .arrow_button-setting
+  }
+
   .button_left_passive{
     background-color: #e5e5e5;
     border: 0;
@@ -147,15 +177,5 @@
     }
 
   }
-
-  //.ab-orange{
-  //  display: flex;
-  //}
-  //.ab-default{
-  //  display: flex;
-  //}
-  //.ab-disabled{
-  //  display: flex;
-  //}
 
 }

@@ -2,6 +2,50 @@
 .block_basic_buttons-content{
   display: flex;
   justify-content: center;
+  margin-top: 73px;
+  margin-bottom: 56px;
+  @media (max-width: 780px) {
+    .button-default{
+      flex-direction: column;
+      align-items: center;
+      .bb-ld{
+        order: 1;
+        margin-right: 0;
+      }
+    }
+    .button-orange{
+      flex-direction: column;
+      align-items: center;
+      margin-right: 0;
+      .bb-ro{
+        order: 1;
+      }
+      .bb-lo{
+        margin-right: 0;
+      }
+    }
+  }
+}
+button{
+  .pulse{
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.51);
+    animation: pulse 0.7s ease-out;
+    transform: scale(0);
+  }
+  @keyframes pulse {
+    to{
+      transform: scale(1);
+      opacity: 0;
+    }
+  }
+  outline: 0;
+  overflow: hidden;
+  position: relative;
+  &:hover{
+    cursor: $point_cursor;
+  }
 }
 .basic_button{
   border-radius: 2px;
@@ -63,33 +107,40 @@
   @extend .basic_default;
   @extend .small
 }
-
-.bb-ld{
+.button-default{
+  display: flex;
+  justify-content: center;
   margin-right: 23px;
-  div{
-    margin-top: 30px;
-    &:first-child{
-      margin-top: 10px;
+  .bb-ld{
+    margin-right: 26px;
+    div{
+      margin-top: 30px;
+      &:first-child{
+        margin-top: 10px;
+      }
+    }
+  }
+  .bb-rd{
+    div{
+      margin-bottom: 20px;
     }
   }
 }
-.bb-rd{
-  margin-right: 23px;
-  div{
-    margin-bottom: 20px;
+.button-orange{
+  display: flex;
+  justify-content: center;
+  .bb-lo{
+    margin-right: 26px;
+    div{
+      margin-bottom: 20px;
+    }
   }
-}
-.bb-lo{
-  margin-right: 23px;
-  div{
-    margin-bottom: 20px;
-  }
-}
-.bb-ro{
-  div{
-    margin-top: 30px;
-    &:first-child{
-      margin-top: 10px;
+  .bb-ro{
+    div{
+      margin-top: 30px;
+      &:first-child{
+        margin-top: 10px;
+      }
     }
   }
 }

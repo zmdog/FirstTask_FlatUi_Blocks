@@ -6,22 +6,27 @@
     height: 30px;
     width: 594px;
     position: relative;
+    @media (max-width: 780px) {
+      width: 100%;
+    }
     label{
       position: absolute;
       top: 13px;
-      width: 592px;
+      width: 99.8%;
       height: 5px;
       background: linear-gradient(to right, #e75735 0%, #e5e5e5 0%);
       left: 1px;
+
     }
     ul{
-      width: 594px;
+      width: 100%;
       position: absolute;
       display: flex;
       list-style-type: none;
       justify-content: space-between;
       padding: 0;
       top: -15.5px;
+
     }
     li{
       .pulse{

@@ -1,5 +1,6 @@
-.block_news-events{
+.content_news-events{
   display: flex;
+  justify-content: center;
 
   .settings_news-events{
     display: flex;
@@ -106,7 +107,7 @@
           margin-bottom: 24px;
           button{
             font-size: 10px;
-            font-family: 'Lato Black';
+            font-family: 'Lato Black', sans-serif;
             padding: 0 11px 0 11px;
             border-radius: 3px;
             border: 0;
