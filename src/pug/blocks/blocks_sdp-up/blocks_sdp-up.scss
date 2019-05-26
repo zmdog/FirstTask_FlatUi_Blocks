@@ -1,7 +1,14 @@
 .blocks_sdp-up{
   @import "block_search/block_search";
-  @import "block_user-profile/block_user-profile";
+  @import "block_user-profile/block_user-profiles";
   @import "block_drop_down/block_drop_down";
   display: flex;
   justify-content: center;
+  @media (max-width: 780px) {
+    flex-direction: column;
+    align-items: center;
+    .block_search_drop-down{
+      margin-right: 0;
+    }
+  }
 }

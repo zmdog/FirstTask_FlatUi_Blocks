@@ -56,16 +56,16 @@ $(document).ready(()=>{
 
             $(block_video).css({
                                 'position':'relative',
-                                'width':'594px',
-                                'height':'335px',
+                                'height':'inherit',
                                 'top':'0',
                                 'left':'0',
-                                'transform':'translate(0, 0)'});
+                                'transform':'translate(0, 0)',
+                                'margin-top':'37px'});
 
             let progress = Math.floor(video.currentTime) / Math.floor(video.duration);
             controls.progress[0].style.width = Math.floor(progress * controls.total.width()) + "px";
 
-            $(video).css({'width':'inherit', 'height':'100%'});
+            $(block_video).children('.video').css({'width':'inherit', 'height':'calc(56.25vw)'});
         }else{
             controls.fulscreen = true;
             $(this).attr('id', 'on');
@@ -77,7 +77,8 @@ $(document).ready(()=>{
                                 'left':'50%',
                                 'transform':'translate(-50%, -50%)',
                                 'width':'100%',
-                                'height':'100%'});
+                                'height':'100%',
+                                'margin-top':'0'});
 
             let progress = Math.floor(video.currentTime) / Math.floor(video.duration);
             controls.progress[0].style.width = Math.floor(progress * controls.total.width()) + "px";

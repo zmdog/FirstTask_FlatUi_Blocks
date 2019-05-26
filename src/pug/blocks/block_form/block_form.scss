@@ -1,9 +1,19 @@
 .content_form_elements{
   display: flex;
   justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 67px;
+  @media (max-width: 780px) {
+    flex-direction: column;
+    align-items: center;
+  }
   .block_form{
     height: 213px;
     width: 288px;
+    @media (max-width: 780px) {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
 
     margin-right: 9px;
     $bc: #e5e5e5;

@@ -53,10 +53,11 @@ include ../block_video/block_video
     .block_percentages-pie_charts
         p(class='title')='PERCENTAGES / PIE CHART'
         .content_percentages-pie_charts
-            +block_percentage(0)
-            +block_percentage(38)
-            +block_percentage(62)
-            +block_percentage(89)
+            .percentages-content
+                +block_percentage(0)
+                +block_percentage(38)
+                +block_percentage(62)
+                +block_percentage(89)
             +block_pie_chart(50, 30, 10, 10)
     .block_sliders
         p(class='title')='SLIDERS'
@@ -85,13 +86,15 @@ include ../block_video/block_video
     .blocks_sdp-up
         .block_search_drop-down
             p(class='title')='SEARCH / DROP DOWN'
-            +block_search('Search', 'true')
-            +block_search('Search', 'false')
-            +block_drop_down(['This is option 1','This is option 2','This is option 3','This is option 4'])
-        .block_user_profile
+            .search_drop-down-content
+                +block_search('Search', 'true')
+                +block_search('Search', 'false')
+                +block_drop_down(['This is option 1','This is option 2','This is option 3','This is option 4'])
+        .block_user-profiles
             p(class='title')='USER PROFILE'
-            +block_user-profile("person_1.png", 'John Smith', 'UX  DESIGNER')
-            +block_user-profile("person_2.png", 'Sarah Brown', 'DEVELOPER')
+            .user_profile-content
+                +block_user-profile("person_1.png", 'John Smith', 'UX  DESIGNER')
+                +block_user-profile("person_2.png", 'Sarah Brown', 'DEVELOPER')
     .block_news-events
         p(class='title')='NEWS & EVENTS'
         .content_news-events
@@ -116,5 +119,6 @@ include ../block_video/block_video
     .block_videos
         p(class='title')='VIDEO'
         .content_videos
-            +block_video('62980495', 'Nature', 'New Zealand Landscapes Timelapse', 'http://vimeo.com/62980495',
-                         'Bevan Percival ')
+            +block_video('62980495')
+            +block_videplayer('Nature', 'New Zealand Landscapes Timelapse', 'http://vimeo.com/62980495',
+            'Bevan Percival ')

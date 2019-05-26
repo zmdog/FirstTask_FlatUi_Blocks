@@ -1,4 +1,4 @@
-mixin block_video(src, vsrc, name, link, from)
+mixin block_video(src)
 
     .block_video
         iframe(src='https://player.vimeo.com/video/'+src
@@ -7,18 +7,19 @@ mixin block_video(src, vsrc, name, link, from)
                frameborder="0"
                allowfullscreen
                )
+mixin block_videplayer(vsrc, name, link, from)
 
-        .video-controls
-            .info
-                p(id='name')=name
-                p(id='from')='from ' + from
-                a(href=link)=link
-            .controls
-                button(class='btn-play' id='unpaused')
-                    i
-                span(class='total')
-                    span(class='current')
-                button(class='btn-fullscreen' id='off')
-                    i(class="fa fa-arrows-alt" aria-hidden="true")
-            .video
-                video(src='../../../../dist/video/'+vsrc+'.mp4' poster='../../../../dist/video/Spiderman.png')
+    .video-controls
+        .info
+            p(id='name')=name
+            p(id='from')='from ' + from
+            a(href=link)=link
+        .controls
+            button(class='btn-play' id='unpaused')
+                i
+            span(class='total')
+                span(class='current')
+            button(class='btn-fullscreen' id='off')
+                i(class="fa fa-arrows-alt" aria-hidden="true")
+        .video
+            video(src='../../../../dist/video/' + vsrc + '.mp4' poster='../../../../dist/video/Spiderman.png')

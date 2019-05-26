@@ -1,36 +1,41 @@
 @import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
 
-.block_search_drop-down{
-  margin-right: 37px;
-  .block_search{
-    height: 28px;
-    display: flex;
-    input{
-      font-size: 14px;
-      font-family: "Source Sans Pro Regular", sans-serif;
-      border: 0;
-      border-bottom-left-radius: 2px;
-      border-top-left-radius: 2px;
-      background-color: #e5e5e5;
-      height: 26px;
-      width: 253px;
-      outline: none;
-      transition: 0.2s;
-      padding-left: 13px;
-      padding-right: 13px;
-      &::placeholder{
-        color: #888888;
-        font-family: "Source Sans Pro Regular", sans-serif;
+  .block_search_drop-down{
+    margin-right: 37px;
+    .search_drop-down-content{
+      margin-top: 22px;
+      margin-bottom: 22px;
+      .block_search{
+        height: 28px;
+        display: flex;
+        width: 288px;
+        input{
+          font-size: 14px;
+          font-family: "Source Sans Pro Regular", sans-serif;
+          border: 0;
+          border-bottom-left-radius: 2px;
+          border-top-left-radius: 2px;
+          background-color: #e5e5e5;
+          height: 26px;
+          width: 253px;
+          outline: none;
+          transition: 0.2s;
+          padding-left: 13px;
+          padding-right: 13px;
+          &::placeholder{
+            color: #888888;
+            font-family: "Source Sans Pro Regular", sans-serif;
+          }
+        }
+        button{
+          color: #FFF;
+          border-bottom-right-radius: 2px;
+          border-top-right-radius: 2px;
+          height: 28px;
+          width: 35.21px;
+          background-color: #e75735;
+          border: 0;
+        }
       }
     }
-    button{
-      color: #FFF;
-      border-bottom-right-radius: 2px;
-      border-top-right-radius: 2px;
-      height: 28px;
-      width: 33px;
-      background-color: #e75735;
-      border: 0;
-    }
   }
-}

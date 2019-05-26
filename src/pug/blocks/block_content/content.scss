@@ -20,14 +20,10 @@ $arrow_right: url("../../../../dist/img/Arrow_Right.png");
   width: 84.85%;
   position: relative;
   margin-left: 7.57%;
-  .content_block-content{
-    display: flex;
-    justify-content: center;
+  .title{
+    font-family: 'Lato Black', sans-serif;
+    font-size: 18px;
+    margin: 0;
+    text-align: center;
   }
-}
-.title{
-  font-family: 'Lato Black', sans-serif;
-  font-size: 18px;
-  margin: 0;
-  text-align: center;
 }

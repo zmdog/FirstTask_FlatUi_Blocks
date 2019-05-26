@@ -87,4 +87,13 @@
 .content_sliders{
   display: flex;
   justify-content: center;
+  margin-bottom: 37px;
+  @media (max-width: 780px) {
+    flex-direction: column;
+    align-items: center;
+    #orange{
+      margin-right: 0;
+    }
+  }
+
 }

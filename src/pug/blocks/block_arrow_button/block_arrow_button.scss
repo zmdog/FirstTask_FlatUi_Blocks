@@ -6,6 +6,13 @@
   @media (max-width: 780px) {
     flex-direction: column;
     align-items: center;
+    .arrow_button-setting{
+      display: flex;
+      margin-bottom: 10px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
   }
   .block_arrow_button{
     margin-right: 24px;
@@ -20,13 +27,6 @@
     display: flex;
     .block_arrow_button{
       margin-right: 24px;
-    }
-    @media (max-width: 780px) {
-     display: flex;
-      margin-bottom: 10px;
-      &:last-child{
-        margin-bottom: 0;
-      }
     }
   }
   .arrow_default{
@@ -122,16 +122,46 @@
     @extend .right
   }
 
-  .arrow_buttons-orange{@extend .arrow_button-setting}
-  .arrow_buttons-passive{@extend .arrow_button-setting}
-  .arrow_buttons-default{
+  .arrow_buttons-orange{
+    margin-right: 24px;
+    @media (max-width: 780px) {
+      margin-right: 0;
+      .block_arrow_button{
+        &:last-child{margin-right: 0;}
+      }
+    }
     .block_arrow_button{
       &:last-child{margin-right: 0;}
     }
+    @extend .arrow_button-setting;
+    &:last-child{margin-right: 0;}
+  }
+
+  .arrow_buttons-passive{
+    margin-right: 24px;
     @media (max-width: 780px) {
-      &:last-child{margin-right: 24px;}
+      margin-right: 0;
+      .block_arrow_button{
+        &:last-child{margin-right: 0;}
+      }
     }
-    @extend .arrow_button-setting
+    .block_arrow_button{
+      &:last-child{margin-right: 0;}
+    }
+    @extend .arrow_button-setting;
+    &:last-child{margin-right: 0;}
+  }
+
+  .arrow_buttons-default{
+    margin-right: 24px;
+    .block_arrow_button{
+      &:last-child{margin-right: 0;}
+      @media (max-width: 780px) {
+        &:last-child{margin-right: 0;}
+      }
+    }
+    @extend .arrow_button-setting;
+    &:last-child{margin-right: 0;}
   }
 
   .button_left_passive{

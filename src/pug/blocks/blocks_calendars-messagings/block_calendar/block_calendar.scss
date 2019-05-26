@@ -1,6 +1,11 @@
 .block_calendar{
   width: 279px;
+  margin-top: 28px;
   margin-right: 27px;
+  margin-bottom: 54px;
+  @media (max-width: 780px) {
+    margin-right: 0;
+  }
   .ui-widget-content-day{
     height: 109px;
     font-size: 80px;

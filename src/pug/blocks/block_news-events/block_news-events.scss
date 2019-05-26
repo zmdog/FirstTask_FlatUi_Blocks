@@ -1,7 +1,12 @@
 .content_news-events{
   display: flex;
   justify-content: center;
-
+  margin-top: 35px;
+  margin-bottom: 50px;
+  @media (max-width: 780px) {
+    flex-direction: column;
+    align-items: center;
+  }
   .settings_news-events{
     display: flex;
     width: 288px;
@@ -58,7 +63,10 @@
         }
       }
     }
-
+    @media (max-width: 780px) {
+      margin-right: 0;
+      margin-bottom: 18px;
+    }
   }
 
   .block_event{

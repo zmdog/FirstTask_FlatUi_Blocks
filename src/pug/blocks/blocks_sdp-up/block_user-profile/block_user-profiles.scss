@@ -1,0 +1,108 @@
+.block_user-profiles{
+  .user_profile-content{
+    margin-top: 32px;
+    margin-bottom: 95px;
+    .block_user-profile{
+      display:flex;
+      height: 94px;
+      width: 268px;
+      font-family: Regular Lato, sans-serif;
+
+      .user_img{
+        border-radius: 50%;
+        background-color: #e5e5e5;
+        img{
+          margin: 5px;
+          width: 84px;
+          height: 84px;
+        }
+      }
+      .active_zone{
+        display: flex;
+        position: relative;
+        transition: 0.5s;
+        overflow: hidden;
+        width: 0;
+        .user_block{
+          position: absolute;
+          width: 163px;
+          right: 0;
+          height: 94px;
+          border-radius: 5px;
+          &:after{
+            left: -4px;
+            top: 50%;
+            margin-top: -5px;
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            transform: rotate(45deg);
+          }
+
+          .user_info{
+            margin-top: 13px;
+            margin-bottom: 14px;
+            p{
+              text-align: center;
+              margin: 0
+            }
+            .user_name{
+              color: #e75735;
+              margin-bottom: 8px;
+              line-height: 14px;
+              font-size: 18px;
+            }
+            .user_prof{
+              line-height: 8px;
+              font-size: 11px;
+            }
+          }
+
+          .social_icons{
+            display: flex;
+            justify-content: center;
+            button{
+              &:nth-last-child(2){
+                margin-left: 10px;
+                margin-right: 10px;
+              }
+              border: 0;
+              box-shadow: none;
+              background-color: rgba(0, 0, 0, 0);
+            }
+            i{
+              &:hover{
+                color: #e75735;
+              }
+              color: #757575;
+              font-size: 21px;
+            }
+          }
+
+
+        }
+        &#active{
+          color: #757575;
+          .user_block{
+            background-color: #e5e5e5;
+            &:after{
+              background-color: #e5e5e5;
+            }
+          }
+        }
+        &#inactive{
+          .user_block{
+            background-color: #4eb7a8;
+            .user_name{color: #FFF}
+            .user_prof{color: #FFF}
+            i{color: #FFF}
+            &:after{
+              background-color: #4eb7a8;
+            }
+          }
+        }
+      }
+    }
+  }
+}
