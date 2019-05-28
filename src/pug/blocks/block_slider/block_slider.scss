@@ -6,7 +6,10 @@
     border-radius: 3px;
     height: 5px;
     width: 260px;
-    margin-left: 11px;
+  }
+
+  .ui-slider-range{
+    background: #4eb7a8
   }
 
   .ui-slider-handle{
@@ -71,13 +74,16 @@
       list-style-type: none;
       padding: 0;
       position: absolute;
-      left: -3.3%;
-      justify-content: space-between;
-      width: 274px;
+      left: -9px;
+      width: 280px;
       top: 5px;
       li{
         width: 20px;
         text-align: center;
+        margin-right: 45px;
+        &:last-child{
+          margin-right: 0;
+        }
       }
     }
     background-color: #e5e5e5;
