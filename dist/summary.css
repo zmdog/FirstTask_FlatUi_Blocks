@@ -1319,7 +1319,8 @@ button {
 .content_block {
   width: 84.85%;
   position: relative;
-  margin-left: 7.57%; }
+  margin-left: 7.57%;
+  margin-top: 80px; }
   .content_block .title {
     font-family: 'Lato Black', sans-serif;
     font-size: 18px;
