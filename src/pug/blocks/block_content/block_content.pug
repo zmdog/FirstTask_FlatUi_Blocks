@@ -99,15 +99,14 @@ include ../block_video/block_video
         p(class='title')='NEWS & EVENTS'
         .content_news-events
             +block_news('bicycle.png', 'It’s all going downhill', '24  AUGUST  2013',
-                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ' +
-                        'Sed condimentum aliquet venenatis. Etiam a nisi nunc, a tincidunt eros.')
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ' +
+            'Sed condimentum aliquet venenatis. Etiam a nisi nunc, a tincidunt eros.')
             +block_event('city.png', 'THIS IS THE TITLE', '24', 'Aug', 'Lorem ipsum dolor sit amet, ' +
-                         'consectetur adipiscing elit.')
+            'consectetur adipiscing elit.')
     .block_locations
         p(class='title')='LOCATION'
         .content_locations
             +block_location('1259  CALIFORNIA ST San Francisco, CA', 'Meet us!')
-
     .blocks_calendars-messaging
         .block_calendars
             p(class='title')='CALENDAR'
@@ -115,7 +114,7 @@ include ../block_video/block_video
         .block_messagings
             p(class='title')='MESSAGING'
             +block_messaging("person_2.png", "Sarah Brown","Hey! So are we cool to meet at the art gallery? Say 8pm",
-                             "Yeah that sounds great. See you then.")
+            "Yeah that sounds great. See you then.")
     .block_videos
         p(class='title')='VIDEO'
         .content_videos

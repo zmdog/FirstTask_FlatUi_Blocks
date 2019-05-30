@@ -1,16 +1,29 @@
 .content_videos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   .block_video{
-    iframe{
+    width: 594px;
+    @media (max-width: 780px) {
       width: 100%;
-      @media (max-width: 780px) {
+      iframe{
         height: calc(56.25vw);
       }
+    }
+    iframe{
+      width: 100%;
     }
   }
   .video-controls{
     position: relative;
     background: black;
     margin-top: 37px;
+    width: 594px;
+    height: 335px;
+    @media (max-width: 780px) {
+      width: 100%;
+      height: calc(56.25vw)
+    }
 
     .info{
       position: absolute;

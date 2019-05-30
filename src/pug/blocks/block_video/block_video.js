@@ -49,42 +49,84 @@ $(document).ready(()=>{
 
     //Fullscreen
     controls.btn_fullscreen.click(function(){
-        if(controls.fulscreen){
-            controls.fulscreen = false;
-            $(this).attr('id', 'off');
-            $(this).children('i').attr('class','fa fa-arrows-alt');
 
-            $(block_video).css({
-                                'position':'relative',
-                                'height':'inherit',
-                                'top':'0',
-                                'left':'0',
-                                'transform':'translate(0, 0)',
-                                'margin-top':'37px'});
+            if(document.documentElement.clientWidth < 780) {
+                if(controls.fulscreen){
+                    controls.fulscreen = false;
+                    $(this).attr('id', 'off');
+                    $(this).children('i').attr('class','fa fa-arrows-alt');
 
-            let progress = Math.floor(video.currentTime) / Math.floor(video.duration);
-            controls.progress[0].style.width = Math.floor(progress * controls.total.width()) + "px";
+                    $(block_video).css({
+                        'position':'relative',
+                        'height':'calc(56.25vw)',
+                        'top':'0',
+                        'left':'0',
+                        'transform':'translate(0, 0)',
+                        'margin-top':'37px'});
 
-            $(block_video).children('.video').css({'width':'inherit', 'height':'calc(56.25vw)'});
-        }else{
-            controls.fulscreen = true;
-            $(this).attr('id', 'on');
-            $(this).children('i').attr('class','fa fa-compress');
+                    let progress = Math.floor(video.currentTime) / Math.floor(video.duration);
+                    controls.progress[0].style.width = Math.floor(progress * controls.total.width()) + "px";
 
-            $(block_video).css({
-                                'position':'fixed',
-                                'top':'50%',
-                                'left':'50%',
-                                'transform':'translate(-50%, -50%)',
-                                'width':'100%',
-                                'height':'100%',
-                                'margin-top':'0'});
+                    $(block_video).children('.video').css({'width':'inherit', 'height':'calc(56.25vw)'});
+                }else{
+                    controls.fulscreen = true;
+                    $(this).attr('id', 'on');
+                    $(this).children('i').attr('class','fa fa-compress');
 
-            let progress = Math.floor(video.currentTime) / Math.floor(video.duration);
-            controls.progress[0].style.width = Math.floor(progress * controls.total.width()) + "px";
+                    $(block_video).css({
+                        'position':'fixed',
+                        'top':'50%',
+                        'left':'50%',
+                        'transform':'translate(-50%, -50%)',
+                        'width':'100%',
+                        'height':'100%',
+                        'margin-top':'0'});
 
-            $(block_video).children('.video').css({'width':'100%','height':'100%'});
-        }
+                    let progress = Math.floor(video.currentTime) / Math.floor(video.duration);
+                    controls.progress[0].style.width = Math.floor(progress * controls.total.width()) + "px";
+
+                    $(block_video).children('.video').css({'width':'100%','height':'100%'});
+                }
+            }
+            else{
+                if(controls.fulscreen){
+                    controls.fulscreen = false;
+                    $(this).attr('id', 'off');
+                    $(this).children('i').attr('class','fa fa-arrows-alt');
+
+                    $(block_video).css({
+                        'position':'relative',
+                        'height':'335px',
+                        'width':'594px',
+                        'top':'0',
+                        'left':'0',
+                        'transform':'translate(0, 0)',
+                        'margin-top':'37px'});
+
+                    let progress = Math.floor(video.currentTime) / Math.floor(video.duration);
+                    controls.progress[0].style.width = Math.floor(progress * controls.total.width()) + "px";
+
+                    $(block_video).children('.video').css({'width':'inherit', 'height':'inherit'});
+                }else{
+                    controls.fulscreen = true;
+                    $(this).attr('id', 'on');
+                    $(this).children('i').attr('class','fa fa-compress');
+
+                    $(block_video).css({
+                        'position':'fixed',
+                        'top':'50%',
+                        'left':'50%',
+                        'transform':'translate(-50%, -50%)',
+                        'width':'100%',
+                        'height':'100%',
+                        'margin-top':'0'});
+
+                    let progress = Math.floor(video.currentTime) / Math.floor(video.duration);
+                    controls.progress[0].style.width = Math.floor(progress * controls.total.width()) + "px";
+
+                    $(block_video).children('.video').css({'width':'100%','height':'100%'});
+                }
+            }
     });
 
 });
