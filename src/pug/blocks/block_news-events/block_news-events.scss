@@ -35,6 +35,9 @@
       width: 142px;
       border-bottom-left-radius: 3px;
       border-top-left-radius: 3px;
+      img{
+        width: 96px;
+      }
     }
     .news{
       @extend .news-event;
@@ -76,6 +79,9 @@
       width: 142px;
       border-bottom-left-radius: 3px;
       border-top-left-radius: 3px;
+      img{
+        width: 96px;
+      }
     }
     .event{
       @extend .news-event;
@@ -124,14 +130,6 @@
           }
         }
       }
-
     }
-
-
-
   }
-
-
-
-
 }

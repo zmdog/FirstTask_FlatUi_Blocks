@@ -2,7 +2,7 @@ mixin block_news(img, title, date, info)
 
     .block_news
         .news-img
-            img(src="./img/"+img)
+            img(src=require("./images/"+img))
         .news
             .content
                 p(class='title')=title
@@ -13,7 +13,7 @@ mixin block_news(img, title, date, info)
 mixin block_event(img, title, day, month, info)
     .block_event
         .event-img
-            img(src="./img/"+img)
+            img(src=require("./images/"+img))
         .event
             .content
                 p(class='date')=day

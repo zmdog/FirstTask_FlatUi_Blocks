@@ -1,6 +1,6 @@
 import "../pug/index.pug"
 
-import "../pug/blocks/block_content/content.scss"
+import "../scss/index.scss"
 
 import "../pug/blocks/event_pulse/event_pulse.js"
 import "../pug/blocks/block_percentage-pie_chart/block_pie_chart.js"

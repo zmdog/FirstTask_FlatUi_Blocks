@@ -2,7 +2,7 @@ mixin block_messaging(img, name, question, answer)
 
    .block_messaging
        .user_img
-           img(src="./img/"+img)
+           img(src=require("./images/"+img))
        .header_messaging
            p=name
 

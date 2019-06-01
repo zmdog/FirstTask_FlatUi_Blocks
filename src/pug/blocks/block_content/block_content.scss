@@ -1,0 +1,16 @@
+$point_cursor: url("../pug/images/hand.png"), text;
+$arrow_left: url("../pug/images/Arrow_Left.png");
+$arrow_right: url("../pug/images/Arrow_Right.png");
+
+.content_block{
+  width: 84.85%;
+  position: relative;
+  margin-left: 7.57%;
+  margin-top: 80px;
+  .title{
+    font-family: 'Lato Black', sans-serif;
+    font-size: 18px;
+    margin: 0;
+    text-align: center;
+  }
+}

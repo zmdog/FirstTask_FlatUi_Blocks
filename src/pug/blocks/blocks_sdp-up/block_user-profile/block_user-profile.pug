@@ -1,7 +1,7 @@
 mixin block_user-profile(img, name, prof)
     .block_user-profile
         .user_img
-            img(src="./img/"+img)
+            img(src=require("./images/"+img))
         .active_zone(id='inactive')
             .user_block
                 .user_info

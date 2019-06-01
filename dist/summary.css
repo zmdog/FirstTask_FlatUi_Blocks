@@ -1,4 +1,15 @@
 @import url(https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css);
+.content_block {
+  width: 84.85%;
+  position: relative;
+  margin-left: 7.57%;
+  margin-top: 80px; }
+  .content_block .title {
+    font-family: 'Lato Black', sans-serif;
+    font-size: 18px;
+    margin: 0;
+    text-align: center; }
+
 .block_basic_buttons-content {
   display: flex;
   justify-content: center;
@@ -36,7 +47,7 @@ button {
     transform: scale(1);
     opacity: 0; } }
   button:hover {
-    cursor: url(012708bfdad21a6bdb801aedeb08c16b.png), text; }
+    cursor: url(img/hand.png), text; }
 
 .basic_button, .button_medium_orange, .button_small_orange, .button_medium_default, .button_small_default {
   border-radius: 2px; }
@@ -404,7 +415,7 @@ button {
       background-color: #e5e5e5;
       border-radius: 50%;
       color: #888888;
-      cursor: url(012708bfdad21a6bdb801aedeb08c16b.png), text; }
+      cursor: url(img/hand.png), text; }
       .content_stages .block_stage li .pulse {
         position: absolute;
         border-radius: 50%;
@@ -542,7 +553,7 @@ button {
   margin-top: 32px;
   margin-bottom: 39px; }
   .content_toggles .block_toggle {
-    cursor: url(012708bfdad21a6bdb801aedeb08c16b.png), text; }
+    cursor: url(img/hand.png), text; }
     .content_toggles .block_toggle#OFF {
       background-color: #e5e5e5; }
       .content_toggles .block_toggle#OFF p {
@@ -582,7 +593,7 @@ button {
     position: relative;
     height: 23px;
     width: 23px;
-    cursor: url(012708bfdad21a6bdb801aedeb08c16b.png), text; }
+    cursor: url(img/hand.png), text; }
     .content_tick_boxes .block_tick_box#ON {
       background-color: #4eb7a8;
       border-radius: 50%;
@@ -777,7 +788,7 @@ button {
       background-color: #4eb7a8;
       border: 0; }
     .blocks_sdp-up .search_drop-down-content .block_drop_down .drop_down_option {
-      cursor: url(012708bfdad21a6bdb801aedeb08c16b.png), text;
+      cursor: url(img/hand.png), text;
       margin: 0;
       height: 0;
       color: #FFF;
@@ -954,12 +965,12 @@ button {
       .block_calendar .calendar .ui-datepicker .ui-datepicker-header .ui-datepicker-prev {
         left: 0; }
         .block_calendar .calendar .ui-datepicker .ui-datepicker-header .ui-datepicker-prev span {
-          background-image: url(531243998c04309440f53beb7c351597.png);
+          background-image: url(img/Arrow_Left.png);
           left: 15px; }
       .block_calendar .calendar .ui-datepicker .ui-datepicker-header .ui-datepicker-next {
         right: 0; }
         .block_calendar .calendar .ui-datepicker .ui-datepicker-header .ui-datepicker-next span {
-          background-image: url(ec9aafc2d2f0705aa0e6d818bd267565.png);
+          background-image: url(img/Arrow_Right.png);
           right: 15px; }
       .block_calendar .calendar .ui-datepicker .ui-datepicker-header .ui-datepicker-title span {
         vertical-align: middle; }
@@ -1058,6 +1069,8 @@ button {
       width: 142px;
       border-bottom-left-radius: 3px;
       border-top-left-radius: 3px; }
+      .content_news-events .block_news .news-img img {
+        width: 96px; }
     .content_news-events .block_news .news {
       background-color: #e75735; }
       .content_news-events .block_news .news .content .title {
@@ -1085,6 +1098,8 @@ button {
     width: 142px;
     border-bottom-left-radius: 3px;
     border-top-left-radius: 3px; }
+    .content_news-events .block_event .event-img img {
+      width: 96px; }
   .content_news-events .block_event .event {
     background-color: #4eb7a8; }
     .content_news-events .block_event .event .content .date {
@@ -1171,12 +1186,12 @@ button {
         justify-content: space-between;
         margin-left: 33.5%; }
         .content_locations .block_location .info-block .icons button {
-          cursor: url(012708bfdad21a6bdb801aedeb08c16b.png), text;
+          cursor: url(img/hand.png), text;
           background-color: #e75735;
           border: 0;
           padding: 0; }
           .content_locations .block_location .info-block .icons button i {
-            cursor: url(012708bfdad21a6bdb801aedeb08c16b.png), text;
+            cursor: url(img/hand.png), text;
             font-size: 26px;
             color: #FFF; }
         .content_locations .block_location .info-block .icons button:last-child {
@@ -1331,17 +1346,6 @@ button {
 @font-face {
   font-family: 'Lato Regular';
   src: url(../Lato-Regular.ttf) format("ttf"); }
-
-.content_block {
-  width: 84.85%;
-  position: relative;
-  margin-left: 7.57%;
-  margin-top: 80px; }
-  .content_block .title {
-    font-family: 'Lato Black', sans-serif;
-    font-size: 18px;
-    margin: 0;
-    text-align: center; }
 
 /*! jQuery UI - v1.12.1 - 2019-05-01
 * http://jqueryui.com
