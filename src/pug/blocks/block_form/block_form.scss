@@ -1,8 +1,8 @@
 .content_form_elements{
   display: flex;
   justify-content: center;
-  margin-top: 50px;
-  margin-bottom: 67px;
+  margin-top: 39px;
+  margin-bottom: 64px;
   @media (max-width: 780px) {
     flex-direction: column;
     align-items: center;
@@ -10,13 +10,13 @@
   .block_form{
     height: 213px;
     width: 288px;
+    margin-right: 29px;
+    margin-top: 4px;
+    $bc: #e5e5e5;
     @media (max-width: 780px) {
       margin-right: 0;
       margin-bottom: 20px;
     }
-
-    margin-right: 9px;
-    $bc: #e5e5e5;
 
     .form{
       display: flex;
@@ -31,8 +31,7 @@
       width: 288px;
       border-radius: 2px;
       transition: 0.5s;
-      padding-left: 13px;
-      padding-right: 13px;
+      padding-left: 10px;
     }
     .form_label{
       display: none;
@@ -124,7 +123,7 @@
     }
 
     textarea{
-      padding: 13px;
+      padding: 11px;
       font-family: "Source Sans Pro Regular", sans-serif;
       outline: none;
       font-size: 14px;
@@ -132,16 +131,19 @@
       background-color: $bc;
       border: 0;
       border-radius: 2px;
-      margin-bottom: 5px;
+      margin-bottom: 8px;
 
       min-height: 66px;
-      min-width: 262px;
+      min-width: 266px;
       max-height: 66px;
-      max-width: 262px;
+      max-width: 266px;
     }
 
     .block_basic_button{
       float:right;
     }
+  }
+  .toggles-tick_boxes{
+    width: 276px;
   }
 }

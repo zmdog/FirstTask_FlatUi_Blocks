@@ -14,15 +14,11 @@
   }
 }
 
-.toggles-tick_boxes{
-  width: 297px;
-}
-
 .content_toggles{
   display: flex;
   justify-content: center;
-  margin-top: 32px;
-  margin-bottom: 39px;
+  margin-top: 25px;
+  margin-bottom: 36px;
   .block_toggle{
     cursor: $point_cursor;
     &#OFF{

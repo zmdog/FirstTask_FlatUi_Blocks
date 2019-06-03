@@ -1,6 +1,6 @@
 .block_user-profiles{
   .user_profile-content{
-    margin-top: 32px;
+    margin-top: 23px;
     margin-bottom: 95px;
     .block_user-profile{
       display:flex;
@@ -8,6 +8,9 @@
       width: 268px;
       font-family: Regular Lato, sans-serif;
 
+      &:last-child{
+        margin-top: 26px;
+      }
       .user_img{
         border-radius: 50%;
         background-color: #e5e5e5;

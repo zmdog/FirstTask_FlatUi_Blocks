@@ -4,11 +4,15 @@
   @import "block_drop_down/block_drop_down";
   display: flex;
   justify-content: center;
+  margin-bottom: -2px;
   @media (max-width: 780px) {
     flex-direction: column;
     align-items: center;
     .block_search_drop-down{
       margin-right: 0;
     }
+  }
+  .search_drop-down-content{
+    margin-top: 14px;
   }
 }

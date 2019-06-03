@@ -26,7 +26,7 @@ $(document).ready(()=>{
 
             } else{
 
-                $(name_input).css({'width':'208px','margin-right':'7px'});
+                $(name_input).css({'width':'200px','margin-right':'7px'});
                 $(name_label).css({'width':'73px','backgroundColor':'#e75735','display':'block'});
                 $(name_label).html('ERROR');
                 $(name_label).children('label').css({'border-width':'4px 4px 4px 0','color':'#e75735'});
@@ -50,7 +50,7 @@ $(document).ready(()=>{
 
             } else{
 
-                $(email_input).css({'width':'208px','margin-right':'7px'});
+                $(email_input).css({'width':'200px','margin-right':'7px'});
                 $(email_label).css({'width':'73px','backgroundColor':'#e75735','display':'block'});
                 $(email_label).html('ERROR');
                 $(email_label).children('label').css({'border-width':'4px 4px 4px 0','color':'#e75735'});

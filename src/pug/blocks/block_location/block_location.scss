@@ -1,8 +1,8 @@
 .content_locations{
   display: flex;
   justify-content: center;
-  margin-top: 32px;
-  margin-bottom: 53px;
+  margin-top: 25px;
+  margin-bottom: 49px;
   @media (max-width: 474px) {
     .meet{display: none}
     .street{margin-left: 5%}
@@ -28,8 +28,8 @@
       .meet{
         font-size: 30px;
         font-family: 'Lato Light', sans-serif;
-        margin-right: 4.91%;
-        margin-left: 5%;
+        margin-right: 4.2%;
+        margin-left: 4.4%;
         height:69px;
         p{
           line-height: 69px;
@@ -39,8 +39,9 @@
         display: flex;
         align-items: center;
         font-size: 12.5px;
+        letter-spacing: 0.8px;
         font-family: 'Lato Black', sans-serif;
-        width: 126px;
+        width: 142px;
         height: 69px;
       }
       .icons{
@@ -48,7 +49,7 @@
         display: flex;
         align-items: center;
         position: absolute;
-        width: 68px;
+        width: 66px;
         height: 69px;
         justify-content: space-between;
         button{
@@ -65,7 +66,6 @@
         button:last-child{
           padding-right: 1px;
         }
-        margin-left: 33.5%;
       }
 
     }

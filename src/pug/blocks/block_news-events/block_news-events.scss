@@ -1,8 +1,8 @@
 .content_news-events{
   display: flex;
   justify-content: center;
-  margin-top: 35px;
-  margin-bottom: 50px;
+  margin-top: 28px;
+  margin-bottom: 46px;
   @media (max-width: 780px) {
     flex-direction: column;
     align-items: center;
@@ -20,7 +20,6 @@
       border-bottom-right-radius: 3px;
       border-top-right-radius: 3px;
       .content_news-event{
-        padding: 0 22px 0 22px;
         text-align: left;
       }
     }
@@ -29,10 +28,9 @@
   .block_news{
     @extend .settings_news-events;
     margin-right: 18px;
-
     .news-img{
       overflow: hidden;
-      width: 142px;
+      width: 95px;
       border-bottom-left-radius: 3px;
       border-top-left-radius: 3px;
       img{
@@ -42,27 +40,31 @@
     .news{
       @extend .news-event;
       background-color: #e75735;
-
+      width: 193px;
       .content{
         @extend .content_news-event;
+        padding-left: 22px;
         .title{
+          text-align: left;
           line-height: 26px;
           font-size: 28px;
+          letter-spacing: -0.1px;
           font-family: 'Lato Light', sans-serif;
           margin-top: 24px;
           margin-bottom: 0;
         }
         .date{
-          line-height: 3px;
+          line-height: 12px;
+          letter-spacing: 1px;
           font-family: 'Lato Black', sans-serif;
           font-size: 11px;
-          margin: 16px 0 16px 0;
         }
         .info{
           font-family: 'Lato Regular', sans-serif;
           font-size: 11px;
-          margin-top: 0;
-          margin-bottom: 36px;
+          margin-top: 13px;
+          letter-spacing: 0.5px;
+          width: 150px;
         }
       }
     }
@@ -89,41 +91,49 @@
 
       .content{
         @extend .content_news-event;
-
+        padding-left: 17px;
         .date{
           font-family: 'Lato Light', sans-serif;
           font-size: 73px;
           margin-top: 24px;
-          margin-bottom: 26px;
+          margin-bottom: 18px;
           line-height: 60px;
           span{
             font-size: 30px;
             line-height: 0;
+            margin-left: 10px;
           }
         }
         .title{
           font-family: 'Lato Black', sans-serif;
           font-size: 12.5px;
-          margin: 0;
-          line-height: 3px;
+          line-height: 13px;
+          text-align: left;
+          margin-left: 4px;
+          letter-spacing: 0.5px;
         }
         .info{
           font-family: 'Lato Regular', sans-serif;
           font-size: 11px;
-          margin-top: 9px;
-          margin-bottom: 21px;
+          margin-top: 4px;
+          margin-left: 5px;
+          margin-bottom: 19px;
+          letter-spacing: 0.5px;
         }
 
         .block_btn{
           display: flex;
           justify-content: center;
-          height: 19px;
+          height: 21px;
           margin-bottom: 24px;
+          float: left;
+          margin-left: 15px;
           button{
             font-size: 10px;
             font-family: 'Lato Black', sans-serif;
             padding: 0 11px 0 11px;
             border-radius: 3px;
+            width: 128px;
             border: 0;
             box-shadow: 0 3px  #379285;
             color: #4eb7a8;
