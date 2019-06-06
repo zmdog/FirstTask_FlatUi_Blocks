@@ -1,6 +1,6 @@
 let block_pie_chart = document.getElementsByClassName('block_pie_chart');
 let $ = require('jquery');
-let Chart = require('../../../../node_modules/chart.js/src/chart');
+let Chart = require('chart.js');
 
 $(document).ready(()=>{
     for(let i=0;i<block_pie_chart.length;i++){
