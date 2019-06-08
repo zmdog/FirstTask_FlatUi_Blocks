@@ -23,7 +23,7 @@ button{
   display: flex;
   justify-content: center;
   margin-top: 3.7222rem;
-  margin-bottom: 1.8rem;
+  margin-bottom: 2rem;
   @media (max-width: 780px) {
     .button-default{
       flex-direction: column;
@@ -97,15 +97,15 @@ button{
         margin-right: 0;
       }
       div{
-        margin-top: 1.7rem;
+        margin-top: 1.59rem;
         &:first-child{
-          margin-top: 0.3337rem;
+          margin-top: 0.43rem;
         }
       }
     }
     .right-default{
       div{
-        margin-bottom: 1.18rem;
+        margin-bottom: 1.13rem;
       }
     }
   }
@@ -118,14 +118,14 @@ button{
         margin-right: 0;
       }
       div{
-        margin-bottom: 1.18rem;
+        margin-bottom: 1.13rem;
       }
     }
     .right-orange{
       div{
-        margin-top: 1.6667rem;
+        margin-top: 1.59rem;
         &:first-child{
-          margin-top: 0.3337rem;
+          margin-top: 0.43rem;
         }
       }
     }
