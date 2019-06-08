@@ -12,27 +12,6 @@
     line-height: 28px;
     text-align: center; }
 
-.block_basic_buttons-content {
-  display: flex;
-  justify-content: center;
-  margin-top: 67px;
-  margin-bottom: 36px; }
-  @media (max-width: 780px) {
-    .block_basic_buttons-content .button-default {
-      flex-direction: column;
-      align-items: center; }
-      .block_basic_buttons-content .button-default .bb-ld {
-        order: 1;
-        margin-right: 0; }
-    .block_basic_buttons-content .button-orange {
-      flex-direction: column;
-      align-items: center;
-      margin-right: 0; }
-      .block_basic_buttons-content .button-orange .bb-ro {
-        order: 1; }
-      .block_basic_buttons-content .button-orange .bb-lo {
-        margin-right: 0; } }
-
 button {
   outline: 0;
   overflow: hidden;
@@ -51,65 +30,87 @@ button {
   button:hover {
     cursor: url(img/hand.png), text; }
 
-.basic_button, .button_medium_orange, .button_small_orange, .button_medium_default, .button_small_default {
-  border-radius: 2px; }
-
-.basic_orange, .button_medium_orange, .button_small_orange {
-  color: #FFFFFF;
-  border: 1px #e75735;
-  background-color: #e75735; }
-  .basic_orange:hover, .button_medium_orange:hover, .button_small_orange:hover {
-    box-shadow: 0 3px #bf3e1f; }
-  .basic_orange:active, .button_medium_orange:active, .button_small_orange:active {
-    border: 1px solid #e75735;
-    background-color: white;
-    color: #e75735;
-    box-shadow: 0 3px #e75735; }
-
-.basic_default, .button_medium_default, .button_small_default {
-  color: #FFFFFF;
-  border: 1px #4eb7a8;
-  background-color: #4eb7a8; }
-  .basic_default:hover, .button_medium_default:hover, .button_small_default:hover {
-    box-shadow: 0 3px  #28a290; }
-  .basic_default:active, .button_medium_default:active, .button_small_default:active {
-    border: 1px solid #4eb7a8;
-    background-color: white;
-    color: #4eb7a8;
-    box-shadow: 0 3px  #4eb7a8; }
-
-.medium, .button_medium_orange, .button_medium_default {
-  height: 32px;
-  width: 118px; }
-
-.small, .button_small_orange, .button_small_default {
-  height: 22px;
-  width: 78px; }
-
-.button-default {
+.block_basic_buttons-content {
   display: flex;
   justify-content: center;
-  margin-right: 22px; }
-  .button-default .bb-ld {
-    margin-right: 24px; }
-    .button-default .bb-ld div {
-      margin-top: 30.4px; }
-      .button-default .bb-ld div:first-child {
-        margin-top: 10px; }
-  .button-default .bb-rd div {
-    margin-bottom: 20px; }
-
-.button-orange {
-  display: flex;
-  justify-content: center; }
-  .button-orange .bb-lo {
-    margin-right: 26px; }
-    .button-orange .bb-lo div {
-      margin-bottom: 20px; }
-  .button-orange .bb-ro div {
-    margin-top: 30.4px; }
-    .button-orange .bb-ro div:first-child {
-      margin-top: 10px; }
+  margin-top: 3.7222rem;
+  margin-bottom: 1.8rem; }
+  @media (max-width: 780px) {
+    .block_basic_buttons-content .button-default {
+      flex-direction: column;
+      align-items: center; }
+    .block_basic_buttons-content .button-orange {
+      flex-direction: column;
+      align-items: center;
+      margin: 0; }
+      .block_basic_buttons-content .button-orange .right-orange {
+        order: 1; }
+      .block_basic_buttons-content .button-orange .left-orange {
+        margin: 0; } }
+  .block_basic_buttons-content .button {
+    border-radius: 2px; }
+  .block_basic_buttons-content .orange {
+    color: #FFFFFF;
+    border: 1px #e75735;
+    background-color: #e75735; }
+    .block_basic_buttons-content .orange:hover {
+      box-shadow: 0 3px #bf3e1f; }
+    .block_basic_buttons-content .orange:active {
+      border: 1px solid #e75735;
+      background-color: white;
+      color: #e75735;
+      box-shadow: 0 3px #e75735; }
+  .block_basic_buttons-content .default {
+    color: #FFFFFF;
+    border: 1px #4eb7a8;
+    background-color: #4eb7a8; }
+    .block_basic_buttons-content .default:hover {
+      box-shadow: 0 3px  #28a290; }
+    .block_basic_buttons-content .default:active {
+      border: 1px solid #4eb7a8;
+      background-color: white;
+      color: #4eb7a8;
+      box-shadow: 0 3px  #4eb7a8; }
+  .block_basic_buttons-content .medium {
+    height: 1.7778rem;
+    width: 6.5556rem;
+    font-size: 0.6667rem;
+    font-family: 'Lato Black', sans-serif; }
+  .block_basic_buttons-content .small {
+    height: 1.2222rem;
+    width: 4.3333rem;
+    font-size: 0.5556rem;
+    font-family: 'Lato Black', sans-serif; }
+  .block_basic_buttons-content .button-default {
+    display: flex;
+    justify-content: center;
+    margin-right: 1.3333rem; }
+    .block_basic_buttons-content .button-default .left-default {
+      margin-right: 1.2778rem; }
+      @media (max-width: 780px) {
+        .block_basic_buttons-content .button-default .left-default {
+          order: 1;
+          margin-right: 0; } }
+      .block_basic_buttons-content .button-default .left-default div {
+        margin-top: 1.7rem; }
+        .block_basic_buttons-content .button-default .left-default div:first-child {
+          margin-top: 0.3337rem; }
+    .block_basic_buttons-content .button-default .right-default div {
+      margin-bottom: 1.18rem; }
+  .block_basic_buttons-content .button-orange {
+    display: flex;
+    justify-content: center; }
+    .block_basic_buttons-content .button-orange .left-orange {
+      margin-right: 1.4444rem; }
+      @media (max-width: 780px) {
+        .block_basic_buttons-content .button-orange .left-orange {
+          margin-right: 0; } }
+      .block_basic_buttons-content .button-orange .left-orange div {
+        margin-bottom: 1.18rem; }
+    .block_basic_buttons-content .button-orange .right-orange div {
+      margin-top: 1.6667rem; }
+      .block_basic_buttons-content .button-orange .right-orange div:first-child {
+        margin-top: 0.3337rem; }
 
 .block_arrow_buttons-content {
   display: flex;
@@ -1370,6 +1371,9 @@ button {
   font-family: 'Lato Regular';
   src: url(../Lato-Regular.ttf) format("ttf"); }
 
+html {
+  font-size: 18px; }
+
 /*! jQuery UI - v1.12.1 - 2019-05-01
 * http://jqueryui.com
 * Includes: core.css, datepicker.css, slider.css, theme.css
@@ -1858,7 +1862,7 @@ a.ui-button:active,
 	filter: Alpha(Opacity=30); /* support: IE8 */
 }
 .ui-widget-shadow {
-	-webkit-box-shadow: 0 0 5px #666666;
-	box-shadow: 0 0 5px #666666;
+	-webkit-box-shadow: 0px 0px 5px #666666;
+	box-shadow: 0px 0px 5px #666666;
 }
 

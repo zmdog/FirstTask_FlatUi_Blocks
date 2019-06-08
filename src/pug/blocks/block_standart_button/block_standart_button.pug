@@ -1,15 +1,4 @@
 mixin block_basic_button(size, text, color)
     .block_basic_button
-        case color
-            when "orange"
-                case size
-                    when "small"
-                            button(class="button_"  + size + "_orange")= text
-                    default
-                            button(class="button_" + "medium" + "_orange")= text
-            default
-                case size
-                    when "small"
-                            button(class="button_"  + size + "_default")= text
-                    default
-                            button(class="button_" + "medium" + "_default")= text
+
+        button(class='button' class=size class=color)=text
