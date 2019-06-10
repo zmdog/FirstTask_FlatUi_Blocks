@@ -2,9 +2,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 18px;
+  margin-top: 1rem;
   .block_video{
-    width: 594px;
+    width: 33rem;
     @media (max-width: 780px) {
       width: 100%;
       iframe{
@@ -18,9 +18,9 @@
   .video-controls{
     position: relative;
     background: black;
-    margin-top: 37px;
-    width: 594px;
-    height: 335px;
+    margin-top: 2.0556rem;
+    width: 33rem;
+    height: 18.6111rem;
     @media (max-width: 780px) {
       width: 100%;
       height: calc(56.25vw)
@@ -41,19 +41,19 @@
       #name{
         @extend .settings-info;
         font-family: "Lato Light", sans-serif;
-        font-size: 36px;
+        font-size: 2rem;
         margin-bottom: 1.85%;
       }
       #from{
         @extend .settings-info;
         font-family: "Lato Black", sans-serif;
-        font-size: 12.5px;
+        font-size: 0.6667rem;
         margin-bottom: 3.87%;
       }
       a{
         @extend .settings-info;
         font-family: 'Lato Regular', sans-serif;
-        font-size: 18px;
+        font-size: 1rem;
         text-decoration: none;
         &:visited{
           color: #FFF;
@@ -68,7 +68,7 @@
       position: absolute;
       display: flex;
       width: 100%;
-      height: 48px;
+      height: 2.6667rem;
       bottom: 0;
       opacity: 0;
       z-index: 5;
@@ -77,28 +77,28 @@
       .btn-play{
         position: absolute;
         left: 0;
-        width: 50px;
+        width: 2.7778rem;
         height: 100%;
         background: rgba(0, 0, 0, 0);
         border: 0;
         &#paused{
           i{
             &:after{
-              top: 13px;
-              left: 27px;
+              top: 0.7222rem;
+              left: 1.5rem;
               background-color: white;
-              height: 20px;
-              width: 3px;
+              height: 1.1111rem;
+              width: 0.1667rem;
               position: absolute;
               content: '';
               transition: 0.5s;
             }
             &:before{
-              top: 13px;
-              left: 20px;
+              top: 0.7222rem;
+              left: 1.1111rem;
               background-color: white;
-              height: 20px;
-              width: 3px;
+              height: 1.1111rem;
+              width: 0.1667rem;
               position: absolute;
               content: '';
               transition: 0.5s;
@@ -108,10 +108,10 @@
         &#unpaused{
           i{
             &:after{
-              top: 13px;
-              border: 10px solid transparent;
-              border-left: 16px solid white;
-              left: 20px;
+              top: 0.7222rem;
+              border: 0.5556rem solid transparent;
+              border-left: 0.8889rem solid white;
+              left: 1.1111rem;
               position: absolute;
               content: '';
             }
@@ -122,37 +122,37 @@
       .total {
         width: 100%;
         background: #e5e5e5;
-        height: 5px;
-        border-radius: 2px;
-        margin: 20px 70px 20px 50px;
+        height: 0.2778rem;
+        border-radius: 0.1111rem;
+        margin: 1.1111rem 3.8889rem 1.1111rem 2.7778rem;
         .current {
           position: absolute;
           background:#e75735;
           line-height:0;
-          height:5px;
-          border-radius: 2px;
+          height: 0.2778rem;
+          border-radius: 0.1111rem;
         }
       }
 
       .btn-fullscreen{
         position: absolute;
         right: 0;
-        width: 48px;
+        width: 2.6667rem;
         height: 100%;
         background-color: #e75735;
         border: 0;
-        font-size: 23px;
+        font-size: 1.2778rem;
         color: #FFF;
         &#off{
           i{
             &:after{
               position: absolute;
               content: '';
-              left: 20px;
+              left: 1.1111rem;
               transform: rotate(45deg);
-              top: 20px;
-              width: 8px;
-              height: 8px;
+              top: 1.1111rem;
+              width: 0.4444rem;
+              height: 0.4444rem;
               background-color: #e75735;
             }
           }
@@ -161,7 +161,7 @@
     }
     .video{
       position: relative;
-      height:335px;
+      height: 18.6111rem;
       width: 100%;
       @media (max-width: 780px) {
         height: calc(56.25vw);

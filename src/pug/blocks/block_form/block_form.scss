@@ -1,149 +1,125 @@
 .content_form_elements{
   display: flex;
   justify-content: center;
-  margin-top: 39px;
-  margin-bottom: 64px;
+  margin-top: 2.2222rem;
+  margin-bottom: 3.4756rem;
   @media (max-width: 780px) {
     flex-direction: column;
     align-items: center;
   }
   .block_form{
-    height: 213px;
-    width: 288px;
-    margin-right: 29px;
-    margin-top: 4px;
+    height: 11.8333rem;
+    width: 16rem;
+    margin-right: 1.6111rem;
+    margin-top: 0.2222rem;
     $bc: #e5e5e5;
     @media (max-width: 780px) {
       margin-right: 0;
-      margin-bottom: 20px;
+      margin-bottom: 1.1111rem;
     }
 
     .form{
       display: flex;
-      margin-bottom: 12px;
-      border-radius: 2px;
+      margin-bottom: 0.6667rem;
+      border-radius: 0.1111rem;
     }
     .form_input{
       font-family: "Source Sans Pro Regular", sans-serif;
       outline: none;
-      font-size: 14px;
-      height: 26px;
-      width: 288px;
-      border-radius: 2px;
+      font-size: 0.7778rem;
+      height: 1.4444rem;
+      width: 16rem;
+      border-radius: 0.1111rem;
       transition: 0.5s;
-      padding-left: 10px;
+      padding-left: 0.5556rem;
     }
     .form_label{
       display: none;
       position: relative;
       font-family: "Lato Black", sans-serif;
-      font-size: 10px;
-      line-height: 28px;
+      font-size: 0.5556rem;
+      line-height: 1.5556rem;
       text-align: center;
       color: #FFF;
-      height: 28px;
+      height: 1.5556rem;
       width: 0;
-      border-radius: 2px;
+      border-radius: 0.1111rem;
       transition: 0.5s;
     }
 
-    .form_name{
+    .settings-inputs{
       @extend .form;
       input{
         border: 0;
         background-color: $bc;
         @extend .form_input
       }
+
+      .settings-state{
+        &:after{
+          content: "";
+          position: absolute;
+          left: -0.3333rem;
+          top: 0.5556rem;
+          border-style: solid;
+          transition: 0.5s;
+        }
+      }
+
       &#YES{
         div{
+          display: none;
           @extend .form_label;
+          @extend .settings-state;
           &:after{
-            content: "";
-            position: absolute;
-            left: -6px;
-            top: 10px;
-            border-style: solid;
             border-color: transparent #4eb7a8 transparent transparent;
-            transition: 0.5s;
           }
         }
       }
       &#NO{
         div{
           @extend .form_label;
+          @extend .settings-state;
           &:after{
-            content: "";
-            position: absolute;
-            left: -6px;
-            top: 10px;
-            border-style: solid;
             border-color: transparent #e75735 transparent transparent;
-            transition: 0.5s;
           }
         }
       }
     }
+
+    .form_name{
+      @extend .settings-inputs;
+    }
     .form_email{
-      @extend .form;
-      input{
-        border: 0;
-        background-color: $bc;
-        @extend .form_input
-      }
-      &#YES{
-        div{
-          display: none;
-          @extend .form_label;
-          &:after{
-            content: "";
-            position: absolute;
-            left: -6px;
-            top: 10px;
-            border-style: solid;
-            border-color: transparent #4eb7a8 transparent transparent;
-            transition: 0.5s;
-          }
-        }
-      }
-      &#NO{
-        div{
-          display: none;
-          @extend .form_label;
-          &:after{
-            content: "";
-            position: absolute;
-            left: -6px;
-            top: 10px;
-            border-style: solid;
-            border-color: transparent #e75735 transparent transparent;
-            transition: 0.5s;
-          }
-        }
-      }
+      @extend .settings-inputs;
     }
 
     textarea{
-      padding: 11px;
+      padding: 0.6111rem;
       font-family: "Source Sans Pro Regular", sans-serif;
       outline: none;
-      font-size: 14px;
+      font-size: 0.7778rem;
       resize: none;
       background-color: $bc;
       border: 0;
-      border-radius: 2px;
-      margin-bottom: 8px;
+      border-radius: 0.1111rem;
+      margin-bottom: 0.3333rem;
 
-      min-height: 66px;
-      min-width: 266px;
-      max-height: 66px;
-      max-width: 266px;
+      min-height: 3.6667rem;
+      min-width: 14.7778rem;
+      max-height: 3.6667rem;
+      max-width: 14.7778rem;
     }
 
+    .block_basic_buttons-content{
+      margin: 0;
+      display: block;
+    }
     .block_basic_button{
       float:right;
     }
   }
   .toggles-tick_boxes{
-    width: 276px;
+    width: 15.3333rem;
   }
 }

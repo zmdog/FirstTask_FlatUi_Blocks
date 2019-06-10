@@ -1,22 +1,22 @@
 .content_locations{
   display: flex;
   justify-content: center;
-  margin-top: 25px;
-  margin-bottom: 49px;
+  margin-top: 1.3889rem;
+  margin-bottom: 2.7222rem;
   @media (max-width: 474px) {
     .meet{display: none}
     .street{margin-left: 5%}
   }
   .block_location{
     background-color: #e75735;
-    border-radius: 3px;
-    width: 594px;
-    height: 272px;
+    border-radius: 0.1667rem;
+    width: 33rem;
+    height: 15.1111rem;
     @media (max-width: 780px) {
       width: 100%
     }
     #map{
-      height: 203px;
+      height: 11.2778rem;
     }
     .info-block{
       display: flex;
@@ -26,31 +26,31 @@
         color: #FFF;
       }
       .meet{
-        font-size: 30px;
+        font-size: 1.6667rem;
         font-family: 'Lato Light', sans-serif;
         margin-right: 4.2%;
         margin-left: 4.4%;
-        height:69px;
+        height: 3.8333rem;
         p{
-          line-height: 69px;
+          line-height: 3.8333rem;
         }
       }
       .street{
         display: flex;
         align-items: center;
-        font-size: 12.5px;
+        font-size: 0.6667rem;
         letter-spacing: 0.8px;
         font-family: 'Lato Black', sans-serif;
-        width: 142px;
-        height: 69px;
+        width: 7.8889rem;
+        height: 3.8333rem;
       }
       .icons{
-        right: 25px;
+        right: 1.3889rem;
         display: flex;
         align-items: center;
         position: absolute;
-        width: 66px;
-        height: 69px;
+        width: 3.6667rem;
+        height: 3.8333rem;
         justify-content: space-between;
         button{
           cursor: $point_cursor;
@@ -59,12 +59,12 @@
           padding: 0;
           i{
             cursor: $point_cursor;
-            font-size: 26px;
+            font-size: 1.4444rem;
             color: #FFF;
           }
         }
         button:last-child{
-          padding-right: 1px;
+          padding-right: 0.05556rem;
         }
       }
 

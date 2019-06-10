@@ -1,27 +1,27 @@
 .block_calendar{
-  width: 279px;
-  margin-top: 20px;
-  margin-right: 27px;
-  margin-bottom: 52px;
+  width: 15.5rem;
+  margin-top: 1.1111rem;
+  margin-right: 1.5rem;
+  margin-bottom: 2.8889rem;
   @media (max-width: 780px) {
     margin-right: 0;
   }
   .ui-widget-content-day{
-    height: 109px;
-    font-size: 80px;
+    height: 6.0556rem;
+    font-size: 4.4444rem;
     font-family: 'Lato Light', sans-serif;
     background-color: #e75735;
     color: #FFF;
     p{
       margin: 0;
-      line-height: 124px;
-      width: 279px;
+      line-height: 6.8889rem;
+      width: 15.5rem;
       text-align: center;
     }
   }
   .calendar{
     .ui-datepicker{
-      width: 279px;
+      width: 15.5rem;
       padding: 0;
       border: 0;
       .ui-datepicker-header{
@@ -29,14 +29,14 @@
         border-radius: 0;
         border: 0;
         background-color: #d54c2c;
-        height: 43px;
+        height: 2.3889rem;
         color: #FFF;
         font-family: "Lato Light", sans-serif;
-        font-size: 24px;
+        font-size: 1.3333rem;
         .ui-datepicker-prev-next{
-          width: 43px;
+          width: 2.3889rem;
           position: absolute;
-          height: 43px;
+          height: 2.3889rem;
           top: 0;
           &:hover{
             border: 0;
@@ -44,10 +44,10 @@
             background-color: #e75735;
           }
           span{
-            width: 10px;
-            top:15px;
+            width: 0.5556rem;
+            top: 0.8333rem;
             position: absolute;
-            line-height: 17px;
+            line-height: 0.9444rem;
           }
         }
         .ui-datepicker-prev{
@@ -55,7 +55,7 @@
           left: 0;
           span{
             background-image: $arrow_left;
-            left:15px;
+            left: 0.8333rem;
           }
         }
         .ui-datepicker-next{
@@ -63,7 +63,7 @@
           right: 0;
           span{
             background-image: $arrow_right;
-            right:15px;
+            right: 0.8333rem;
           }
         }
         .ui-datepicker-title{
@@ -79,10 +79,10 @@
         margin-bottom: 0;
         thead{
           tr{
-            width: 279px;
-            height: 27px;
+            width: 15.5rem;
+            height: 1.5rem;
             font-family: 'Lato Black', sans-serif;
-            font-size: 9px;
+            font-size: 0.5rem;
             background-color: #e75735;
             color: #FFF;
           }
@@ -97,7 +97,7 @@
           tr{
             td{
               padding: 0;
-              font-size: 20px;
+              font-size: 1.1111rem;
               font-family: 'Source Sans Pro Regular', sans-serif;
               text-align: center;
               &:last-child{
@@ -105,26 +105,26 @@
                 span{margin-right: 0}
               }
               a{
-                width: 39px;
-                height: 39px;
+                width: 2.1667rem;
+                height: 2.1667rem;
                 padding: 0;
                 background-color: #f2f2f2;
                 border: 0;
-                margin: 0 1px 1px 0;
+                margin: 0 0.05556rem 0.05556rem 0;
                 color: #868686;
                 text-align: center;
-                line-height: 38px;
+                line-height: 2.1111rem;
               }
               span{
-                height: 39px;
-                width: 39px;
+                height: 2.1667rem;
+                width: 2.1667rem;
                 border: 0;
                 padding: 0;
-                margin: 0 1px 1px 0;
+                margin: 0 0.05556rem 0.05556rem 0;
                 color: #FFF;
                 background-color: #f2f2f2;
                 text-align: center;
-                line-height: 38px;
+                line-height: 2.1111rem;
               }
             }
           }
@@ -134,15 +134,15 @@
   }
   .ui-widget-content-btn{
     background-color: #e5e5e5;
-    height: 49px;
+    height: 2.7222rem;
     button{
-      height: 49px;
-      width: 279px;
+      height: 2.7222rem;
+      width: 15.5rem;
       background-color: #e5e5e5;
       border: 0;
-      padding-left: 20px;
+      padding-left: 1.1111rem;
       text-align: left;
-      font-size: 13px;
+      font-size: 0.7222rem;
       color: #868686;
       font-family: 'Lato Black', sans-serif;
     }

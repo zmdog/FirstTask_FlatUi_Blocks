@@ -4,7 +4,6 @@ let Chart = require('chart.js');
 
 $(document).ready(()=>{
     for(let i=0;i<block_pie_chart.length;i++){
-        console.log('работает');
         let canvas = block_pie_chart[i].getElementsByTagName('canvas');
         let doughnutChart = new Chart(canvas,{
             type: 'doughnut',

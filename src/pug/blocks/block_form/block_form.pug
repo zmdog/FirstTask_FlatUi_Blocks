@@ -10,4 +10,5 @@ mixin block_form()
             input(placeholder='Your Email' type='email')
             .label_email
         textarea(placeholder='Your Message')
-        +block_basic_button("medium", "SUBMIT", "default")
+        .block_basic_buttons-content
+            +block_basic_button("medium", "SUBMIT", "default")

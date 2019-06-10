@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   margin-top: 1.6667rem;
-  margin-bottom: 2.2778rem;
+  margin-bottom: 2.4178rem;
   @media (max-width: 780px) {
     flex-direction: column;
     align-items: center;
@@ -49,44 +49,44 @@
   }
   .default{
     @extend .button-settings;
-    border: #4eb7a8 solid 3px;
+    border: #4eb7a8 solid 0.1667rem;
     &:hover{
       background-color: #4EB7A8;
       &::after{
-        border-top: 4px solid #FFFFFF;
-        border-right: 4px solid #FFFFFF;
+        border-top: 0.2222rem solid #FFFFFF;
+        border-right: 0.2222rem solid #FFFFFF;
       }
     }
     &::after{
-      border-top: 4px solid #4eb7a8;
-      border-right: 4px solid #4eb7a8;
+      border-top: 0.2222rem solid #4eb7a8;
+      border-right: 0.2222rem solid #4eb7a8;
     }
   }
   .orange{
     @extend .button-settings;
-    border: #e75735 solid 3px;
+    border: #e75735 solid 0.1667rem;
     &:hover{
       background-color: #E75735;
       &::after{
-        border-top: 4px solid #FFFFFF;
-        border-right: 4px solid #FFFFFF;
+        border-top: 0.2222rem solid #FFFFFF;
+        border-right: 0.2222rem solid #FFFFFF;
       }
     }
     &::after{
-      border-top: 4px solid #e75735;
-      border-right: 4px solid #e75735;
+      border-top: 0.2222rem solid #e75735;
+      border-right: 0.2222rem solid #e75735;
     }
   }
   .passive{
     @extend .button-settings;
     background-color: #e5e5e5;
-    border: #e5e5e5 solid 3px;
+    border: #e5e5e5 solid 0.1667rem;
     &:hover{
       background-color: #e5e5e5;
     }
     &::after{
-      border-top: 4px solid #FFFFFF;
-      border-right: 4px solid #FFFFFF;
+      border-top: 0.2222rem solid #FFFFFF;
+      border-right: 0.2222rem solid #FFFFFF;
     }
   }
 

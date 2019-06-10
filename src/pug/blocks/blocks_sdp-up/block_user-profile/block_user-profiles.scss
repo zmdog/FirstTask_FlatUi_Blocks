@@ -1,23 +1,23 @@
 .block_user-profiles{
   .user_profile-content{
-    margin-top: 23px;
-    margin-bottom: 95px;
+    margin-top: 1.2778rem;
+    margin-bottom: 5.2778rem;
     .block_user-profile{
       display:flex;
-      height: 94px;
-      width: 268px;
-      font-family: Regular Lato, sans-serif;
+      height: 5.2222rem;
+      width: 14.8889rem;
+      font-family: 'Regular Lato', sans-serif;
 
       &:last-child{
-        margin-top: 26px;
+        margin-top: 1.4444rem;
       }
       .user_img{
         border-radius: 50%;
         background-color: #e5e5e5;
         img{
-          margin: 5px;
-          width: 84px;
-          height: 84px;
+          margin: 0.2778rem;
+          width: 4.6667rem;
+          height: 4.6667rem;
         }
       }
       .active_zone{
@@ -28,37 +28,37 @@
         width: 0;
         .user_block{
           position: absolute;
-          width: 163px;
+          width: 9.0556rem;
           right: 0;
-          height: 94px;
-          border-radius: 5px;
+          height: 5.2222rem;
+          border-radius: 0.2778rem;
           &:after{
-            left: -4px;
+            left: -0.2222rem;
             top: 50%;
-            margin-top: -5px;
+            margin-top: -0.2778rem;
             content: '';
             position: absolute;
-            width: 10px;
-            height: 10px;
+            width: 0.5556rem;
+            height: 0.5556rem;
             transform: rotate(45deg);
           }
 
           .user_info{
-            margin-top: 13px;
-            margin-bottom: 14px;
+            margin-top: 0.7222rem;
+            margin-bottom: 0.7778rem;
             p{
               text-align: center;
               margin: 0
             }
             .user_name{
               color: #e75735;
-              margin-bottom: 8px;
-              line-height: 14px;
-              font-size: 18px;
+              margin-bottom: 0.4444rem;
+              line-height: 0.7778rem;
+              font-size: 1rem;
             }
             .user_prof{
-              line-height: 8px;
-              font-size: 11px;
+              line-height: 0.4444rem;
+              font-size: 0.6111rem;
             }
           }
 
@@ -67,8 +67,8 @@
             justify-content: center;
             button{
               &:nth-last-child(2){
-                margin-left: 10px;
-                margin-right: 10px;
+                margin-left: 0.5556rem;
+                margin-right: 0.5556rem;
               }
               border: 0;
               box-shadow: none;
@@ -79,7 +79,7 @@
                 color: #e75735;
               }
               color: #757575;
-              font-size: 21px;
+              font-size: 1.1667rem;
             }
           }
 

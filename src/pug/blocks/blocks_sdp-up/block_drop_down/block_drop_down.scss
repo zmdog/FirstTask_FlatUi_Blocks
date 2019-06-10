@@ -1,6 +1,6 @@
 .block_drop_down{
-  width: 288px;
-  margin-top: 18px;
+  width: 16rem;
+  margin-top: 1rem;
     .block_option{
       position: relative;
       background-color: #e5e5e5;
@@ -10,10 +10,10 @@
     a{
       color: #888888;
       font-family: "Source Sans Pro Regular", sans-serif;
-      font-size: 14px;
-      padding-left: 13px;
-      line-height: 28px;
-      padding-right: 13px;
+      font-size: 0.7778rem;
+      padding-left: 0.7222rem;
+      line-height: 1.5556rem;
+      padding-right: 0.7222rem;
     }
     .option-btn{
       right: 0;
@@ -21,8 +21,8 @@
       border-bottom-right-radius: 2px;
       border-top-right-radius: 2px;
       position: absolute;
-      height: 28px;
-      width: 33px;
+      height: 1.5556rem;
+      width: 1.8333rem;
       background-color: #4eb7a8;
       border: 0;
     }
@@ -31,13 +31,13 @@
       margin: 0;
       height: 0;
       color: #FFF;
-      font-size: 14px;
-      line-height: 28px;
+      font-size: 0.7778rem;
+      line-height: 1.5556rem;
       overflow: hidden;
       background-color: #4eb7a8;
       list-style-type: none;
-      padding-left: 13px;
-      padding-right: 13px;
+      padding-left: 0.7222rem;
+      padding-right: 0.7222rem;
       transition: 1s;
       border-radius: 2px;
     }
