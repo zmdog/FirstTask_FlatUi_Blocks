@@ -1,69 +1,37 @@
 $(document).ready(()=>{
 
-    let block_form = $('.block_form');
+    function option_check(form){
 
+        // Adding validation conditions and moving part
+        let options = $(this).val() && $(this).val().length > 5,
+            label =  $(form).children('div');
 
-    $(block_form).each(function(){
+        if(options){
+            $(label).css({'width':'4.0556rem','backgroundColor':'#4eb7a8','display':'block'});
+            $(label).html('THANKS!');
+            $(label).children('label').css({
+                'border-width':'0.2222rem 0.2222rem 0.2222rem 0',
+                'color':'#4eb7a8',
+                'borderColor':'transparent #4eb7a8 transparent transparent'});
+            $(form).attr('id','YES')
 
-        let form_name  = $(this).children('.form_name'),
-            form_email = $(this).children('.form_email'),
-            name_input = form_name.children('input'),
-            name_label = form_name.children('div'),
-            email_input= form_email.children('input'),
-            email_label= form_email.children('div');
+        } else{
+            $(this).css({'width':'11.1111rem','margin-right':'0.3889rem'});
+            $(label).css({'width':'4.0556rem','backgroundColor':'#e75735','display':'block'});
+            $(label).html('ERROR');
+            $(label).children('label').css({'border-width':'0.2222rem 0.2222rem 0.2222rem 0','color':'#e75735'});
+            $(form).attr('id','NO')
+        }
+    }
 
-        $(name_input).on('input', function(){
-            let options = $(this).val() && $(this).val().length>5;
-            if(options){
+    $('.block_form').each(function(){
 
-                $(name_label).css({'width':'73px','backgroundColor':'#4eb7a8','display':'block'});
-                $(name_label).html('THANKS!');
-                $(name_label).children('label').css({
-                    'border-width':'4px 4px 4px 0',
-                    'color':'#4eb7a8',
-                    'borderColor':'transparent #4eb7a8 transparent transparent'});
-                $(form_name).attr('id','YES')
+        // Adding inputs
+        let name_input  = $(this).children('.form_name').children('input'),
+            email_input = $(this).children('.form_email').children('input');
 
-            } else{
-
-                $(name_input).css({'width':'200px','margin-right':'7px'});
-                $(name_label).css({'width':'73px','backgroundColor':'#e75735','display':'block'});
-                $(name_label).html('ERROR');
-                $(name_label).children('label').css({'border-width':'4px 4px 4px 0','color':'#e75735'});
-                $(form_name).attr('id','NO')
-            }
-
-        });
-
-        $(email_input).on('input', function(){
-            let options = $(this).val() && $(this).val().length>5;
-
-            if(options){
-
-                $(email_label).css({'width':'73px','backgroundColor':'#4eb7a8','display':'block'});
-                $(email_label).html('THANKS!');
-                $(email_label).children('label').css({
-                    'border-width':'4px 4px 4px 0',
-                    'color':'#4eb7a8',
-                    'borderColor':'transparent #4eb7a8 transparent transparent'});
-                $(form_email).attr('id','YES')
-
-            } else{
-
-                $(email_input).css({'width':'200px','margin-right':'7px'});
-                $(email_label).css({'width':'73px','backgroundColor':'#e75735','display':'block'});
-                $(email_label).html('ERROR');
-                $(email_label).children('label').css({'border-width':'4px 4px 4px 0','color':'#e75735'});
-                $(form_email).attr('id','NO')
-
-            }
-
-        });
-
-
-
-
-
+        // The function call in the input context
+        $(name_input).on('input', ()=>{option_check.call(name_input, $(this).children('.form_name'))});
+        $(email_input).on('input', ()=>{option_check.call(email_input, $(this).children('.form_email'))});
     });
-
 });

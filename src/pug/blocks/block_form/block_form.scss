@@ -55,13 +55,13 @@
         @extend .form_input
       }
 
-      .settings-state{
+      .settings-form-state{
         &:after{
           content: "";
           position: absolute;
-          left: -0.3333rem;
-          top: 0.5556rem;
-          border-style: solid;
+          border: solid 5px;
+          left: -0.5rem;
+          top: 0.5rem;
           transition: 0.5s;
         }
       }
@@ -70,7 +70,7 @@
         div{
           display: none;
           @extend .form_label;
-          @extend .settings-state;
+          @extend .settings-form-state;
           &:after{
             border-color: transparent #4eb7a8 transparent transparent;
           }
@@ -79,7 +79,7 @@
       &#NO{
         div{
           @extend .form_label;
-          @extend .settings-state;
+          @extend .settings-form-state;
           &:after{
             border-color: transparent #e75735 transparent transparent;
           }
