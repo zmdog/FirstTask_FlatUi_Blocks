@@ -1,8 +1,10 @@
 mixin block_slider(type, min, max, step)
 
-    div(data-min=min data-max=max data-step=step class="slider" id=type)
-        case type
-            when 'orange'
-                label(class='ui-slider-label-orange')
-            when 'default'
-                ul(class='ui-slider-label-default')
+    div(class='block_slider-' + type)
+        div(data-min=min data-max=max data-step=step class="slider" id=type)
+            case type
+                when 'orange'
+                    div(class='ui-slider-handle')
+                        label(class='ui-slider-label-orange')
+                when 'default'
+                    ul(class='ui-slider-label-default')
