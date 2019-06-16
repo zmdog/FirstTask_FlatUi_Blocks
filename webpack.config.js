@@ -27,10 +27,10 @@ module.exports = {
                 ]
             },
             {
-                test: /\.png$/,
+                test: /\.png|ico$/,
                 loader: 'file-loader',
                 options: {
-                    name: 'img/[name].png',
+                    name: 'img/[name].[ext]',
                 }
             },
             {
