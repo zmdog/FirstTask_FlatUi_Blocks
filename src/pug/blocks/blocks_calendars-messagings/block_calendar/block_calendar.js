@@ -1,10 +1,7 @@
 
 $(document).ready(()=>{
 
-    let calendars = $('.block_calendar');
-
-    $(calendars).each(function(index){
-
+    $('.block_calendar').each(function(index, elem){
 
         $(this).children('.calendar').datepicker({
             inline: true,
@@ -12,9 +9,10 @@ $(document).ready(()=>{
             showOtherMonths: true,
             dayNamesMin: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
             onSelect: function() {
-                let currentDate = $(calendars[index]).children('.calendar').datepicker('getDate');
 
-                $(calendars[index]).children('.ui-widget-content-day')
+                // The date change when you click
+                let currentDate = $(elem).children('.calendar').datepicker('getDate');
+                $(elem).children('.ui-widget-content-day')
                                    .children('p').text($.datepicker.formatDate('d', currentDate));
             }
         });
@@ -24,9 +22,10 @@ $(document).ready(()=>{
 
         $(this).children('.ui-widget-content-day').children('p').text(currentDay);
 
+        // Button TODAY
         $(this).find('.ui-widget-content-btn').on('click', ()=>{
-            $(calendars[index]).children('.calendar').datepicker('setDate', currentDate);
-            $(calendars[index]).children('.ui-widget-content-day').children('p').text(currentDate.getDate());
+            $(elem).children('.calendar').datepicker('setDate', currentDate);
+            $(elem).children('.ui-widget-content-day').children('p').text(currentDate.getDate());
         })
     });
 

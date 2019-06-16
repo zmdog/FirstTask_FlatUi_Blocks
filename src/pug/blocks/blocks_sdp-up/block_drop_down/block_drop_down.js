@@ -1,8 +1,6 @@
 $(document).ready(()=>{
 
-    let block_drop_down = $('.block_drop_down');
-
-    $(block_drop_down).each(function(){
+    $('.block_drop_down').each(function(){
 
         let  option_btn = $(this).children('.block_option').children('.option-btn'),
             drop_down_option = $(this).children('.drop_down_option'),
@@ -25,11 +23,6 @@ $(document).ready(()=>{
 
             $(this).children('.block_option').children('a').text(text);
         })
-
-
-
-
-
     });
 
 });

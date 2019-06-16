@@ -1,7 +1,7 @@
-mixin block_slider(type, min, max, step)
+mixin block_slider(type, min, max, step, start_position)
 
     div(class='block_slider-' + type)
-        div(data-min=min data-max=max data-step=step class="slider" id=type)
+        div(data-min=min data-max=max data-step=step data-start_position=start_position class="slider" id=type)
             case type
                 when 'orange'
                     div(class='ui-slider-handle')

@@ -6,6 +6,7 @@ $(document).ready(()=>{
         let options = $(this).val() && $(this).val().length > 5,
             label =  $(form).children('div');
 
+        // Display the desired moving part depending on the conditions
         if(options){
             $(label).css({'width':'4.0556rem','backgroundColor':'#4eb7a8','display':'block'});
             $(label).html('THANKS!');
@@ -14,7 +15,6 @@ $(document).ready(()=>{
                 'color':'#4eb7a8',
                 'borderColor':'transparent #4eb7a8 transparent transparent'});
             $(form).attr('id','YES')
-
         } else{
             $(this).css({'width':'11.1111rem','margin-right':'0.3889rem'});
             $(label).css({'width':'4.0556rem','backgroundColor':'#e75735','display':'block'});

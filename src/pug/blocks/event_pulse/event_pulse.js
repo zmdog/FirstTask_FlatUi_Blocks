@@ -1,22 +1,24 @@
 $(document).ready(function(){
-    function pulse(e){
-        let div      = document.createElement('div'),
-            styleDiv = div.style,
-            rect     = this.context.getBoundingClientRect(),
-            px       = 'px';
+    function pulse(event, button){
+        let pulse = document.createElement('div'),
+            rect  = $(button).offset();
 
-        styleDiv.width = styleDiv.height = 50 + px;
-        styleDiv.left = e.clientX - rect.left - (40 / 2) + px;
-        styleDiv.top = e.clientY - rect.top - (47 / 2) + px;
+        // The style of pulse
+        $(pulse).css({
+            'width':'50px',
+            'height':'50px',
+            'left':event.clientX - rect.left - (40 / 2) + 'px',
+            'top':event.clientY - rect.top - (47 / 2) + 'px'
+        });
 
-        div.classList.add('pulse');
-        this.context.appendChild(div);
-        setTimeout(()=>{div.remove()},700);﻿
+        $(pulse).attr('class', 'pulse');
+        $(pulse).appendTo(button);
+        // the disappearance of the pulse 700 ms
+        setTimeout(()=>{pulse.remove()},700);﻿
     }
 
-    let buttons = document.querySelectorAll("button");
-    let forEach = Array.prototype.forEach;
-    forEach.call(buttons,(b)=>{
-        b.addEventListener('click', {handleEvent: pulse, context:b})
-    });
+    let buttons = $(document).find("button");
+    buttons.each((index, button)=>{
+        $(button).on('click', ()=>{pulse(event, button)})
+    })
 });
