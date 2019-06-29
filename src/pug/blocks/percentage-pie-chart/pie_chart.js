@@ -1,5 +1,7 @@
 $(document).ready(function(){
-    $('.pie-chart').each(function(index, elem){
+    let $pie_chart = $('.pie-chart');
+
+    $pie_chart.each(function(index, elem){
         let doughnutChart = new Chart($(this).find('canvas'),{
             type: 'doughnut',
             showTooltips: false,

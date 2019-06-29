@@ -1,10 +1,10 @@
 $(document).ready(()=>{
 
-    let block_toggle = $('.toggle'),
-        block_tick_box = $('.tick-box');
+    let $block_toggle = $('.toggle'),
+        $block_tick_box = $('.tick-box');
 
     // Change the style that is associated with the id(toggle or tick box)
-    block_toggle.each((index, value)=>{
+    $block_toggle.each((index, value)=>{
 
         $(value).on('click',()=>{
             if($(value).attr('id') === 'OFF'){
@@ -17,7 +17,7 @@ $(document).ready(()=>{
         });
 
     });
-    block_tick_box.each((index, value)=>{
+    $block_tick_box.each((index, value)=>{
 
         $(value).on('click',()=>{
             if($(value).attr('id') === 'OFF'){

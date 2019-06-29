@@ -1,5 +1,7 @@
 $(document).ready(function () {
-    $(".percentage").each(function() {
+    let $percentage = $(".percentage");
+
+    $percentage.each(function() {
         $(this).circleProgress({
             value: parseInt($(".percent", this).text()) / 100,
             size: 95,
