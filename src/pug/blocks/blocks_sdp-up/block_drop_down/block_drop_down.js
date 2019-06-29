@@ -1,9 +1,9 @@
 $(document).ready(()=>{
 
-    $('.block_drop_down').each(function(){
+    $('.block-drop-down').each(function(){
 
-        let  option_btn = $(this).children('.block_option').children('.option-btn'),
-            drop_down_option = $(this).children('.drop_down_option'),
+        let  option_btn = $(this).children('.block-option').children('.option-btn'),
+            drop_down_option = $(this).children('.drop-down-option'),
             block_drop_down_state = false,
             li = $(drop_down_option).children('li');
 
@@ -21,7 +21,7 @@ $(document).ready(()=>{
         li.on('click',(event)=>{
             let text = $(event.target).text();
 
-            $(this).children('.block_option').children('a').text(text);
+            $(this).children('.block-option').children('a').text(text);
         })
     });
 

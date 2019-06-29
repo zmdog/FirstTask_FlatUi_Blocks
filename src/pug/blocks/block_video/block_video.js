@@ -106,7 +106,7 @@ $(document).ready(()=>{
                     let progress = Math.floor(video.currentTime) / Math.floor(video.duration);
                     controls.progress[0].style.width = Math.floor(progress * controls.total.width()) + "px";
 
-                    $(block_video).children('.video').css({'width':'inherit', 'height':'inherit'});
+                    $(block_video).children('.video').css({'width':'100%', 'height':'100%'});
                 }else{
                     controls.fulscreen = true;
                     $(this).attr('id', 'on');

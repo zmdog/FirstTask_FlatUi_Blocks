@@ -1,8 +1,8 @@
-@import "block_messaging/block_messaging";
-@import "block_calendar/block_calendar";
+@import 'block_messaging/block_messaging';
+@import 'block_calendar/block_calendar';
 
 
-.blocks_calendars-messaging {
+.blocks-calendars-messaging {
   display: flex;
   justify-content: center;
   @media (max-width: 780px) {

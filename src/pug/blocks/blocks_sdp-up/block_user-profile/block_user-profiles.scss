@@ -1,8 +1,8 @@
-.block_user-profiles{
-  .user_profile-content{
+.block-user-profiles{
+  .user-profile-content{
     margin-top: 1.2778rem;
     margin-bottom: 5.2778rem;
-    .block_user-profile{
+    .block-user-profile{
       display:flex;
       height: 5.2222rem;
       width: 14.8889rem;
@@ -11,7 +11,7 @@
       &:last-child{
         margin-top: 1.4444rem;
       }
-      .user_img{
+      .user-img{
         border-radius: 50%;
         background-color: #e5e5e5;
         img{
@@ -20,13 +20,13 @@
           height: 4.6667rem;
         }
       }
-      .active_zone{
+      .active-zone{
         display: flex;
         position: relative;
         transition: 0.5s;
         overflow: hidden;
         width: 0;
-        .user_block{
+        .user-block{
           position: absolute;
           width: 9.0556rem;
           right: 0;
@@ -43,26 +43,26 @@
             transform: rotate(45deg);
           }
 
-          .user_info{
+          .user-info{
             margin-top: 0.7222rem;
             margin-bottom: 0.7778rem;
             p{
               text-align: center;
               margin: 0
             }
-            .user_name{
+            .user-name{
               color: #e75735;
               margin-bottom: 0.4444rem;
               line-height: 0.7778rem;
               font-size: 1rem;
             }
-            .user_prof{
+            .user-prof{
               line-height: 0.4444rem;
               font-size: 0.6111rem;
             }
           }
 
-          .social_icons{
+          .social-icons{
             display: flex;
             justify-content: center;
             button{
@@ -87,7 +87,7 @@
         }
         &#active{
           color: #757575;
-          .user_block{
+          .user-block{
             background-color: #e5e5e5;
             &:after{
               background-color: #e5e5e5;
@@ -95,10 +95,10 @@
           }
         }
         &#inactive{
-          .user_block{
+          .user-block{
             background-color: #4eb7a8;
-            .user_name{color: #FFF}
-            .user_prof{color: #FFF}
+            .user-name{color: #FFF}
+            .user-prof{color: #FFF}
             i{color: #FFF}
             &:after{
               background-color: #4eb7a8;

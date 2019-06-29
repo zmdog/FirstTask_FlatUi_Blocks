@@ -24,14 +24,14 @@ $(document).ready(()=>{
         }
     }
 
-    $('.block_form').each(function(){
+    $('.block-form').each(function(){
 
         // Adding inputs
-        let name_input  = $(this).children('.form_name').children('input'),
-            email_input = $(this).children('.form_email').children('input');
+        let name_input  = $(this).children('.form-name').children('input'),
+            email_input = $(this).children('.form-email').children('input');
 
         // The function call in the input context
-        $(name_input).on('input', ()=>{option_check.call(name_input, $(this).children('.form_name'))});
-        $(email_input).on('input', ()=>{option_check.call(email_input, $(this).children('.form_email'))});
+        $(name_input).on('input', ()=>{option_check.call(name_input, $(this).children('.form-name'))});
+        $(email_input).on('input', ()=>{option_check.call(email_input, $(this).children('.form-email'))});
     });
 });

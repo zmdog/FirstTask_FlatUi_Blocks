@@ -1,7 +1,7 @@
 $(document).ready(()=>{
 
-    let block_toggle = $('.block_toggle'),
-        block_tick_box = $('.block_tick_box');
+    let block_toggle = $('.block-toggle'),
+        block_tick_box = $('.block-tick-box');
 
     // Change the style that is associated with the id(toggle or tick box)
     block_toggle.each((index, value)=>{

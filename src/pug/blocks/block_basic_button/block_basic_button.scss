@@ -1,6 +1,7 @@
 button{
   .pulse{
     position: absolute;
+    content: '';
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.51);
     animation: pulse 0.7s ease-out;
@@ -19,7 +20,7 @@ button{
     cursor: $point_cursor;
   }
 }
-.block_basic_buttons-content{
+.block-basic-buttons-content{
   display: flex;
   justify-content: center;
   margin-top: 3.6822rem;

@@ -1,4 +1,4 @@
-.block_arrow_buttons-content{
+.block-arrow-buttons-content{
   display: flex;
   justify-content: center;
   margin-top: 1.6667rem;
@@ -8,7 +8,7 @@
     align-items: center;
   }
 
-  .arrow_buttons-settings{
+  .arrow-buttons-settings{
     display: flex;
     margin-right: 1.3333rem;
   }
@@ -39,7 +39,7 @@
       }
     }
     &::after{
-      content: "";
+      content: '';
       display: inline-block;
       position: absolute;
       top: 0.7778rem;
@@ -113,21 +113,21 @@
     }
   }
 
-  .arrow_buttons-orange{
-    @extend .arrow_buttons-settings;
+  .arrow-buttons-orange{
+    @extend .arrow-buttons-settings;
     @media (max-width: 780px) {
       margin-right: 0;
     }
   }
 
-  .arrow_buttons-passive{
-    @extend .arrow_buttons-settings;
+  .arrow-buttons-passive{
+    @extend .arrow-buttons-settings;
     @media (max-width: 780px) {
       margin-right: 0;
     }
   }
 
-  .arrow_buttons-default{
+  .arrow-buttons-default{
     display: flex;
     @media (max-width: 780px) {
       margin-right: 0;

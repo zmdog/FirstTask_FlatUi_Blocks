@@ -1,14 +1,14 @@
-include ../block_standart_button/block_standart_button
+include ../block_basic_button/block_basic_button
 
 mixin block_form()
 
-    form(class='block_form')
-        div(class='form_name' id='NO')
+    form(class='block-form')
+        div(class='form-name' id='NO')
             input(placeholder='Your Name' type='text')
-            .label_name
-        div(class='form_email' id='NO')
+            .label-name
+        div(class='form-email' id='NO')
             input(placeholder='Your Email' type='email')
-            .label_email
+            .label-email
         textarea(placeholder='Your Message')
-        .block_basic_buttons-content
+        .block-basic-buttons-content
             +block_basic_button("medium", "SUBMIT", "default")

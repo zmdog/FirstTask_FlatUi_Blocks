@@ -1,3 +1,6 @@
+let $ = require('jquery');
+let Chart = require('chart.js');
+
 import "../pug/index.pug"
 
 import "../scss/index.scss"

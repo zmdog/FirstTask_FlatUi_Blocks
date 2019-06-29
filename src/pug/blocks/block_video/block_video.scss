@@ -1,9 +1,9 @@
-.content_videos{
+.content-videos{
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 1rem;
-  .block_video{
+  .block-video{
     width: 33rem;
     @media (max-width: 780px) {
       width: 100%;
@@ -40,13 +40,13 @@
       }
       #name{
         @extend .settings-info;
-        font-family: "Lato Light", sans-serif;
+        font-family: 'Lato Light', sans-serif;
         font-size: 2rem;
         margin-bottom: 1.85%;
       }
       #from{
         @extend .settings-info;
-        font-family: "Lato Black", sans-serif;
+        font-family: 'Lato Black', sans-serif;
         font-size: 0.6667rem;
         margin-bottom: 3.87%;
       }

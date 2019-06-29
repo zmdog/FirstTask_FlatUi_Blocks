@@ -1,8 +1,8 @@
 $(document).ready(function () {
 
-    $('.block_user-profile').each((index,elem)=>{
-        let img = $(elem).children('.user_img'),
-            active_zone = $(elem).children('.active_zone');
+    $('.block-user-profile').each((index,elem)=>{
+        let img = $(elem).children('.user-img'),
+            active_zone = $(elem).children('.active-zone');
 
             $(img).hover(()=>{
                 $(active_zone).css({'width':'100%'});

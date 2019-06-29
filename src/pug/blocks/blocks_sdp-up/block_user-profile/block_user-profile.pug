@@ -1,13 +1,13 @@
 mixin block_user-profile(img, name, prof)
-    .block_user-profile
-        .user_img
+    .block-user-profile
+        .user-img
             img(src=require("./images/"+img))
-        .active_zone(id='inactive')
-            .user_block
-                .user_info
-                    p(class='user_name')=name
-                    p(class='user_prof')=prof
-                .social_icons
+        .active-zone(id='inactive')
+            .user-block
+                .user-info
+                    p(class='user-name')=name
+                    p(class='user-prof')=prof
+                .social-icons
                     button(class= 'social-btn')
                         i(class="fa fa-facebook" aria-hidden="true")
                     button(class= 'social-btn')

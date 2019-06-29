@@ -1,19 +1,19 @@
 mixin block_messaging(img, name, question, answer)
 
-   .block_messaging
-       .user_img
+   .block-messaging
+       .user-img
            img(src=require("./images/"+img))
-       .header_messaging
+       .header-messaging
            p=name
 
-       .content_messaging
+       .content-messaging
            form
-               .content_icons
+               .content-icons
                    button(class='messaging-btn')
                        i(class="icon-message")
                    button(class='messaging-btn')
                        i(class="fa fa-camera" aria-hidden="true")
-               .content_chatting
+               .content-chatting
                    .question
                        p=question
                    .answer

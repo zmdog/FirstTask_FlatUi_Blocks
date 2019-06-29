@@ -1,4 +1,4 @@
-.content_sliders{
+.content-sliders{
   display: flex;
   justify-content: center;
   margin-bottom: 1.5556rem;
@@ -26,7 +26,7 @@
     }
   }
 
-  .block_slider-orange{
+  .block-slider-orange{
     position: relative;
     #orange{
       margin-right: 3.3889rem;
@@ -49,7 +49,7 @@
           background-color: #e75735;
           border-radius: 0.2778rem;
           border: none;
-          font-family: "Lato", sans-serif;
+          font-family: 'Lato', sans-serif;
           font-weight: 900;
           font-size: 0.7222rem;
           color: #ffffff;
@@ -69,7 +69,7 @@
   }
 
 
-  .block_slider-default{
+  .block-slider-default{
     position: relative;
     #default{
       @extend .settings-sliders;
@@ -85,14 +85,14 @@
     .ui-slider-label-default{
       font-size: 0.6111rem;
       color: #d1d1d1;
-      font-family: "Lato", sans-serif;
+      font-family: 'Lato', sans-serif;
       font-weight: 900;
 
     }
     ul{
       font-size: 0.6111rem;
       color: #d1d1d1;
-      font-family: "Lato", sans-serif;
+      font-family: 'Lato', sans-serif;
       display: flex;
       list-style-type: none;
       padding: 0;

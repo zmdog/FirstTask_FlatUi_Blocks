@@ -1,6 +1,6 @@
 $(document).ready(()=>{
 
-    $('.block_search').children('.search_button').on('click',(event)=>{
+    $('.block-search').children('.search-button').on('click',(event)=>{
         let elem = $(event.currentTarget).parent().attr('id'),
             input = $(event.currentTarget).parent().children('input');
 

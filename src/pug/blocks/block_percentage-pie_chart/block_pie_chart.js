@@ -1,20 +1,15 @@
-let block_pie_chart = document.getElementsByClassName('block_pie_chart');
-let $ = require('jquery');
-let Chart = require('chart.js');
-
-$(document).ready(()=>{
-    for(let i=0;i<block_pie_chart.length;i++){
-        let canvas = block_pie_chart[i].getElementsByTagName('canvas');
-        let doughnutChart = new Chart(canvas,{
+$(document).ready(function(){
+    $('.block-pie-chart').each(function(index, elem){
+        let doughnutChart = new Chart($(this).find('canvas'),{
             type: 'doughnut',
             showTooltips: false,
             data: {
                 datasets: [{
                     data: [
-                        block_pie_chart[i].dataset.piece1,
-                        block_pie_chart[i].dataset.piece2,
-                        block_pie_chart[i].dataset.piece3,
-                        block_pie_chart[i].dataset.piece4
+                        elem.dataset.piece1,
+                        elem.dataset.piece2,
+                        elem.dataset.piece3,
+                        elem.dataset.piece4
                     ],
                     backgroundColor: [
                         "#747474",
@@ -39,5 +34,5 @@ $(document).ready(()=>{
                 },
             }
         });
-    }
+    });
 });

@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $(".block_percentage").each(function() {
+    $(".block-percentage").each(function() {
         $(this).circleProgress({
             value: parseInt($(".percent", this).text()) / 100,
             size: 95,

@@ -1,6 +1,6 @@
 $(document).ready(()=>{
 
-    $('.block_slider-orange').each(function(){
+    $('.block-slider-orange').each(function(){
         let slider = $(this).children('.slider#orange'),
             label = $(this).find('.ui-slider-label-orange');
 

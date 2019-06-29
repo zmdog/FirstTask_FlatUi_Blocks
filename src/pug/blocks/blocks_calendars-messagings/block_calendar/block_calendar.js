@@ -1,7 +1,7 @@
 
 $(document).ready(()=>{
 
-    $('.block_calendar').each(function(index, elem){
+    $('.block-calendar').each(function(index, elem){
 
         $(this).children('.calendar').datepicker({
             inline: true,

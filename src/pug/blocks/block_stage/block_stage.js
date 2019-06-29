@@ -1,6 +1,6 @@
 $(document).ready(()=>{
 
-    let block_stage = $('.block_stage');
+    let block_stage = $('.block-stage');
 
     $(block_stage).each(function(index, elem){
 
