@@ -1,0 +1,46 @@
+.percentages-pie-charts_content{
+  display: flex;
+  justify-content: center;
+  margin-top: 1.1111rem;
+  margin-bottom: 1.8333rem;
+  @media (max-width: 780px) {
+    align-items: center;
+    flex-direction: column;
+    .percentages-pie-charts_percentages{
+      width: 12.3333rem;
+      .percentage{
+        &:nth-last-child(1){margin-right: 0}
+        &:nth-last-child(3){margin-right: 0}
+      }
+    }
+  }
+  .percentages-pie-charts_percentages{
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    .percentage{
+      position: relative;
+      margin-right: 1.6667rem;
+      width: 5.2778rem;
+      height: 5.2778rem;
+      .percent{
+        width: 100%;
+        position: absolute;
+        top: 1.4444rem;
+        text-align: center;
+        font-size: 2.2222rem;
+        color: #9d9d9d;
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        letter-spacing: -0.1667rem
+      }
+    }
+
+  }
+  .percentages-pie-charts_pie-charts{
+    #pie, .pie-chart{
+      width: 5.2778rem;
+      height: 5.2778rem;
+    }
+  }
+}

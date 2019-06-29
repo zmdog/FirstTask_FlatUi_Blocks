@@ -1,0 +1,10 @@
+mixin drop_down(options)
+
+    .drop-down
+        .option
+            a= 'Choose An Option'
+            button(class= 'option-btn')
+                i(class="fa fa-chevron-down" aria-hidden="true")
+        ul(class= 'drop-down-option')
+            each val in options
+                li= val

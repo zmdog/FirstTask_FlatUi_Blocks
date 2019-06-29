@@ -1,0 +1,14 @@
+mixin location(location, meet)
+
+    .location
+        #map
+        .info
+            .meet
+                p=meet
+            .street
+                p=location
+            .icons
+                button
+                    i(class="fa fa-crosshairs" aria-hidden="true")
+                button
+                    i(class="fa fa-map-marker" aria-hidden="true")

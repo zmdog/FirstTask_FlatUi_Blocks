@@ -1,0 +1,134 @@
+button{
+  .pulse{
+    position: absolute;
+    content: '';
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.51);
+    animation: pulse 0.7s ease-out;
+    transform: scale(0);
+  }
+  @keyframes pulse {
+    to{
+      transform: scale(1);
+      opacity: 0;
+    }
+  }
+  outline: 0;
+  overflow: hidden;
+  position: relative;
+  &:hover{
+    cursor: $point_cursor;
+  }
+}
+.basic-buttons_content{
+  display: flex;
+  justify-content: center;
+  margin-top: 3.6822rem;
+  margin-bottom: 2rem;
+  @media (max-width: 780px) {
+    .buttons_default{
+      flex-direction: column;
+      align-items: center;
+    }
+    .buttons_orange{
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      .right-orange{
+        order: 1;
+      }
+      .left-orange{
+        margin: 0;
+      }
+    }
+  }
+
+  .button{
+    border-radius: 0.1111rem;
+  }
+  .orange{
+    color: #FFFFFF;
+    border: 0.05556rem #e75735;
+    background-color: #e75735;
+    &:hover{
+      box-shadow: 0 0.1667rem #bf3e1f;
+    }
+    &:active{
+      border: 0.05556rem solid #e75735;
+      background-color: white;
+      color: #e75735;
+      box-shadow: 0 0.1667rem #e75735;
+    }
+  }
+  .default{
+    color: #FFFFFF;
+    border: 0.05556rem #4eb7a8;
+    background-color: #4eb7a8;
+    &:hover{
+      box-shadow: 0 0.1667rem  #28a290;
+    }
+    &:active{
+      border: 0.05556rem solid #4eb7a8;
+      background-color: white;
+      color: #4eb7a8;
+      box-shadow: 0 0.1667rem  #4eb7a8;
+    }
+  }
+  .medium{
+    height: 1.7778rem;
+    width: 6.5556rem;
+    font-size: 0.6667rem;
+    font-family: 'Lato Black', sans-serif;
+  }
+  .small{
+    height: 1.2222rem;
+    width: 4.3333rem;
+    font-size: 0.5556rem;
+    font-family: 'Lato Black', sans-serif;
+  }
+
+  .buttons_default{
+    display: flex;
+    justify-content: center;
+    margin-right: 1.3333rem;
+    .buttons_left{
+      margin-right: 1.2778rem;
+      @media (max-width: 780px) {
+        order: 1;
+        margin-right: 0;
+      }
+      div{
+        margin-top: 1.59rem;
+        &:first-child{
+          margin-top: 0.43rem;
+        }
+      }
+    }
+    .buttons_right{
+      div{
+        margin-bottom: 1.13rem;
+      }
+    }
+  }
+  .buttons_orange{
+    display: flex;
+    justify-content: center;
+    .buttons_left{
+      margin-right: 1.4444rem;
+      @media (max-width: 780px) {
+        margin-right: 0;
+      }
+      div{
+        margin-bottom: 1.13rem;
+      }
+    }
+    .buttons_right{
+      div{
+        margin-top: 1.59rem;
+        &:first-child{
+          margin-top: 0.43rem;
+        }
+      }
+    }
+  }
+}

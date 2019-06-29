@@ -1,0 +1,19 @@
+.sdp-up{
+  @import 'block_search/search';
+  @import 'block_user-profile/user-profiles';
+  @import 'block_drop_down/drop_down';
+  display: flex;
+  justify-content: center;
+  margin-bottom: -2px;
+  @media (max-width: 780px) {
+    flex-direction: column;
+    align-items: center;
+    .search-drop-down{
+      margin-right: 0;
+      margin-bottom: 3rem;
+    }
+  }
+  .search-drop-down_content{
+    margin-top: 14px;
+  }
+}

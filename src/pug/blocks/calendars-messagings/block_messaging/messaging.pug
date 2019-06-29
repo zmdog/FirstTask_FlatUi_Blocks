@@ -1,0 +1,21 @@
+mixin messaging(img, name, question, answer)
+
+   .messaging
+       .user-img
+           img(src=require("./images/"+img))
+       .header-messaging
+           p=name
+
+       .messaging_content
+           form
+               .messaging_icons
+                   button(class='messaging-btn')
+                       i(class="icon-message")
+                   button(class='messaging-btn')
+                       i(class="fa fa-camera" aria-hidden="true")
+               .messaging_chatting
+                   .question
+                       p=question
+                   .answer
+                       textarea=answer
+                   button="REPLY"

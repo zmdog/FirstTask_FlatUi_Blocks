@@ -1,0 +1,16 @@
+mixin user-profile(img, name, prof)
+    .user-profile
+        .user-img
+            img(src=require("./images/"+img))
+        .active-zone(id='inactive')
+            .block-user
+                .user-info
+                    p(class='user-name')=name
+                    p(class='user-prof')=prof
+                .social-icons
+                    button(class= 'social-btn')
+                        i(class="fa fa-facebook" aria-hidden="true")
+                    button(class= 'social-btn')
+                        i(class="fa fa-twitter" aria-hidden="true")
+                    button(class= 'social-btn')
+                        i(class="fa fa-dribbble" aria-hidden="true")

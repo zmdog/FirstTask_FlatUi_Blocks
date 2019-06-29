@@ -1,0 +1,41 @@
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+
+.search-drop-down{
+  margin-right: 2.0556rem;
+  .search{
+    height: 1.6156rem;
+    display: flex;
+    margin-top: 0.9444rem;
+    width: 16rem;
+    input{
+      font-size: 0.7778rem;
+      font-family: "Source Sans Pro Regular", sans-serif;
+      border: 0;
+      border-bottom-left-radius: 2px;
+      border-top-left-radius: 2px;
+      background-color: #e5e5e5;
+      height: 1.4444rem;
+      width: 14.0556rem;
+      outline: none;
+      transition: 0.2s;
+      padding-left: 0.7222rem;
+      padding-right: 0.7222rem;
+      &::placeholder{
+        color: #888888;
+        font-family: "Source Sans Pro Regular", sans-serif;
+      }
+    }
+    button{
+      color: #FFF;
+      border-bottom-right-radius: 2px;
+      border-top-right-radius: 2px;
+      height: 1.5556rem;
+      width: 1.9444rem;
+      background-color: #e75735;
+      border: 0;
+    }
+    &:first-child{
+      margin-top: 0;
+    }
+  }
+}

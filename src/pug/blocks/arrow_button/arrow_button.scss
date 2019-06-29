@@ -1,0 +1,136 @@
+.arrow-buttons_content{
+  display: flex;
+  justify-content: center;
+  margin-top: 1.6667rem;
+  margin-bottom: 2.4178rem;
+  @media (max-width: 780px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .arrow-buttons-settings{
+    display: flex;
+    margin-right: 1.3333rem;
+  }
+
+
+  .button{
+    width: 2.7778rem;
+    height: 2.7778rem;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    margin-right: 1.3333rem;
+    &:last-child{
+      margin-right: 0
+    }
+    @media (max-width: 780px) {
+      margin-bottom: 0.5556rem;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+  }
+  .button-settings{
+    &:hover{
+      border: 0;
+      &::after{
+        top: 0.9444rem;
+        width: 0.7222rem;
+      }
+    }
+    &::after{
+      content: '';
+      display: inline-block;
+      position: absolute;
+      top: 0.7778rem;
+      width: 0.7222rem;
+      height: 0.7222rem;
+    }
+  }
+  .default{
+    @extend .button-settings;
+    border: #4eb7a8 solid 0.1667rem;
+    &:hover{
+      background-color: #4EB7A8;
+      &::after{
+        border-top: 0.2222rem solid #FFFFFF;
+        border-right: 0.2222rem solid #FFFFFF;
+      }
+    }
+    &::after{
+      border-top: 0.2222rem solid #4eb7a8;
+      border-right: 0.2222rem solid #4eb7a8;
+    }
+  }
+  .orange{
+    @extend .button-settings;
+    border: #e75735 solid 0.1667rem;
+    &:hover{
+      background-color: #E75735;
+      &::after{
+        border-top: 0.2222rem solid #FFFFFF;
+        border-right: 0.2222rem solid #FFFFFF;
+      }
+    }
+    &::after{
+      border-top: 0.2222rem solid #e75735;
+      border-right: 0.2222rem solid #e75735;
+    }
+  }
+  .passive{
+    @extend .button-settings;
+    background-color: #e5e5e5;
+    border: #e5e5e5 solid 0.1667rem;
+    &:hover{
+      background-color: #e5e5e5;
+    }
+    &::after{
+      border-top: 0.2222rem solid #FFFFFF;
+      border-right: 0.2222rem solid #FFFFFF;
+    }
+  }
+
+  .right{
+    &:hover{
+      &::after{
+        right: 1.1111rem;
+      }
+    }
+    &::after{
+      right: 0.9444rem;
+      transform: rotate(45deg)
+    }
+  }
+  .left{
+    &:hover{
+      &::after{
+        left: 1.1111rem;
+      }
+    }
+    &::after{
+      left: 0.9444rem;
+      transform: rotate(-135deg)
+    }
+  }
+
+  .arrow-buttons_orange{
+    @extend .arrow-buttons-settings;
+    @media (max-width: 780px) {
+      margin-right: 0;
+    }
+  }
+
+  .arrow-buttons_passive{
+    @extend .arrow-buttons-settings;
+    @media (max-width: 780px) {
+      margin-right: 0;
+    }
+  }
+
+  .arrow-buttons_default{
+    display: flex;
+    @media (max-width: 780px) {
+      margin-right: 0;
+    }
+  }
+}

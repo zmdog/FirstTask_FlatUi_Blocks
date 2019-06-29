@@ -1,0 +1,23 @@
+mixin news(img, title, date, info)
+    .block-news
+        .news-img
+            img(src=require("./images/"+img))
+        .news
+            .content
+                p(class='title')=title
+                p(class='date')=date
+                p(class='info')=info
+
+
+mixin event(img, title, day, month, info)
+    .block-event
+        .event-img
+            img(src=require("./images/"+img))
+        .event
+            .content
+                p(class='date')=day
+                    span=month
+                p(class='title')=title
+                p(class='info')=info
+                .block-btn
+                    button='ADD  TO  CALENDAR'

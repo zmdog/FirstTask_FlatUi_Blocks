@@ -1,0 +1,124 @@
+include ../basic_button/basic_button
+include ../arrow_button/arrow_button
+include ../percentage-pie-chart/percentage
+include ../percentage-pie-chart/pie_chart
+include ../slider/slider
+include ../stage/stage
+include ../form/form
+include ../toggle_tick_box/toggle
+include ../toggle_tick_box/tick_box
+include ../sdp-up/block_search/search
+include ../sdp-up/block_drop_down/drop_down
+include ../sdp-up/block_user-profile/user-profile
+include ../news-events/news-events
+include ../location/location
+include ../calendars-messagings/block_calendar/calendar
+include ../calendars-messagings/block_messaging/messaging
+include ../video/video
+
+.content-block
+    .basic-buttons
+        p(class="title")="STANDARD  BUTTONS"
+        .basic-buttons_content
+            .buttons_default
+                .buttons_left
+                    +basic_button("small", "SMALL", "default")
+                    +basic_button("small", "SMALL", "default")
+                    +basic_button("small", "SMALL", "default")
+                .buttons_right
+                    +basic_button("medium", "MEDIUM", "default")
+                    +basic_button("medium", "MEDIUM", "default")
+                    +basic_button("medium", "MEDIUM", "default")
+            .buttons_orange
+                .buttons_left
+                    +basic_button("medium", "MEDIUM","orange")
+                    +basic_button("medium", "MEDIUM","orange")
+                    +basic_button("medium", "MEDIUM","orange")
+                .buttons_right
+                    +basic_button("small", "SMALL", "orange")
+                    +basic_button("small", "SMALL", "orange")
+                    +basic_button("small", "SMALL", "orange")
+    .arrow-buttons
+        p(class="title")="ARROW  BUTTONS"
+        .arrow-buttons_content
+            .arrow-buttons_orange
+                +arrow_button("active","left", "orange")
+                +arrow_button("active","right", "orange")
+            .arrow-buttons_passive
+                +arrow_button("passive", "left", 'passive')
+                +arrow_button("passive", "right", 'passive')
+            .arrow-buttons_default
+                +arrow_button("active","left", "default")
+                +arrow_button("active","right", "default")
+    .percentages-pie-charts
+        p(class="title")="PERCENTAGES / PIE CHART"
+        .percentages-pie-charts_content
+            .percentages-pie-charts_percentages
+                +percentage(0)
+                +percentage(38)
+                +percentage(62)
+                +percentage(89)
+            .percentages-pie-charts_pie-charts
+                +pie_chart(50, 30, 10, 10)
+    .sliders
+        p(class="title")="SLIDERS"
+        .sliders_content
+            +slider("orange", 0, 120, 5, 0)
+            +slider("default", 0, 100, 25, 0)
+    .stages
+        p(class="title")="STAGES"
+        .stages_content
+            +stage(5)
+    .form-elements
+        p(class="title")="FORM  ELEMENTS"
+        .form-elements_content
+            +form()
+            .form-elements_toggles-tick-boxes
+                .toggles
+                    p(class="title")="TOGGLES"
+                    .toggles_content
+                        +toggle("OFF")
+                        +toggle("ON")
+                .tick-boxes
+                    p(class="title")="TICK BOXES"
+                    .tick-boxes_content
+                        +tick_box("ON")
+                        +tick_box("OFF")
+    .sdp-up
+        .search-drop-down
+            p(class="title")="SEARCH / DROP DOWN"
+            .search-drop-down_content
+                +search("Search", "true")
+                +search("Search", "false")
+                +drop_down(["This is option 1","This is option 2","This is option 3","This is option 4"])
+        .user-profiles
+            p(class="title")="USER PROFILE"
+            .user-profile_content
+                +user-profile("person_1.png", "John Smith", "UX  DESIGNER")
+                +user-profile("person_2.png", "Sarah Brown", "DEVELOPER")
+    .news-events
+        p(class="title")="NEWS & EVENTS"
+        .news-events_content
+            +news("bicycle.png", "It’s all going downhill", "24  AUGUST  2013",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. " +
+            "Sed condimentum aliquet venenatis. Etiam a nisi nunc, a tincidunt eros.")
+            +event("city.png", "THIS IS THE TITLE", "24", "Aug", "Lorem ipsum dolor sit amet, " +
+            "consectetur adipiscing elit.")
+    .locations
+        p(class="title")="LOCATION"
+        .locations_content
+            +location("1259  CALIFORNIA ST San Francisco, CA", "Meet us!")
+    .calendars-messaging
+        .calendars
+            p(class="title")="CALENDAR"
+            +calendar()
+        .messagings
+            p(class="title")="MESSAGING"
+            +messaging("person_2.png", "Sarah Brown","Hey! So are we cool to meet at the art gallery? Say 8pm",
+            "Yeah that sounds great. See you then.")
+    .videos
+        p(class="title")="VIDEO"
+        .videos_content
+            +video("62980495")
+            +videplayer("Nature", "New Zealand Landscapes Timelapse", "http://vimeo.com/62980495",
+            "Bevan Percival ")

@@ -1,0 +1,14 @@
+include ../basic_button/basic_button
+
+mixin form()
+
+    form(class='form')
+        div(class='form-name' id='NO')
+            input(placeholder='Your Name' type='text')
+            .label-name
+        div(class='form-email' id='NO')
+            input(placeholder='Your Email' type='email')
+            .label-email
+        textarea(placeholder='Your Message')
+        .basic-buttons_content
+            +basic_button("medium", "SUBMIT", "default")
